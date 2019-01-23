@@ -1,0 +1,25 @@
+.menu__list {
+  display: flex;
+  justify-content: space-between;
+  
+  .menu__item {
+    font-family: 'ubuntu';
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 13px;
+    list-style-type: disc;
+
+    &:first-child {
+      list-style-type: none;
+    }
+
+    &::after {
+      content: "";
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      background-color:#fff;
+      // position: relative;
+    }
+  }
+}
