@@ -1,0 +1,31 @@
+.reviews__list {
+  display: flex;
+  flex-wrap: wrap;
+  .reviews__item {
+    flex: 1 0 285px;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    .reviews__photo {
+      display: block;
+      width: 100%; 
+      cursor: pointer;
+      &:hover {
+        filter: grayscale(75%);
+        
+      }
+      &:hover + .reviews__text {
+        display: block;
+        color: #000000;
+        height: 300px;
+        position: absolute;
+        top: 0px;
+        left: 0;
+      }
+    }
+    .reviews__text {
+      height: 0;
+    }
+    
+  }
+}
