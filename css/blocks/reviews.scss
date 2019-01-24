@@ -6,26 +6,68 @@
     margin: 0;
     padding: 0;
     position: relative;
-    .reviews__photo {
-      display: block;
-      width: 100%; 
+    
+    .reviews__appearance {
+      position: relative;
       cursor: pointer;
-      &:hover {
-        filter: grayscale(75%);
-        
-      }
-      &:hover + .reviews__text {
+      .reviews__photo {
         display: block;
-        color: #000000;
+        width: 100%;
+        cursor: pointer;
+        filter: grayscale(100%);
+      }
+      .reviews__avatar {
+        display: block;
+        width: 100%;
+        height: 100%;
+      }
+      .reviews__avatar::after {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #000;
+        opacity: 0;
+        transition: opacity .3s;
+      }
+      .reviews__text {
+        height: 0;
+      }
+    
+      &:hover .reviews__avatar::after {
+        opacity: .52;
+        transition: opacity .3s;
+      }
+      &:hover .reviews__text {
+        padding-left: 20px;
+        padding-top: 50px;
+        width: 80%;
         height: 300px;
         position: absolute;
         top: 0px;
         left: 0;
+        transition: height .3s;
+        .reviews__text-title {
+          font-family: 'gagalin';
+          text-transform: uppercase;
+          padding-bottom: 30px;
+        }
+        .reviews__text-desc {
+          font-family: 'ubuntu';
+          line-height: 1.4em;
+          font-weight: 300;
+        }
+        .reviews__text-button {
+          background-color: #2f3234;
+          color: #fff;
+          padding: 11px 14px;
+          border-radius: 3px;
+          margin-top: 17px;
+        }
       }
     }
-    .reviews__text {
-      height: 0;
-    }
-    
   }
 }
