@@ -12,9 +12,9 @@ body {
   font-family: 'ubuntu';
   color: #fff;
   font-size: 16px;
-  // line-height: 1.42;
-  // -webkit-font-smoothing: antialiased;
-  // -moz-osx-font-smoothing: grayscale;
+  line-height: 1.42;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 .wrapper {
@@ -30,33 +30,16 @@ ul {
   padding: 0;
 }
 
-ul li {
-  list-style: none;
-}
+// ul li {
+//   list-style: none;
+// }
 
 .container {
   margin: 0 auto;
   width: 945px;
-}
-// .page__container {
-//   display: flex;
-//   justify-content: space-between;
-// }
-
-button {
-  border: none;
-  background: transparent;
-  cursor: pointer;
 }
 
 h1, h2, h3, h4, h5, h6 {
   margin: 0;
   font-weight: normal;
 }
-
-// .title{
-//   color: #221f1f;
-//   font-size: 49px;
-//   font-weight: bold;
-//   text-transform: uppercase;
-// }

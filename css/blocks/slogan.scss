@@ -1,4 +1,3 @@
-$color: #f9b43b;
 .slogan {
   display: flex;
   justify-content: space-between;
@@ -6,17 +5,14 @@ $color: #f9b43b;
     padding-bottom: 95px;
   }
   .slogan__title {
+    @include title;
+    color: $color_slogan__title;
     width: 50%;
     align-self: center;
-    font-family: 'gagalin';
-    font-size: 72px;
-    color: $color;
     .slogan__text {
       font-family: 'lifehack';
-      color: #fff;
       font-weight: 500;
       display: block;
-      line-height: 1em;
     }
   }
 }

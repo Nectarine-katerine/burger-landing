@@ -1,5 +1,7 @@
-@import 'fonts';
-@import 'base';
+@import './layout/fonts.scss';
+@import './layout/base.scss';
+@import './layout/variables.scss';
+@import './layout/mixins.scss';
 @import 'blocks/header.scss';
 @import 'blocks/menu.scss';
 @import 'blocks/first-page.scss';

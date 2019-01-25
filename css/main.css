@@ -124,7 +124,8 @@ h1, h2, h3, h4, h5, h6 {
 .sidebar {
   position: fixed;
   top: 80px;
-  right: 215px; }
+  right: 215px;
+  z-index: 10; }
   .sidebar .sidebar__link {
     display: block;
     width: 6px;
@@ -243,10 +244,14 @@ h1, h2, h3, h4, h5, h6 {
           line-height: 1.4em;
           font-weight: 300; }
         .reviews__list .reviews__item .reviews__appearance:hover .reviews__text .reviews__text-button {
+          font-family: 'ubuntu';
           background-color: #2f3234;
           color: #fff;
           padding: 11px 14px;
           border-radius: 3px;
-          margin-top: 17px; }
+          margin-top: 17px;
+          text-transform: uppercase;
+          font-size: 13px;
+          font-weight: 500; }
 
 /*# sourceMappingURL=main.css.map */

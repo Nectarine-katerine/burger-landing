@@ -1,7 +1,8 @@
 .sidebar {
   position: fixed;
-  top: 80px;
+  top: 85px;
   right: 215px;
+  z-index: 10;
   .sidebar__link {
     display: block;
     width: 6px;

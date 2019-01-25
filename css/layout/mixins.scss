@@ -1,0 +1,11 @@
+@mixin button {
+  background-color: $color_button;
+  padding: 11px 16px;
+  border-radius: 3px;
+  text-transform: uppercase;
+}
+
+@mixin title {
+  font-family: 'gagalin';
+  font-size: 72px;
+}
