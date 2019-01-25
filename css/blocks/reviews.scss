@@ -1,66 +1,65 @@
 .reviews__list {
   display: flex;
   flex-wrap: wrap;
-  .reviews__item {
-    flex: 1 0 285px;
-    margin: 0;
-    padding: 0;
-    position: relative;
-    
-    .reviews__appearance {
-      position: relative;
-      
-      .reviews__photo {
-        display: block;
-        width: 100%;
-        filter: grayscale(100%);
-      }
-     
-      .reviews__avatar::after {
-        content: "";
-        display: block;
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background-color: #000;
-        opacity: 0;
-        transition: opacity .3s;
-      }
-      .reviews__text {
-        height: 0;
-      }
-    
-      &:hover .reviews__avatar::after {
-        opacity: .52;
-        transition: opacity .3s;
-      }
-      &:hover .reviews__text {
-        padding-left: 20px;
-        padding-top: 50px;
-        width: 80%;
-        height: 300px;
-        position: absolute;
-        top: 0px;
-        left: 0;
-        transition: height .3s;
-        .reviews__text-title {
-          font-family: 'gagalin';
-          text-transform: uppercase;
-          padding-bottom: 30px;
-        }
-        .reviews__text-desc {
-          font-weight: 300;
-        }
-        .reviews__text-button {
-          @include button;
-          background-color: $color_gray;
-          margin-top: 17px;
-          font-size: 13px;
-          font-weight: 500;
-        }
-      }
-    }
+}
+
+.reviews__item {
+  flex: 1 0 285px;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  &:hover .reviews__avatar::after {
+    opacity: .52;
+    transition: opacity .3s;
+  }
+  &:hover .reviews__text {
+    padding-left: 20px;
+    padding-top: 50px;
+    width: 80%;
+    height: 300px;
+    position: absolute;
+    top: 0px;
+    left: 0;
+    transition: height .3s;
   }
 }
+
+.reviews__appearance {
+  position: relative;
+}
+
+.reviews__photo {
+  display: block;
+  width: 100%;
+  filter: grayscale(100%);
+}
+
+.reviews__avatar::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  opacity: 0;
+  transition: opacity .3s;
+ 
+}
+  .reviews__text {
+    height: 0;
+  }
+  .reviews__text-title {
+    font-family: 'gagalin';
+    text-transform: uppercase;
+    padding-bottom: 30px;
+  }
+  .reviews__text-desc {
+    font-weight: 300;
+  }
+  .reviews__text-button {
+    @include button;
+    background-color: $gray;
+    margin-top: 17px;
+  }

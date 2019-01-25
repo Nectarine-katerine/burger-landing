@@ -1,11 +1,16 @@
-@mixin button {
-  background-color: $color_button;
-  padding: 11px 16px;
-  border-radius: 3px;
-  text-transform: uppercase;
-}
-
 @mixin title {
   font-family: 'gagalin';
   font-size: 72px;
+}
+@mixin button {
+  padding: 10px 15px;
+  background: $red;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  display: inline-block;
+  text-transform: uppercase;
+  font-family: 'ubuntu';
+  font-size: 13px;
+  font-weight: 500;
 }

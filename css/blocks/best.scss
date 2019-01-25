@@ -1,19 +1,28 @@
 .best {
   background: url('../../img/bg_best.png') center center no-repeat;
   background-size: cover;
-  .best__title {
-    @include title;
-    color: $color_gray;
-    text-align: center;
-    padding-top: 133px;
-    padding-bottom: 50px;
-  }
+  // display: flex;
+  // flex-direction: column;
+  // justify-content: center;
+}
+.best__container {
+  // padding: 6% 0;
+  
+}
+.best__title {
+  @include title;
+  color: $gray;
+  text-align: center;
+  margin-bottom: 25px;
+}
+
   .best__list {
     display: flex;
+  }
     .best__item {
       text-align: center;
       width: 33%;
-      color: $color_gray;
+      color: $gray;
       font-weight: 300;
       font-size: 14px;
       background: url('../../icons/meat.png') top center no-repeat;
@@ -26,10 +35,10 @@
         padding-bottom: 180px;
       }
     }
+  
     .best__item-title {
       font-family: 'lifehack';
       font-size: 24px;
       padding-bottom: 10px;
     }
-  }
-}
+  

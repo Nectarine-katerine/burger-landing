@@ -1,13 +1,24 @@
+//colors
+$gray: #2f3234;
+$red: #e45028;
+$yellow: #f9b43b;
+
+//setup
 @import './layout/fonts.scss';
 @import './layout/base.scss';
-@import './layout/variables.scss';
 @import './layout/mixins.scss';
+
+//common
+@import 'blocks/button.scss';
+
+//blocks
+@import 'blocks/hero.scss';
 @import 'blocks/header.scss';
 @import 'blocks/menu.scss';
-@import 'blocks/first-page.scss';
-@import 'blocks/button.scss';
+
+
 @import 'blocks/slogan.scss';
-@import 'blocks/sidebar.scss';
-@import 'blocks/down.scss';
+@import 'blocks/fixed-menu.scss';
+@import 'blocks/arrow__down.scss';
 @import 'blocks/best.scss';
 @import 'blocks/reviews.scss';

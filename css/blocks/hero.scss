@@ -1,0 +1,35 @@
+.hero {
+  background:  url('../../img/texture.png'), url('../../img/start-bg.png') center center no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+}
+
+.hero__container {
+  flex: 1;
+}
+
+.hero__content {
+  flex: .8;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.hero__title {
+  @include title;
+  color: $yellow;
+  margin-bottom: 25px;
+}
+
+.hero__text {
+  color: #fff;
+  width: 50%;
+  font-family: 'lifehack';
+  font-weight: 500;
+  font-size: 65px;
+  line-height: 1em;
+}
+
+.hero__pic {
+  width: 50%;
+}
