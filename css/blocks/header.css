@@ -2,9 +2,10 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-top: 5px;
-}
+  padding-top: 5px; }
+
 .header__btns {
   display: flex;
-  align-items: center;
-}
+  align-items: center; }
+
+/*# sourceMappingURL=header.css.map */

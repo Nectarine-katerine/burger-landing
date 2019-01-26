@@ -141,7 +141,7 @@ footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-top: 8px; }
+  padding-top: 5px; }
 
 .header__btns {
   display: flex;
@@ -175,8 +175,8 @@ footer {
 
 .fixed-menu {
   position: fixed;
-  top: 81px;
-  right: 215px; }
+  top: 77px;
+  right: 172px; }
 
 .fixed-menu_link {
   display: block;
@@ -203,7 +203,7 @@ footer {
   width: 35px;
   height: 25px;
   position: absolute;
-  bottom: 35px;
+  bottom: 40px;
   left: 48%; }
 
 .arrow__down-link {
@@ -252,7 +252,7 @@ footer {
   flex-wrap: wrap; }
 
 .reviews__item {
-  flex: 1 0 285px;
+  width: 25%;
   margin: 0;
   padding: 0;
   position: relative; }
