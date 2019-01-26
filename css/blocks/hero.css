@@ -1,23 +1,23 @@
 /*
 Error: Undefined mixin 'title'.
-        on line 19 of C:\Users\AS\Desktop\burger_project\css\blocks\hero.scss, in `title'
-        from line 19 of C:\Users\AS\Desktop\burger_project\css\blocks\hero.scss
+        on line 22 of C:\Users\AS\Desktop\burger_project\css\blocks\hero.scss, in `title'
+        from line 22 of C:\Users\AS\Desktop\burger_project\css\blocks\hero.scss
 
-14:   display: flex;
-15:   justify-content: space-between;
-16:   align-items: center;
-17: }
-18: .hero__title {
-19:   @include title;
-20:   color: $yellow;
-21:   margin-bottom: 25px;
-22: }
-23: 
-24: .hero__text {
+17:   display: flex;
+18:   justify-content: center;
+19:   align-items: center;
+20: }
+21: .hero__title {
+22:   @include title;
+23:   color: $yellow;
+24:   margin-top: 44px;
+25:   margin-bottom: 22px;
+26: }
+27: 
 
 Backtrace:
-C:\Users\AS\Desktop\burger_project\css\blocks\hero.scss:19:in `title'
-C:\Users\AS\Desktop\burger_project\css\blocks\hero.scss:19
+C:\Users\AS\Desktop\burger_project\css\blocks\hero.scss:22:in `title'
+C:\Users\AS\Desktop\burger_project\css\blocks\hero.scss:22
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:352:in `block in visit_mixin'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:98:in `block in with_mixin'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:135:in `with_frame'
@@ -66,4 +66,4 @@ C:/Program Files (x86)/Koala/bin/sass:22:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined mixin 'title'.\A         on line 19 of C:\Users\AS\Desktop\burger_project\css\blocks\hero.scss, in `title'\A         from line 19 of C:\Users\AS\Desktop\burger_project\css\blocks\hero.scss\A \A 14:   display: flex;\A 15:   justify-content: space-between;\A 16:   align-items: center;\A 17: }\A 18: .hero__title {\A 19:   @include title;\A 20:   color: $yellow;\A 21:   margin-bottom: 25px;\A 22: }\A 23: \A 24: .hero__text {"; }
+  content: "Error: Undefined mixin 'title'.\A         on line 22 of C:\Users\AS\Desktop\burger_project\css\blocks\hero.scss, in `title'\A         from line 22 of C:\Users\AS\Desktop\burger_project\css\blocks\hero.scss\A \A 17:   display: flex;\A 18:   justify-content: center;\A 19:   align-items: center;\A 20: }\A 21: .hero__title {\A 22:   @include title;\A 23:   color: $yellow;\A 24:   margin-top: 44px;\A 25:   margin-bottom: 22px;\A 26: }\A 27: "; }
