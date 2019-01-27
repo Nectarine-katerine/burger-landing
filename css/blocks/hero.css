@@ -1,23 +1,23 @@
 /*
 Error: Undefined mixin 'title'.
-        on line 7 of C:\Users\AS\Desktop\burger_project\css\blocks\best.scss, in `title'
-        from line 7 of C:\Users\AS\Desktop\burger_project\css\blocks\best.scss
+        on line 15 of C:\Users\AS\Desktop\burger_project\css\blocks\hero.scss, in `title'
+        from line 15 of C:\Users\AS\Desktop\burger_project\css\blocks\hero.scss
 
-2:   background: url('../img/bg_best.png') center center no-repeat;
-3:   background-size: cover;
-4: }
-5: 
-6: .best__title {
-7:   @include title;
-8:   color: $gray;
-9:   text-align: center;
-10:   margin-bottom: 45px;
-11: }
-12: 
+10:   display: flex;
+11:   justify-content: center;
+12:   align-items: center;
+13: }
+14: .hero__title {
+15:   @include title;
+16:   color: $yellow;
+17:   margin-top: 44px;
+18:   margin-bottom: 22px;
+19: }
+20: 
 
 Backtrace:
-C:\Users\AS\Desktop\burger_project\css\blocks\best.scss:7:in `title'
-C:\Users\AS\Desktop\burger_project\css\blocks\best.scss:7
+C:\Users\AS\Desktop\burger_project\css\blocks\hero.scss:15:in `title'
+C:\Users\AS\Desktop\burger_project\css\blocks\hero.scss:15
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:352:in `block in visit_mixin'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:98:in `block in with_mixin'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:135:in `with_frame'
@@ -66,4 +66,4 @@ C:/Program Files (x86)/Koala/bin/sass:22:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined mixin 'title'.\A         on line 7 of C:\Users\AS\Desktop\burger_project\css\blocks\best.scss, in `title'\A         from line 7 of C:\Users\AS\Desktop\burger_project\css\blocks\best.scss\A \A 2:   background: url('../img/bg_best.png') center center no-repeat;\A 3:   background-size: cover;\A 4: }\A 5: \A 6: .best__title {\A 7:   @include title;\A 8:   color: $gray;\A 9:   text-align: center;\A 10:   margin-bottom: 45px;\A 11: }\A 12: "; }
+  content: "Error: Undefined mixin 'title'.\A         on line 15 of C:\Users\AS\Desktop\burger_project\css\blocks\hero.scss, in `title'\A         from line 15 of C:\Users\AS\Desktop\burger_project\css\blocks\hero.scss\A \A 10:   display: flex;\A 11:   justify-content: center;\A 12:   align-items: center;\A 13: }\A 14: .hero__title {\A 15:   @include title;\A 16:   color: $yellow;\A 17:   margin-top: 44px;\A 18:   margin-bottom: 22px;\A 19: }\A 20: "; }

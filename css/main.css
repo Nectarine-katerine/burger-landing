@@ -47,8 +47,7 @@ body {
   overflow: hidden;
   width: 100%;
   min-width: 940px;
-  min-height: 100%;
-  position: relative; }
+  min-height: 100%; }
 
 ul {
   margin: 0;
@@ -104,12 +103,6 @@ footer {
   background-size: cover;
   display: flex;
   flex-direction: column; }
-
-.hero__container {
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-  position: relative; }
 
 .hero__content {
   flex: .8;
@@ -222,10 +215,12 @@ footer {
   margin-bottom: 45px;
   color: #2f3234;
   text-align: center;
-  margin-bottom: 55px; }
+  margin-bottom: 45px; }
 
 .best__list {
-  display: flex; }
+  display: flex;
+  align-items: baseline;
+  margin-bottom: 50px; }
 
 .best__item {
   text-align: center;
@@ -234,18 +229,22 @@ footer {
   color: #2f3234;
   font-weight: 300;
   font-size: 14px;
-  background: url("../icons/meat.png") top center no-repeat;
-  padding-top: 100px; }
-  .best__item:nth-child(2) {
-    background: url("../icons/hand.png") top center no-repeat; }
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly; }
   .best__item:last-child {
-    background: url("../icons/natural.png") top center no-repeat;
     margin-right: 0; }
+
+.best__img {
+  margin-bottom: 20px; }
+
+.best__icon {
+  display: inline-block; }
 
 .best__desc-title {
   font-family: 'lifehack';
   font-size: 24px;
-  padding-bottom: 10px; }
+  padding-bottom: 15px; }
 
 .reviews__list {
   display: flex;
