@@ -1,0 +1,27 @@
+.team {
+  background: url('../img/bg_team.png') center center no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.team__container {
+  width: 50%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  background-color: $gray;
+  opacity: .93;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.team__content {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.team__title {
+  @include title;
+  color: $yellow;
+}

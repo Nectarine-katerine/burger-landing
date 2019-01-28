@@ -1,0 +1,28 @@
+.accordeon__title {
+@include title;
+font-size: 14px;
+margin-bottom: 17px;
+
+}
+
+.accordeon__desc-name {
+  font-family: 'ubuntu';
+  font-weight: 700;
+  font-size: 14px;
+}
+.accordeon__desc-text {
+  font-family: 'ubuntu';
+  font-weight: 300;
+  font-size: 14px;
+  width: 53%;
+}
+
+.accordeon__appearance {
+  height: 0;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+}
+.accordeon__appearance_active {
+  height: 100%;
+}
