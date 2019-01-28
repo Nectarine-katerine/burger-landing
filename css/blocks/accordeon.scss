@@ -1,7 +1,22 @@
+.accordeon__item {
+  position: relative;
+}
 .accordeon__title {
 @include title;
 font-size: 14px;
 margin-bottom: 17px;
+&:before {
+  content: '';
+position: absolute;
+width: 300px;
+height: 30px;
+top: -15px;
+right: 0;
+border-color: transparent transparent #fff transparent; 
+border-style: solid;
+border-width: 0 15px 15px 15px;
+display: block;
+}
 
 }
 
