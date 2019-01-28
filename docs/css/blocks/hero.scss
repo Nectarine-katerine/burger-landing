@@ -15,7 +15,6 @@
   align-items: center;
 }
 .hero__title {
-  @include title;
   color: $yellow;
   margin-top: 44px;
   margin-bottom: 22px;

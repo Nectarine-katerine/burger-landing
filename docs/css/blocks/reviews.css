@@ -1,21 +1,21 @@
 /*
 Error: Undefined mixin 'button'.
-        on line 62 of C:\Users\AS\Desktop\burger_project\css\blocks\reviews.scss, in `button'
-        from line 62 of C:\Users\AS\Desktop\burger_project\css\blocks\reviews.scss
+        on line 54 of C:\Users\AS\Desktop\burger_project\css\blocks\reviews.scss, in `button'
+        from line 54 of C:\Users\AS\Desktop\burger_project\css\blocks\reviews.scss
 
-57:   }
-58:   .reviews__text-desc {
-59:     font-weight: 300;
-60:   }
-61:   .reviews__text-button {
-62:     @include button;
-63:     background-color: $gray;
-64:     margin-top: 17px;
-65:   }
+49:   font-weight: 300;
+50:   width: 72%;
+51:   font-size: 14px;
+52: }
+53: .reviews__text-button {
+54:   @include button;
+55:   background-color: $gray;
+56:   margin-top: 17px;
+57: }
 
 Backtrace:
-C:\Users\AS\Desktop\burger_project\css\blocks\reviews.scss:62:in `button'
-C:\Users\AS\Desktop\burger_project\css\blocks\reviews.scss:62
+C:\Users\AS\Desktop\burger_project\css\blocks\reviews.scss:54:in `button'
+C:\Users\AS\Desktop\burger_project\css\blocks\reviews.scss:54
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:352:in `block in visit_mixin'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:98:in `block in with_mixin'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:135:in `with_frame'
@@ -50,10 +50,9 @@ C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/bas
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:161:in `visit'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:10:in `visit'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/root_node.rb:36:in `css_tree'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:389:in `_render_with_sourcemap'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:307:in `render_with_sourcemap'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/exec/sass_scss.rb:391:in `run'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/root_node.rb:20:in `render'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:290:in `render'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/exec/sass_scss.rb:400:in `run'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/exec/sass_scss.rb:63:in `process_result'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/exec/base.rb:52:in `parse'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/exec/base.rb:19:in `parse!'
@@ -64,4 +63,4 @@ C:/Program Files (x86)/Koala/bin/sass:22:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined mixin 'button'.\A         on line 62 of C:\Users\AS\Desktop\burger_project\css\blocks\reviews.scss, in `button'\A         from line 62 of C:\Users\AS\Desktop\burger_project\css\blocks\reviews.scss\A \A 57:   }\A 58:   .reviews__text-desc {\A 59:     font-weight: 300;\A 60:   }\A 61:   .reviews__text-button {\A 62:     @include button;\A 63:     background-color: $gray;\A 64:     margin-top: 17px;\A 65:   }"; }
+  content: "Error: Undefined mixin 'button'.\A         on line 54 of C:\Users\AS\Desktop\burger_project\css\blocks\reviews.scss, in `button'\A         from line 54 of C:\Users\AS\Desktop\burger_project\css\blocks\reviews.scss\A \A 49:   font-weight: 300;\A 50:   width: 72%;\A 51:   font-size: 14px;\A 52: }\A 53: .reviews__text-button {\A 54:   @include button;\A 55:   background-color: $gray;\A 56:   margin-top: 17px;\A 57: }"; }
