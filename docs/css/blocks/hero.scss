@@ -5,6 +5,13 @@
   flex-direction: column;
 }
 
+.hero__container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  position: relative;
+}
+
 .hero__content {
   flex: .8;
   display: flex;

@@ -4,7 +4,7 @@
 }
 
 .reviews__item {
-  width: 25%;
+  flex: 1 0 285px;
   margin: 0;
   padding: 0;
   position: relative;
@@ -49,7 +49,6 @@
 }
   .reviews__text {
     height: 0;
-    overflow: hidden;
   }
   .reviews__text-title {
     font-family: 'gagalin';
