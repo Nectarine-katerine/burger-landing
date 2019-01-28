@@ -1,23 +1,23 @@
 /*
 Error: Undefined mixin 'title'.
-        on line 15 of C:\Users\AS\Desktop\burger_project\css\blocks\hero.scss, in `title'
-        from line 15 of C:\Users\AS\Desktop\burger_project\css\blocks\hero.scss
+        on line 18 of C:\Users\AS\Desktop\burger_project\css\blocks\hero.scss, in `title'
+        from line 18 of C:\Users\AS\Desktop\burger_project\css\blocks\hero.scss
 
-10:   display: flex;
-11:   justify-content: center;
-12:   align-items: center;
-13: }
-14: .hero__title {
-15:   @include title;
-16:   color: $yellow;
-17:   margin-top: 44px;
-18:   margin-bottom: 22px;
-19: }
-20: 
+13:   display: flex;
+14:   justify-content: center;
+15:   align-items: center;
+16: }
+17: .hero__title {
+18:   @include title;
+19:   color: $yellow;
+20:   margin-top: 44px;
+21:   margin-bottom: 22px;
+22: }
+23: 
 
 Backtrace:
-C:\Users\AS\Desktop\burger_project\css\blocks\hero.scss:15:in `title'
-C:\Users\AS\Desktop\burger_project\css\blocks\hero.scss:15
+C:\Users\AS\Desktop\burger_project\css\blocks\hero.scss:18:in `title'
+C:\Users\AS\Desktop\burger_project\css\blocks\hero.scss:18
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:352:in `block in visit_mixin'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:98:in `block in with_mixin'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:135:in `with_frame'
@@ -66,4 +66,4 @@ C:/Program Files (x86)/Koala/bin/sass:22:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined mixin 'title'.\A         on line 15 of C:\Users\AS\Desktop\burger_project\css\blocks\hero.scss, in `title'\A         from line 15 of C:\Users\AS\Desktop\burger_project\css\blocks\hero.scss\A \A 10:   display: flex;\A 11:   justify-content: center;\A 12:   align-items: center;\A 13: }\A 14: .hero__title {\A 15:   @include title;\A 16:   color: $yellow;\A 17:   margin-top: 44px;\A 18:   margin-bottom: 22px;\A 19: }\A 20: "; }
+  content: "Error: Undefined mixin 'title'.\A         on line 18 of C:\Users\AS\Desktop\burger_project\css\blocks\hero.scss, in `title'\A         from line 18 of C:\Users\AS\Desktop\burger_project\css\blocks\hero.scss\A \A 13:   display: flex;\A 14:   justify-content: center;\A 15:   align-items: center;\A 16: }\A 17: .hero__title {\A 18:   @include title;\A 19:   color: $yellow;\A 20:   margin-top: 44px;\A 21:   margin-bottom: 22px;\A 22: }\A 23: "; }

@@ -104,6 +104,9 @@ footer {
   display: flex;
   flex-direction: column; }
 
+.hero__container {
+  position: relative; }
+
 .hero__content {
   flex: .8;
   display: flex;
