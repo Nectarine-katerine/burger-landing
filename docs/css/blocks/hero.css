@@ -1,49 +1,24 @@
 /*
-Error: Undefined mixin 'title'.
-<<<<<<< HEAD
-        on line 18 of C:\Users\AS\Desktop\burger_project\css\blocks\hero.scss, in `title'
-        from line 18 of C:\Users\AS\Desktop\burger_project\css\blocks\hero.scss
+Error: Undefined variable: "$yellow".
+        on line 18 of C:\Users\AS\Desktop\burger_project\css\blocks\hero.scss
 
 13:   display: flex;
 14:   justify-content: center;
 15:   align-items: center;
 16: }
 17: .hero__title {
-18:   @include title;
-19:   color: $yellow;
-20:   margin-top: 44px;
-21:   margin-bottom: 22px;
-22: }
-23: 
+18:   color: $yellow;
+19:   margin-top: 44px;
+20:   margin-bottom: 22px;
+21: }
+22: 
+23: .hero__text {
 
 Backtrace:
-C:\Users\AS\Desktop\burger_project\css\blocks\hero.scss:18:in `title'
 C:\Users\AS\Desktop\burger_project\css\blocks\hero.scss:18
-=======
-        on line 22 of C:\Users\AS\Desktop\burger_project\css\blocks\hero.scss, in `title'
-        from line 22 of C:\Users\AS\Desktop\burger_project\css\blocks\hero.scss
-
-17:   display: flex;
-18:   justify-content: center;
-19:   align-items: center;
-20: }
-21: .hero__title {
-22:   @include title;
-23:   color: $yellow;
-24:   margin-top: 44px;
-25:   margin-bottom: 22px;
-26: }
-27: 
-
-Backtrace:
-C:\Users\AS\Desktop\burger_project\css\blocks\hero.scss:22:in `title'
-C:\Users\AS\Desktop\burger_project\css\blocks\hero.scss:22
->>>>>>> master
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:352:in `block in visit_mixin'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:98:in `block in with_mixin'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:135:in `with_frame'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:98:in `with_mixin'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:350:in `visit_mixin'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/script/tree/variable.rb:49:in `_perform'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/script/tree/node.rb:50:in `perform'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:402:in `visit_prop'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `visit'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:79:in `block in with_base'
@@ -86,8 +61,4 @@ C:/Program Files (x86)/Koala/bin/sass:22:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-<<<<<<< HEAD
-  content: "Error: Undefined mixin 'title'.\A         on line 18 of C:\Users\AS\Desktop\burger_project\css\blocks\hero.scss, in `title'\A         from line 18 of C:\Users\AS\Desktop\burger_project\css\blocks\hero.scss\A \A 13:   display: flex;\A 14:   justify-content: center;\A 15:   align-items: center;\A 16: }\A 17: .hero__title {\A 18:   @include title;\A 19:   color: $yellow;\A 20:   margin-top: 44px;\A 21:   margin-bottom: 22px;\A 22: }\A 23: "; }
-=======
-  content: "Error: Undefined mixin 'title'.\A         on line 22 of C:\Users\AS\Desktop\burger_project\css\blocks\hero.scss, in `title'\A         from line 22 of C:\Users\AS\Desktop\burger_project\css\blocks\hero.scss\A \A 17:   display: flex;\A 18:   justify-content: center;\A 19:   align-items: center;\A 20: }\A 21: .hero__title {\A 22:   @include title;\A 23:   color: $yellow;\A 24:   margin-top: 44px;\A 25:   margin-bottom: 22px;\A 26: }\A 27: "; }
->>>>>>> master
+  content: "Error: Undefined variable: \"$yellow\".\A         on line 18 of C:\Users\AS\Desktop\burger_project\css\blocks\hero.scss\A \A 13:   display: flex;\A 14:   justify-content: center;\A 15:   align-items: center;\A 16: }\A 17: .hero__title {\A 18:   color: $yellow;\A 19:   margin-top: 44px;\A 20:   margin-bottom: 22px;\A 21: }\A 22: \A 23: .hero__text {"; }
