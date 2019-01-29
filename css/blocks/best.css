@@ -1,28 +1,24 @@
 /*
-Error: Undefined mixin 'title'.
-        on line 10 of C:\Users\AS\Desktop\burger_project\css\blocks\best.scss, in `title'
-        from line 10 of C:\Users\AS\Desktop\burger_project\css\blocks\best.scss
+Error: Undefined variable: "$gray".
+        on line 7 of C:\Users\AS\Desktop\burger_project\css\blocks\best.scss
 
-5:   // flex-direction: column;
-6:   // justify-content: center;
-7: }
-8: 
-9: .best__title {
-10:   @include title;
-11:   color: $gray;
-12:   text-align: center;
-13:   margin-bottom: 55px;
-14: }
-15: 
+2:   background: url('../img/bg_best.png') center center no-repeat;
+3:   background-size: cover;
+4: }
+5: 
+6: .best__title {
+7:   color: $gray;
+8:   text-align: center;
+9: }
+10: 
+11: .best__list {
+12:   display: flex;
 
 Backtrace:
-C:\Users\AS\Desktop\burger_project\css\blocks\best.scss:10:in `title'
-C:\Users\AS\Desktop\burger_project\css\blocks\best.scss:10
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:352:in `block in visit_mixin'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:98:in `block in with_mixin'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:135:in `with_frame'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:98:in `with_mixin'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:350:in `visit_mixin'
+C:\Users\AS\Desktop\burger_project\css\blocks\best.scss:7
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/script/tree/variable.rb:49:in `_perform'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/script/tree/node.rb:50:in `perform'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:402:in `visit_prop'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `visit'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:79:in `block in with_base'
@@ -65,4 +61,4 @@ C:/Program Files (x86)/Koala/bin/sass:22:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined mixin 'title'.\A         on line 10 of C:\Users\AS\Desktop\burger_project\css\blocks\best.scss, in `title'\A         from line 10 of C:\Users\AS\Desktop\burger_project\css\blocks\best.scss\A \A 5:   // flex-direction: column;\A 6:   // justify-content: center;\A 7: }\A 8: \A 9: .best__title {\A 10:   @include title;\A 11:   color: $gray;\A 12:   text-align: center;\A 13:   margin-bottom: 55px;\A 14: }\A 15: "; }
+  content: "Error: Undefined variable: \"$gray\".\A         on line 7 of C:\Users\AS\Desktop\burger_project\css\blocks\best.scss\A \A 2:   background: url('../img/bg_best.png') center center no-repeat;\A 3:   background-size: cover;\A 4: }\A 5: \A 6: .best__title {\A 7:   color: $gray;\A 8:   text-align: center;\A 9: }\A 10: \A 11: .best__list {\A 12:   display: flex;"; }
