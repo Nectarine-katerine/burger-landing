@@ -99,10 +99,17 @@ footer { position: relative; width: 100%; }
 
 .reviews__text-button { padding: 10px 15px; background: #e45028; color: #fff; border-radius: 5px; text-transform: uppercase; font-family: 'ubuntu'; font-size: 13px; font-weight: 500; background-color: #2f3234; margin-top: 17px; }
 
-.accordeon__item { position: relative; }
+.accordeon__item { position: relative; margin-bottom: 30px; }
+.accordeon__item:last-child { margin-bottom: 0; }
 
-.accordeon__title { font-family: 'gagalin'; font-size: 72px; margin-bottom: 45px; font-size: 14px; margin-bottom: 17px; }
-.accordeon__title:before { content: ''; position: absolute; width: 300px; height: 30px; top: -15px; right: 0; border-color: transparent transparent #fff transparent; border-style: solid; border-width: 0 15px 15px 15px; display: block; }
+.accordeon__item_active .accordeon__appearance { height: 100%; }
+
+.accordeon__item_active .accordeon__title { color: #f9b43b; }
+
+.accordeon__item_active .accordeon__title::before { content: ''; border: 5px solid transparent; width: 0; height: 0; border-bottom-color: #f9b43b; border-top-width: 0; border-left-width: 5px; border-right-width: 5px; display: inline-block; }
+
+.accordeon__title { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; font-family: 'gagalin'; font-size: 72px; margin-bottom: 45px; font-size: 14px; margin-bottom: 17px; }
+.accordeon__title:before { content: ''; border: 5px solid transparent; width: 0; height: 0; border-top-color: #f9b43b; border-bottom-width: 0; border-left-width: 5px; border-right-width: 5px; display: inline-block; }
 
 .accordeon__desc-name { font-family: 'ubuntu'; font-weight: 700; font-size: 14px; }
 
@@ -110,10 +117,20 @@ footer { position: relative; width: 100%; }
 
 .accordeon__appearance { height: 0; overflow: hidden; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; }
 
-.accordeon__appearance_active { height: 100%; }
+.accordeon__avatar { border-radius: 50%; background: #000; overflow: hidden; display: inline-block; }
+
+.accordeon__avatar-picture { display: block; }
 
 .map { background-image: url("../img/map.png"); background-position: center center; background-repeat: no-repeat; background-size: cover; }
 
 .mr-menu { background: url("../img/bg-menu.png") center center no-repeat/cover; }
 
 .mr-menu__title { font-family: 'gagalin'; font-size: 72px; margin-bottom: 45px; color: #fff; }
+
+.team { background: url("../img/bg_team.png") center center no-repeat; background-size: cover; position: relative; }
+
+.team__container { width: 50%; height: 100%; position: absolute; top: 0; left: 50%; background-color: #2f3234; opacity: .93; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; }
+
+.team__content { width: 80%; margin: 0 auto; }
+
+.team__title { font-family: 'gagalin'; font-size: 72px; margin-bottom: 45px; color: #f9b43b; }
