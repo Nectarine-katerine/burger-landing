@@ -1,65 +1,62 @@
+.reviews {
+  background: #000;
+  position: relative;
+}
 .reviews__list {
   display: flex;
   flex-wrap: wrap;
-}
-
-.reviews__item {
-  width: 25%;
-  margin: 0;
-  padding: 0;
-  position: relative;
-  &:hover .reviews__avatar::after {
-    opacity: .52;
-    transition: opacity .3s;
-  }
-  &:hover .reviews__text {
-    padding-left: 20px;
-    padding-top: 50px;
-    width: 80%;
-    height: 300px;
-    position: absolute;
-    top: 0px;
-    left: 0;
-    transition: height .3s;
-  }
-}
-
-.reviews__appearance {
-  position: relative;
-}
-
-.reviews__photo {
-  display: block;
-  width: 100%;
-  filter: grayscale(100%);
-}
-
-.reviews__avatar::after {
-  content: "";
-  display: block;
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: #000;
-  opacity: 0;
-  transition: opacity .3s;
- 
 }
-  .reviews__text {
-    height: 0;
+
+.reviews__item {
+  width: 25%;
+  height: 50%;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  filter: grayscale(100%);
+  position: relative;
+  &:hover .reviews__text {
+    opacity: 1;
+    transition: opacity .3s;
   }
-  .reviews__text-title {
-    font-family: 'gagalin';
-    text-transform: uppercase;
-    padding-bottom: 30px;
-  }
-  .reviews__text-desc {
-    font-weight: 300;
-  }
-  .reviews__text-button {
-    @include button;
-    background-color: $gray;
-    margin-top: 17px;
-  }
+}
+.reviews__text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  background: rgba(#000000, .52);
+  padding: 25px; 
+  padding-left: 20px;
+  color: #fff;
+  opacity: 0;
+  overflow: hidden;
+  transition: opacity .3s;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-evenly;
+}
+.reviews__text-title {
+  font-family: 'gagalin';
+  text-transform: uppercase;
+  padding-bottom: 25px;
+  font-weight: 14px;
+}
+.reviews__text-desc {
+  font-weight: 300;
+  width: 72%;
+  font-size: 14px;
+  overflow: hidden;
+}
+.reviews__text-button {
+  @include button;
+  background-color: $gray;
+  margin-top: 17px;
+}

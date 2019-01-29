@@ -1,136 +1,73 @@
-@font-face { font-family: 'gagalin'; src: url("../fonts/gagalin-regular-webfont.woff2") format("woff2"), url("../fonts/gagalin-regular-webfont.woff") format("woff"); font-weight: normal; font-style: normal; }
-@font-face { font-family: 'lifehack'; src: url("../fonts/lifehack_medium-webfont.woff2") format("woff2"), url("../fonts/lifehack_medium-webfont.woff") format("woff"); font-weight: 500; font-style: normal; }
-@font-face { font-family: 'ubuntu'; src: url("../fonts/ubuntu-regular-webfont.woff2") format("woff2"), url("../fonts/ubuntu-regular-webfont.woff") format("woff"); font-weight: normal; font-style: normal; }
-@font-face { font-family: 'ubuntu'; src: url("../fonts/ubuntu-b-webfont.woff2") format("woff2"), url("../fonts/ubuntu-b-webfont.woff") format("woff"); font-weight: 700; font-style: normal; }
-@font-face { font-family: 'ubuntu'; src: url("../fonts/ubuntu-light-webfont.woff2") format("woff2"), url("../fonts/ubuntu-light-webfont.woff") format("woff"); font-weight: 300; font-style: normal; }
-@font-face { font-family: 'ubuntu'; src: url("../fonts/ubuntu-medium-webfont.woff2") format("woff2"), url("../fonts/ubuntu-medium-webfont.woff") format("woff"); font-weight: 500; font-style: normal; }
-* { -webkit-box-sizing: border-box; box-sizing: border-box; }
+/*
+Error: Undefined mixin 'title'.
+        on line 34 of C:/Users/AS/Desktop/burger_project/css/blocks/accordeon.scss, in `title'
+        from line 34 of C:/Users/AS/Desktop/burger_project/css/blocks/accordeon.scss
+        from line 26 of C:\Users\AS\Desktop\burger_project\css\main.scss
 
-html, body { height: 100%; }
+29: @import './blocks/team.scss';
 
-body { margin: 0; font-family: 'ubuntu'; color: #fff; line-height: 1.42; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
-
-.wrapper { overflow: hidden; width: 100%; min-width: 940px; min-height: 100%; }
-
-ul { margin: 0; padding: 0; }
-ul li { list-style: none; }
-
-.container { margin: 0 auto; width: 945px; height: 100%; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; }
-
-h1, h2, h3, h4, h5, h6 { margin: 0; font-weight: normal; }
-
-p { padding: 0; margin: 0; }
-
-button { border: none; background: transparent; cursor: pointer; }
-
-footer { position: relative; width: 100%; }
-
-.section { height: 100vh; min-height: 650px; }
-.section_centered .container { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; }
-
-.button { padding: 10px 15px; background: #e45028; color: #fff; border-radius: 5px; text-transform: uppercase; font-family: 'ubuntu'; font-size: 13px; font-weight: 500; margin-left: 15px; }
-
-.hero { background: url("../img/texture.png"), url("../img/start-bg.png") center center no-repeat; background-size: cover; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; }
-
-.hero__container { position: relative; }
-
-.hero__content { -webkit-box-flex: .8; -ms-flex: .8; flex: .8; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
-
-.hero__title { font-family: 'gagalin'; font-size: 72px; margin-bottom: 45px; color: #f9b43b; margin-top: 44px; margin-bottom: 22px; }
-
-.hero__text { color: #fff; font-family: 'lifehack'; font-weight: 500; font-size: 65px; line-height: 1em; }
-
-.hero__picture { margin: 0 16px; display: inline-block; margin-bottom: 38px; }
-
-.header { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; -webkit-box-align: center; -ms-flex-align: center; align-items: center; padding-top: 5px; }
-
-.header__btns { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
-
-.menu__list { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
-
-.menu__item { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
-.menu__item:last-child:after { display: none; }
-.menu__item:after { content: ""; display: inline-block; width: 4px; height: 4px; border-radius: 50%; background: #fff; margin: 0 16px; }
-
-.menu__link { color: #fff; text-decoration: none; font-family: 'ubuntu'; font-size: 13px; font-weight: 500; text-transform: uppercase; }
-
-.fixed-menu { position: fixed; top: 77px; right: 172px; }
-
-.fixed-menu_link { display: block; width: 6px; height: 6px; border-radius: 50%; background-color: #fff; margin-top: 15px; position: relative; }
-
-.fixed-menu_item:hover .fixed-menu_link::after, .fixed-menu_item_active .fixed-menu_link::after { content: ""; width: 16px; height: 16px; border-radius: 50%; border: 1px solid #fff; position: absolute; top: 50%; left: 50%; -webkit-transform: translate(-50%, -50%); transform: translate(-50%, -50%); }
-
-.arrow__down { width: 35px; height: 25px; position: absolute; bottom: 40px; left: 48%; }
-
-.arrow__down-link { display: block; width: 100%; height: 100%; background: url("../img/arrow-scroll.png") center center no-repeat; }
-
-.best { background: url("../img/bg_best.png") center center no-repeat; background-size: cover; }
-
-.best__title { font-family: 'gagalin'; font-size: 72px; margin-bottom: 45px; color: #2f3234; text-align: center; margin-bottom: 45px; }
-
-.best__list { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: baseline; -ms-flex-align: baseline; align-items: baseline; margin-bottom: 50px; }
-
-.best__item { text-align: center; -webkit-box-flex: 1; -ms-flex: 1; flex: 1; margin-right: 20px; color: #2f3234; font-weight: 300; font-size: 14px; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-pack: space-evenly; -ms-flex-pack: space-evenly; justify-content: space-evenly; }
-.best__item:last-child { margin-right: 0; }
-
-.best__img { margin-bottom: 20px; }
-
-.best__icon { display: inline-block; }
-
-.best__desc-title { font-family: 'lifehack'; font-size: 24px; padding-bottom: 15px; }
-
-.reviews__list { display: -webkit-box; display: -ms-flexbox; display: flex; -ms-flex-wrap: wrap; flex-wrap: wrap; }
-
-.reviews__item { width: 25%; margin: 0; padding: 0; position: relative; }
-.reviews__item:hover .reviews__avatar::after { opacity: .52; -webkit-transition: opacity .3s; transition: opacity .3s; }
-.reviews__item:hover .reviews__text { padding-left: 20px; padding-top: 50px; width: 80%; height: 300px; position: absolute; top: 0px; left: 0; -webkit-transition: height .3s; transition: height .3s; }
-
-.reviews__appearance { position: relative; }
-
-.reviews__photo { display: block; width: 100%; -webkit-filter: grayscale(100%); filter: grayscale(100%); }
-
-.reviews__avatar::after { content: ""; display: block; position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: #000; opacity: 0; -webkit-transition: opacity .3s; transition: opacity .3s; }
-
-.reviews__text { height: 0; }
-
-.reviews__text-title { font-family: 'gagalin'; text-transform: uppercase; padding-bottom: 30px; }
-
-.reviews__text-desc { font-weight: 300; }
-
-.reviews__text-button { padding: 10px 15px; background: #e45028; color: #fff; border-radius: 5px; text-transform: uppercase; font-family: 'ubuntu'; font-size: 13px; font-weight: 500; background-color: #2f3234; margin-top: 17px; }
-
-.accordeon__item { position: relative; margin-bottom: 30px; }
-.accordeon__item:last-child { margin-bottom: 0; }
-
-.accordeon__item_active .accordeon__appearance { height: 100%; }
-
-.accordeon__item_active .accordeon__title { color: #f9b43b; }
-
-.accordeon__item_active .accordeon__title::before { content: ''; border: 5px solid transparent; width: 0; height: 0; border-bottom-color: #f9b43b; border-top-width: 0; border-left-width: 5px; border-right-width: 5px; display: inline-block; }
-
-.accordeon__title { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; font-family: 'gagalin'; font-size: 72px; margin-bottom: 45px; font-size: 14px; margin-bottom: 17px; }
-.accordeon__title:before { content: ''; border: 5px solid transparent; width: 0; height: 0; border-top-color: #f9b43b; border-bottom-width: 0; border-left-width: 5px; border-right-width: 5px; display: inline-block; }
-
-.accordeon__desc-name { font-family: 'ubuntu'; font-weight: 700; font-size: 14px; }
-
-.accordeon__desc-text { font-family: 'ubuntu'; font-weight: 300; font-size: 14px; width: 53%; }
-
-.accordeon__appearance { height: 0; overflow: hidden; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; }
-
-.accordeon__avatar { border-radius: 50%; background: #000; overflow: hidden; display: inline-block; }
-
-.accordeon__avatar-picture { display: block; }
-
-.map { background-image: url("../img/map.png"); background-position: center center; background-repeat: no-repeat; background-size: cover; }
-
-.mr-menu { background: url("../img/bg-menu.png") center center no-repeat/cover; }
-
-.mr-menu__title { font-family: 'gagalin'; font-size: 72px; margin-bottom: 45px; color: #fff; }
-
-.team { background: url("../img/bg_team.png") center center no-repeat; background-size: cover; position: relative; }
-
-.team__container { width: 50%; height: 100%; position: absolute; top: 0; left: 50%; background-color: #2f3234; opacity: .93; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; }
-
-.team__content { width: 80%; margin: 0 auto; }
-
-.team__title { font-family: 'gagalin'; font-size: 72px; margin-bottom: 45px; color: #f9b43b; }
+Backtrace:
+C:/Users/AS/Desktop/burger_project/css/blocks/accordeon.scss:34:in `title'
+C:/Users/AS/Desktop/burger_project/css/blocks/accordeon.scss:34
+C:\Users\AS\Desktop\burger_project\css\main.scss:26
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:352:in `block in visit_mixin'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:98:in `block in with_mixin'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:135:in `with_frame'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:98:in `with_mixin'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:350:in `visit_mixin'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:79:in `block in with_base'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:135:in `with_frame'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:79:in `with_base'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `visit'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:444:in `block (2 levels) in visit_rule'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:444:in `map'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:444:in `block in visit_rule'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:183:in `with_environment'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:442:in `visit_rule'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:79:in `block in with_base'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:135:in `with_frame'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:79:in `with_base'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `visit'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:329:in `block (2 levels) in visit_import'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:329:in `map'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:329:in `block in visit_import'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:88:in `block in with_import'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:135:in `with_frame'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:88:in `with_import'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:326:in `visit_import'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:79:in `block in with_base'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:135:in `with_frame'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:79:in `with_base'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `visit'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:52:in `map'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:171:in `block in visit_children'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:183:in `with_environment'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:170:in `visit_children'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:190:in `visit_root'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:161:in `visit'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:10:in `visit'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/root_node.rb:36:in `css_tree'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/root_node.rb:20:in `render'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:290:in `render'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/exec/sass_scss.rb:400:in `run'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/exec/sass_scss.rb:63:in `process_result'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/exec/base.rb:52:in `parse'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/exec/base.rb:19:in `parse!'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/bin/sass:13:in `<top (required)>'
+C:/Program Files (x86)/Koala/bin/sass:22:in `load'
+C:/Program Files (x86)/Koala/bin/sass:22:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Undefined mixin 'title'.\A         on line 34 of C:/Users/AS/Desktop/burger_project/css/blocks/accordeon.scss, in `title'\A         from line 34 of C:/Users/AS/Desktop/burger_project/css/blocks/accordeon.scss\A         from line 26 of C:\Users\AS\Desktop\burger_project\css\main.scss\A \A 29: @import './blocks/team.scss';"; }
