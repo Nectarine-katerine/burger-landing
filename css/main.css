@@ -1,384 +1,119 @@
-@font-face {
-  font-family: 'gagalin';
-  src: url("../fonts/gagalin-regular-webfont.woff2") format("woff2"), url("../fonts/gagalin-regular-webfont.woff") format("woff");
-  font-weight: normal;
-  font-style: normal; }
-@font-face {
-  font-family: 'lifehack';
-  src: url("../fonts/lifehack_medium-webfont.woff2") format("woff2"), url("../fonts/lifehack_medium-webfont.woff") format("woff");
-  font-weight: 500;
-  font-style: normal; }
-@font-face {
-  font-family: 'ubuntu';
-  src: url("../fonts/ubuntu-regular-webfont.woff2") format("woff2"), url("../fonts/ubuntu-regular-webfont.woff") format("woff");
-  font-weight: normal;
-  font-style: normal; }
-@font-face {
-  font-family: 'ubuntu';
-  src: url("../fonts/ubuntu-b-webfont.woff2") format("woff2"), url("../fonts/ubuntu-b-webfont.woff") format("woff");
-  font-weight: 700;
-  font-style: normal; }
-@font-face {
-  font-family: 'ubuntu';
-  src: url("../fonts/ubuntu-light-webfont.woff2") format("woff2"), url("../fonts/ubuntu-light-webfont.woff") format("woff");
-  font-weight: 300;
-  font-style: normal; }
-@font-face {
-  font-family: 'ubuntu';
-  src: url("../fonts/ubuntu-medium-webfont.woff2") format("woff2"), url("../fonts/ubuntu-medium-webfont.woff") format("woff");
-  font-weight: 500;
-  font-style: normal; }
-* {
-  box-sizing: border-box; }
+@font-face { font-family: 'gagalin'; src: url("../fonts/gagalin-regular-webfont.woff2") format("woff2"), url("../fonts/gagalin-regular-webfont.woff") format("woff"); font-weight: normal; font-style: normal; }
+@font-face { font-family: 'lifehack'; src: url("../fonts/lifehack_medium-webfont.woff2") format("woff2"), url("../fonts/lifehack_medium-webfont.woff") format("woff"); font-weight: 500; font-style: normal; }
+@font-face { font-family: 'ubuntu'; src: url("../fonts/ubuntu-regular-webfont.woff2") format("woff2"), url("../fonts/ubuntu-regular-webfont.woff") format("woff"); font-weight: normal; font-style: normal; }
+@font-face { font-family: 'ubuntu'; src: url("../fonts/ubuntu-b-webfont.woff2") format("woff2"), url("../fonts/ubuntu-b-webfont.woff") format("woff"); font-weight: 700; font-style: normal; }
+@font-face { font-family: 'ubuntu'; src: url("../fonts/ubuntu-light-webfont.woff2") format("woff2"), url("../fonts/ubuntu-light-webfont.woff") format("woff"); font-weight: 300; font-style: normal; }
+@font-face { font-family: 'ubuntu'; src: url("../fonts/ubuntu-medium-webfont.woff2") format("woff2"), url("../fonts/ubuntu-medium-webfont.woff") format("woff"); font-weight: 500; font-style: normal; }
+* { -webkit-box-sizing: border-box; box-sizing: border-box; }
 
-html,
-body {
-  height: 100%; }
+html, body { height: 100%; }
 
-body {
-  margin: 0;
-  font-family: 'ubuntu';
-  color: #fff;
-  line-height: 1.42;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale; }
+body { margin: 0; font-family: 'ubuntu'; color: #fff; line-height: 1.42; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
 
-.wrapper {
-  overflow: hidden;
-  width: 100%;
-  min-width: 940px;
-  min-height: 100%; }
+.wrapper { overflow: hidden; width: 100%; min-width: 940px; min-height: 100%; }
 
-ul {
-  margin: 0;
-  padding: 0; }
-  ul li {
-    list-style: none; }
+ul { margin: 0; padding: 0; }
+ul li { list-style: none; }
 
-.container {
-  margin: 0 auto;
-  width: 945px;
-  height: 100%;
-  display: flex;
-  flex-direction: column; }
+.container { margin: 0 auto; width: 945px; height: 100%; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; }
 
-h1, h2, h3, h4, h5, h6 {
-  margin: 0;
-  font-weight: normal; }
+h1, h2, h3, h4, h5, h6 { margin: 0; font-weight: normal; }
 
-p {
-  padding: 0;
-  margin: 0; }
+p { padding: 0; margin: 0; }
 
-button {
-  border: none;
-  background: transparent;
-  cursor: pointer; }
+button { border: none; background: transparent; cursor: pointer; }
 
-footer {
-  position: relative;
-  width: 100%; }
+footer { position: relative; width: 100%; }
 
-.section {
-  height: 100vh;
-  min-height: 650px; }
-  .section_centered .container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center; }
+.section { height: 100vh; min-height: 650px; }
+.section_centered .container { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; }
 
-.button {
-  padding: 10px 15px;
-  background: #e45028;
-  color: #fff;
-  border-radius: 5px;
-  text-transform: uppercase;
-  font-family: 'ubuntu';
-  font-size: 13px;
-  font-weight: 500;
-  margin-left: 15px; }
+.button { padding: 10px 15px; background: #e45028; color: #fff; border-radius: 5px; text-transform: uppercase; font-family: 'ubuntu'; font-size: 13px; font-weight: 500; margin-left: 15px; }
 
-.hero {
-  background: url("../img/texture.png"), url("../img/start-bg.png") center center no-repeat;
-  background-size: cover;
-  display: flex;
-  flex-direction: column; }
+.hero { background: url("../img/texture.png"), url("../img/start-bg.png") center center no-repeat; background-size: cover; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; }
 
-.hero__content {
-  flex: .8;
-  display: flex;
-  justify-content: center;
-  align-items: center; }
+.hero__container { position: relative; }
 
-.hero__title {
-  font-family: 'gagalin';
-  font-size: 72px;
-  margin-bottom: 45px;
-  color: #f9b43b;
-  margin-top: 44px;
-  margin-bottom: 22px; }
+.hero__content { -webkit-box-flex: .8; -ms-flex: .8; flex: .8; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
 
-.hero__text {
-  color: #fff;
-  font-family: 'lifehack';
-  font-weight: 500;
-  font-size: 65px;
-  line-height: 1em; }
+.hero__title { font-family: 'gagalin'; font-size: 72px; margin-bottom: 45px; color: #f9b43b; margin-top: 44px; margin-bottom: 22px; }
 
-.hero__picture {
-  margin: 0 16px;
-  display: inline-block;
-  margin-bottom: 38px; }
+.hero__text { color: #fff; font-family: 'lifehack'; font-weight: 500; font-size: 65px; line-height: 1em; }
 
-.header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding-top: 5px; }
+.hero__picture { margin: 0 16px; display: inline-block; margin-bottom: 38px; }
 
-.header__btns {
-  display: flex;
-  align-items: center; }
+.header { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; -webkit-box-align: center; -ms-flex-align: center; align-items: center; padding-top: 5px; }
 
-.menu__list {
-  display: flex;
-  align-items: center; }
+.header__btns { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
 
-.menu__item {
-  display: flex;
-  align-items: center; }
-  .menu__item:last-child:after {
-    display: none; }
-  .menu__item:after {
-    content: "";
-    display: inline-block;
-    width: 4px;
-    height: 4px;
-    border-radius: 50%;
-    background: #fff;
-    margin: 0 16px; }
+.menu__list { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
 
-.menu__link {
-  color: #fff;
-  text-decoration: none;
-  font-family: 'ubuntu';
-  font-size: 13px;
-  font-weight: 500;
-  text-transform: uppercase; }
+.menu__item { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
+.menu__item:last-child:after { display: none; }
+.menu__item:after { content: ""; display: inline-block; width: 4px; height: 4px; border-radius: 50%; background: #fff; margin: 0 16px; }
 
-.fixed-menu {
-  position: fixed;
-  top: 77px;
-  right: 172px; }
+.menu__link { color: #fff; text-decoration: none; font-family: 'ubuntu'; font-size: 13px; font-weight: 500; text-transform: uppercase; }
 
-.fixed-menu_link {
-  display: block;
-  width: 6px;
-  height: 6px;
-  border-radius: 50%;
-  background-color: #fff;
-  margin-top: 15px;
-  position: relative; }
+.fixed-menu { position: fixed; top: 77px; right: 172px; }
 
-.fixed-menu_item:hover .fixed-menu_link::after,
-.fixed-menu_item_active .fixed-menu_link::after {
-  content: "";
-  width: 16px;
-  height: 16px;
-  border-radius: 50%;
-  border: 1px solid #fff;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%); }
+.fixed-menu_link { display: block; width: 6px; height: 6px; border-radius: 50%; background-color: #fff; margin-top: 15px; position: relative; }
 
-.arrow__down {
-  width: 35px;
-  height: 25px;
-  position: absolute;
-  bottom: 40px;
-  left: 48%; }
+.fixed-menu_item:hover .fixed-menu_link::after, .fixed-menu_item_active .fixed-menu_link::after { content: ""; width: 16px; height: 16px; border-radius: 50%; border: 1px solid #fff; position: absolute; top: 50%; left: 50%; -webkit-transform: translate(-50%, -50%); transform: translate(-50%, -50%); }
 
-.arrow__down-link {
-  display: block;
-  width: 100%;
-  height: 100%;
-  background: url("../img/arrow-scroll.png") center center no-repeat; }
+.arrow__down { width: 35px; height: 25px; position: absolute; bottom: 40px; left: 48%; }
 
-.best {
-  background: url("../img/bg_best.png") center center no-repeat;
-  background-size: cover; }
+.arrow__down-link { display: block; width: 100%; height: 100%; background: url("../img/arrow-scroll.png") center center no-repeat; }
 
-.best__title {
-  font-family: 'gagalin';
-  font-size: 72px;
-  margin-bottom: 45px;
-  color: #2f3234;
-  text-align: center;
-  margin-bottom: 45px; }
+.best { background: url("../img/bg_best.png") center center no-repeat; background-size: cover; }
 
-.best__list {
-  display: flex;
-  align-items: baseline;
-  margin-bottom: 50px; }
+.best__title { font-family: 'gagalin'; font-size: 72px; margin-bottom: 45px; color: #2f3234; text-align: center; margin-bottom: 45px; }
 
-.best__item {
-  text-align: center;
-  flex: 1;
-  margin-right: 20px;
-  color: #2f3234;
-  font-weight: 300;
-  font-size: 14px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly; }
-  .best__item:last-child {
-    margin-right: 0; }
+.best__list { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: baseline; -ms-flex-align: baseline; align-items: baseline; margin-bottom: 50px; }
 
-.best__img {
-  margin-bottom: 20px; }
+.best__item { text-align: center; -webkit-box-flex: 1; -ms-flex: 1; flex: 1; margin-right: 20px; color: #2f3234; font-weight: 300; font-size: 14px; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-pack: space-evenly; -ms-flex-pack: space-evenly; justify-content: space-evenly; }
+.best__item:last-child { margin-right: 0; }
 
-.best__icon {
-  display: inline-block; }
+.best__img { margin-bottom: 20px; }
 
-.best__desc-title {
-  font-family: 'lifehack';
-  font-size: 24px;
-  padding-bottom: 15px; }
+.best__icon { display: inline-block; }
 
-.reviews__list {
-  display: flex;
-  flex-wrap: wrap; }
+.best__desc-title { font-family: 'lifehack'; font-size: 24px; padding-bottom: 15px; }
 
-.reviews__item {
-  width: 25%;
-  margin: 0;
-  padding: 0;
-  position: relative; }
-  .reviews__item:hover .reviews__avatar::after {
-    opacity: .52;
-    transition: opacity .3s; }
-  .reviews__item:hover .reviews__text {
-    padding-left: 20px;
-    padding-top: 50px;
-    width: 80%;
-    height: 300px;
-    position: absolute;
-    top: 0px;
-    left: 0;
-    transition: height .3s; }
+.reviews__list { display: -webkit-box; display: -ms-flexbox; display: flex; -ms-flex-wrap: wrap; flex-wrap: wrap; }
 
-.reviews__appearance {
-  position: relative; }
+.reviews__item { width: 25%; margin: 0; padding: 0; position: relative; }
+.reviews__item:hover .reviews__avatar::after { opacity: .52; -webkit-transition: opacity .3s; transition: opacity .3s; }
+.reviews__item:hover .reviews__text { padding-left: 20px; padding-top: 50px; width: 80%; height: 300px; position: absolute; top: 0px; left: 0; -webkit-transition: height .3s; transition: height .3s; }
 
-.reviews__photo {
-  display: block;
-  width: 100%;
-  filter: grayscale(100%); }
+.reviews__appearance { position: relative; }
 
-.reviews__avatar::after {
-  content: "";
-  display: block;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: #000;
-  opacity: 0;
-  transition: opacity .3s; }
+.reviews__photo { display: block; width: 100%; -webkit-filter: grayscale(100%); filter: grayscale(100%); }
 
-.reviews__text {
-  height: 0;
-  overflow: hidden; }
+.reviews__avatar::after { content: ""; display: block; position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: #000; opacity: 0; -webkit-transition: opacity .3s; transition: opacity .3s; }
 
-.reviews__text-title {
-  font-family: 'gagalin';
-  text-transform: uppercase;
-  padding-bottom: 30px; }
+.reviews__text { height: 0; }
 
-.reviews__text-desc {
-  font-weight: 300; }
+.reviews__text-title { font-family: 'gagalin'; text-transform: uppercase; padding-bottom: 30px; }
 
-.reviews__text-button {
-  padding: 10px 15px;
-  background: #e45028;
-  color: #fff;
-  border-radius: 5px;
-  text-transform: uppercase;
-  font-family: 'ubuntu';
-  font-size: 13px;
-  font-weight: 500;
-  background-color: #2f3234;
-  margin-top: 17px; }
+.reviews__text-desc { font-weight: 300; }
 
-.team {
-  background: url("../img/bg_team.png") center center no-repeat;
-  background-size: cover;
-  position: relative; }
+.reviews__text-button { padding: 10px 15px; background: #e45028; color: #fff; border-radius: 5px; text-transform: uppercase; font-family: 'ubuntu'; font-size: 13px; font-weight: 500; background-color: #2f3234; margin-top: 17px; }
 
-.team__container {
-  width: 50%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 50%;
-  background-color: #2f3234;
-  opacity: .93;
-  display: flex;
-  flex-direction: column;
-  justify-content: center; }
+.accordeon__item { position: relative; }
 
-.team__content {
-  width: 80%;
-  margin: 0 auto; }
+.accordeon__title { font-family: 'gagalin'; font-size: 72px; margin-bottom: 45px; font-size: 14px; margin-bottom: 17px; }
+.accordeon__title:before { content: ''; position: absolute; width: 300px; height: 30px; top: -15px; right: 0; border-color: transparent transparent #fff transparent; border-style: solid; border-width: 0 15px 15px 15px; display: block; }
 
-.team__title {
-  font-family: 'gagalin';
-  font-size: 72px;
-  margin-bottom: 45px;
-  color: #f9b43b; }
+.accordeon__desc-name { font-family: 'ubuntu'; font-weight: 700; font-size: 14px; }
 
-.accordeon__title {
-  font-family: 'gagalin';
-  font-size: 72px;
-  margin-bottom: 45px;
-  font-size: 14px;
-  margin-bottom: 17px; }
+.accordeon__desc-text { font-family: 'ubuntu'; font-weight: 300; font-size: 14px; width: 53%; }
 
-.accordeon__desc-name {
-  font-family: 'ubuntu';
-  font-weight: 700;
-  font-size: 14px; }
+.accordeon__appearance { height: 0; overflow: hidden; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; }
 
-.accordeon__desc-text {
-  font-family: 'ubuntu';
-  font-weight: 300;
-  font-size: 14px;
-  width: 53%; }
+.accordeon__appearance_active { height: 100%; }
 
-.accordeon__appearance {
-  height: 0;
-  overflow: hidden;
-  display: flex;
-  justify-content: space-between; }
+.map { background-image: url("../img/map.png"); background-position: center center; background-repeat: no-repeat; background-size: cover; }
 
-.accordeon__appearance_active {
-  height: 100%; }
+.mr-menu { background: url("../img/bg-menu.png") center center no-repeat/cover; }
 
-.mr-menu {
-  background: url("../img/bg-menu.png") center center no-repeat/cover; }
-
-.mr-menu__title {
-  font-family: 'gagalin';
-  font-size: 72px;
-  margin-bottom: 45px;
-  color: #fff; }
-
-.map {
-  background-image: url("../img/map.png");
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover; }
-
-/*# sourceMappingURL=main.css.map */
+.mr-menu__title { font-family: 'gagalin'; font-size: 72px; margin-bottom: 45px; color: #fff; }
