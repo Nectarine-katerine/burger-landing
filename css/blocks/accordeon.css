@@ -1,21 +1,21 @@
 /*
 Error: Undefined variable: "$yellow".
-        on line 18 of C:\Users\AS\Desktop\burger_project\css\blocks\accordeon.scss
+        on line 12 of C:\Users\AS\Desktop\burger_project\css\blocks\accordeon.scss
 
+7: }
+8: .accordeon__item_active .accordeon__appearance {
+9:   height: 95px;
+10: }
+11: .accordeon__item_active .accordeon__title {
+12:   color: $yellow;
 13: }
-14: .accordeon__item_active .accordeon__appearance {
-15:   height: 100%;
-16: }
-17: .accordeon__item_active .accordeon__title {
-18:   color: $yellow;
-19: }
-20: .accordeon__item_active .accordeon__title::before {
-21: content: '';
-22: border: 5px solid transparent;
-23: width: 0;
+14: .accordeon__item_active .accordeon__title::before {
+15: content: '';
+16: border: 5px solid transparent;
+17: width: 0;
 
 Backtrace:
-C:\Users\AS\Desktop\burger_project\css\blocks\accordeon.scss:18
+C:\Users\AS\Desktop\burger_project\css\blocks\accordeon.scss:12
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/script/tree/variable.rb:49:in `_perform'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/script/tree/node.rb:50:in `perform'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:402:in `visit_prop'
@@ -61,4 +61,4 @@ C:/Program Files (x86)/Koala/bin/sass:22:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$yellow\".\A         on line 18 of C:\Users\AS\Desktop\burger_project\css\blocks\accordeon.scss\A \A 13: }\A 14: .accordeon__item_active .accordeon__appearance {\A 15:   height: 100%;\A 16: }\A 17: .accordeon__item_active .accordeon__title {\A 18:   color: $yellow;\A 19: }\A 20: .accordeon__item_active .accordeon__title::before {\A 21: content: '';\A 22: border: 5px solid transparent;\A 23: width: 0;"; }
+  content: "Error: Undefined variable: \"$yellow\".\A         on line 12 of C:\Users\AS\Desktop\burger_project\css\blocks\accordeon.scss\A \A 7: }\A 8: .accordeon__item_active .accordeon__appearance {\A 9:   height: 95px;\A 10: }\A 11: .accordeon__item_active .accordeon__title {\A 12:   color: $yellow;\A 13: }\A 14: .accordeon__item_active .accordeon__title::before {\A 15: content: '';\A 16: border: 5px solid transparent;\A 17: width: 0;"; }

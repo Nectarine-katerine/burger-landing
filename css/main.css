@@ -107,7 +107,7 @@ footer { position: relative; width: 100%; }
 .accordeon__item { position: relative; margin-bottom: 30px; }
 .accordeon__item:last-child { margin-bottom: 0; }
 
-.accordeon__item_active .accordeon__appearance { height: 100%; }
+.accordeon__item_active .accordeon__appearance { height: 95px; }
 
 .accordeon__item_active .accordeon__title { color: #f9b43b; }
 
@@ -124,11 +124,9 @@ footer { position: relative; width: 100%; }
 
 .accordeon__appearance { height: 0; overflow: hidden; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; }
 
-.accordeon__avatar { border-radius: 50%; background: #000; overflow: hidden; display: inline-block; margin: 0 18px; }
+.accordeon__avatar { width: 18%; border-radius: 50%; background-position: center center; background-size: cover; background-repeat: no-repeat; overflow: hidden; display: inline-block; margin: 0 18px; }
 
-.accordeon__avatar-picture { display: block; }
-
-.map { background-image: url("../img/map.png"); background-position: center center; background-repeat: no-repeat; background-size: cover; }
+.map { background-image: url("../img/map.png"); background-position: center center; background-repeat: no-repeat; background-size: cover; position: relative; }
 
 .mr-menu { background: url("../img/bg-menu.png") center center no-repeat/cover; position: relative; }
 
@@ -197,4 +195,28 @@ footer { position: relative; width: 100%; }
 .form__radio:checked ~ .form__radio_fake:after { content: ""; width: 8px; height: 8px; border-radius: 50%; background: #e35028; position: absolute; top: 50%; left: 50%; -webkit-transform: translate(-50%, -50%); transform: translate(-50%, -50%); -webkit-transition: .3s; transition: .3s; }
 
 .form__checkbox:checked ~ .form__checkbox_fake:after { content: '\2714'; color: #e35028; position: absolute; top: 50%; left: 50%; -webkit-transform: translate(-50%, -50%); transform: translate(-50%, -50%); -webkit-transition: .3s; transition: .3s; }
+
+.footer { background: url("../img/footer-bg.png") center center/cover no-repeat; position: absolute; bottom: 0; left: 0; }
+
+.footer__container { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -ms-flex-direction: row; flex-direction: row; }
+
+.footer__col { -webkit-box-flex: 1; -ms-flex: 1; flex: 1; }
+
+.social { height: 100%; }
+
+.social__icon { width: 20px; height: 20px; margin-right: 20px; }
+
+.social__icon { fill: #2f3234; display: inline-block; -webkit-transition: fill .3s; transition: fill .3s; }
+.social__icon:hover { fill: #fff; -webkit-transition: fill .3s; transition: fill .3s; }
+
+.social__icon_margin-0 { margin-right: 0; }
+
+.social__list { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: end; -ms-flex-pack: end; justify-content: flex-end; -webkit-box-align: center; -ms-flex-align: center; align-items: center; height: 100%; }
+
+.phone__icon { fill: #e45028; width: 12px; height: 11px; display: inline-block; }
+
+.phone__number { color: #e45028; font-family: 'ubuntu'; font-weight: 700; font-size: 14px; display: inline-block; padding-bottom: 10px; }
+
+.address { font-family: 'ubuntu'; font-weight: 300; font-size: 14px; padding-top: 10px; }
+
 /*# sourceMappingURL=main.css.map */
