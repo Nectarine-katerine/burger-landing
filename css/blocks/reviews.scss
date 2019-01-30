@@ -56,7 +56,6 @@
   overflow: hidden;
 }
 .reviews__text-button {
-  @include button;
   background-color: $gray;
   margin-top: 17px;
 }

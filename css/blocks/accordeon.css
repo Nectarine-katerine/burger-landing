@@ -1,18 +1,21 @@
 /*
-Error: Undefined variable: "$gray".
-        on line 59 of C:\Users\AS\Desktop\burger_project\css\blocks\reviews.scss
+Error: Undefined variable: "$yellow".
+        on line 18 of C:\Users\AS\Desktop\burger_project\css\blocks\accordeon.scss
 
-54:   width: 72%;
-55:   font-size: 14px;
-56:   overflow: hidden;
-57: }
-58: .reviews__text-button {
-59:   background-color: $gray;
-60:   margin-top: 17px;
-61: }
+13: }
+14: .accordeon__item_active .accordeon__appearance {
+15:   height: 100%;
+16: }
+17: .accordeon__item_active .accordeon__title {
+18:   color: $yellow;
+19: }
+20: .accordeon__item_active .accordeon__title::before {
+21: content: '';
+22: border: 5px solid transparent;
+23: width: 0;
 
 Backtrace:
-C:\Users\AS\Desktop\burger_project\css\blocks\reviews.scss:59
+C:\Users\AS\Desktop\burger_project\css\blocks\accordeon.scss:18
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/script/tree/variable.rb:49:in `_perform'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/script/tree/node.rb:50:in `perform'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:402:in `visit_prop'
@@ -58,4 +61,4 @@ C:/Program Files (x86)/Koala/bin/sass:22:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$gray\".\A         on line 59 of C:\Users\AS\Desktop\burger_project\css\blocks\reviews.scss\A \A 54:   width: 72%;\A 55:   font-size: 14px;\A 56:   overflow: hidden;\A 57: }\A 58: .reviews__text-button {\A 59:   background-color: $gray;\A 60:   margin-top: 17px;\A 61: }"; }
+  content: "Error: Undefined variable: \"$yellow\".\A         on line 18 of C:\Users\AS\Desktop\burger_project\css\blocks\accordeon.scss\A \A 13: }\A 14: .accordeon__item_active .accordeon__appearance {\A 15:   height: 100%;\A 16: }\A 17: .accordeon__item_active .accordeon__title {\A 18:   color: $yellow;\A 19: }\A 20: .accordeon__item_active .accordeon__title::before {\A 21: content: '';\A 22: border: 5px solid transparent;\A 23: width: 0;"; }

@@ -6,7 +6,6 @@ $yellow: #f9b43b;
 //setup
 @import './layout/fonts.scss';
 @import './layout/base.scss';
-@import './layout/mixins.scss';
 
 //common
 @import './blocks/button.scss';
@@ -17,7 +16,7 @@ $yellow: #f9b43b;
 @import './blocks/header.scss';
 @import './blocks/menu.scss';
 
-
+@import 'blocks/logo.scss';
 @import 'blocks/fixed-menu.scss';
 @import 'blocks/arrow__down.scss';
 @import 'blocks/best.scss';

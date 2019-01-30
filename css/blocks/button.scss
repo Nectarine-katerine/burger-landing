@@ -1,4 +1,19 @@
 .button {
-  @include button;
-  margin-left: 15px;
+  padding: 10px 15px;
+  background: $red;
+  color: #fff;
+  border-radius: 5px;
+  text-transform: uppercase;
+  font-family: 'ubuntu';
+  font-size: 13px;
+  font-weight: 500;  
+}
+
+.button_bg_none {
+  background: none;
+  font-family: 'ubuntu';
+  font-size: 14px;
+  font-weight: 300;
+  text-transform: none;
+  margin-left: 20px;
 }
