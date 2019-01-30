@@ -1,8 +1,72 @@
 .mr-menu {
   background:url('../img/bg-menu.png') center center no-repeat / cover;
+  position: relative;
+}
+.mr-menu__content {
+  display: flex;
+  justify-content: flex-end;
+  height: 100%;
+  position: absolute;
+  right: 0;
+  left: 50%;
+  background-color: $gray;
+  opacity: .93;
+}
+.mr-menu__accordeon {
+display: flex;
+flex-direction: flex-end;
+}
+
+.mr-menu__accordeon-list {
+  display: flex;
+  align-items: flex-end;
+  // justify-content: space-between;
 }
 
 .mr-menu__title {
-  @include title;
   color: #fff;
+}
+.mr-menu__accordeon-item {
+  position: relative;
+  // margin-bottom: 50px;
+  transform: rotate(-90deg);
+  transform-origin: 0 0;
+
+  &:last-child {
+    margin-bottom: 0;
+
+  }
+}
+.mr-menu__accordeon-item_active .mr-menu__accordeon-appearance {
+  width: 100%;
+}
+.mr-menu__accordeon-item_active .mr-menu__accordeon-title {
+  color: $yellow;
+}
+
+.mr-menu__accordeon-title {
+display: flex;
+align-items: center;
+font-size: 40px;
+margin-bottom: 17px;
+
+}
+
+.mr-menu__accordeon-desc-name {
+  font-family: 'ubuntu';
+  font-weight: 700;
+  font-size: 14px;
+}
+.mr-menu__accordeon-desc-text {
+  font-family: 'ubuntu';
+  font-weight: 300;
+  font-size: 14px;
+  width: 53%;
+}
+
+.mr-menu__accordeon-appearance {
+  height: 0;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
 }

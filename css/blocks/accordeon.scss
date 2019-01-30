@@ -31,7 +31,6 @@ display: inline-block;
 .accordeon__title {
 display: flex;
 align-items: center;
-@include title;
 font-size: 14px;
 margin-bottom: 17px;
 &:before {
