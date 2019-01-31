@@ -1,72 +1,93 @@
-.mr-menu {
+.carte {
   background:url('../img/bg-menu.png') center center no-repeat / cover;
   position: relative;
 }
-.mr-menu__content {
+.carte__title {
+  color: #fff;
+  margin-bottom: 0;
+  margin-top: 100px;
+}
+
+.carte__accordeon {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: flex-end;
+}
+.carte__accordeon-list {
   display: flex;
   justify-content: flex-end;
   height: 100%;
-  position: absolute;
-  right: 0;
-  left: 50%;
-  background-color: $gray;
-  opacity: .93;
 }
-.mr-menu__accordeon {
-display: flex;
-flex-direction: flex-end;
-}
-
-.mr-menu__accordeon-list {
+.carte__accordeon-item {
   display: flex;
+  justify-content: flex-start;
   align-items: flex-end;
-  // justify-content: space-between;
-}
-
-.mr-menu__title {
-  color: #fff;
-}
-.mr-menu__accordeon-item {
+  height: 100%;
   position: relative;
-  // margin-bottom: 50px;
-  transform: rotate(-90deg);
-  transform-origin: 0 0;
-
-  &:last-child {
-    margin-bottom: 0;
-
-  }
 }
-.mr-menu__accordeon-item_active .mr-menu__accordeon-appearance {
-  width: 100%;
+.carte__accordeon-item_active {
+  width: 45%;
 }
-.mr-menu__accordeon-item_active .mr-menu__accordeon-title {
+.carte__accordeon-item_active .carte__accordeon-appearance {
+width: 100%;
+height: 100%;
+background: $gray;
+opacity: .93;
+line-height: 1.42em;
+}
+
+.carte__accordeon-item_active .carte__accordeon-title-text {
   color: $yellow;
 }
 
-.mr-menu__accordeon-title {
-display: flex;
-align-items: center;
+.carte__accordeon-title {
+  position: relative;
+  height: 100%;
+  display: flex;
+  justify-content: flex-end;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 30px 15px;
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(20,20,20,0.7);
+    display: block;
+  }
+}
+.carte__accordeon-title_meat {
+  background-image: url(../img/menu_meat.png);
+}
+.carte__accordeon-title_veg {
+  background-image: url(../img/menu-veg.png);
+}
+.carte__accordeon-title_diet {
+  background-image: url(../img/menu-diet.png);
+}
+.carte__accordeon-title-text {
 font-size: 40px;
 margin-bottom: 17px;
-
+writing-mode: vertical-lr;
+transform: rotate(180deg);
 }
 
-.mr-menu__accordeon-desc-name {
-  font-family: 'ubuntu';
-  font-weight: 700;
-  font-size: 14px;
-}
-.mr-menu__accordeon-desc-text {
-  font-family: 'ubuntu';
-  font-weight: 300;
-  font-size: 14px;
-  width: 53%;
-}
-
-.mr-menu__accordeon-appearance {
+.carte__accordeon-appearance {
+  width: 0;
   height: 0;
   overflow: hidden;
-  display: flex;
-  justify-content: space-between;
+}
+
+.carte__accordeon-desc-text {
+  font-family: 'ubuntu';
+  font-size: 14px;
+  font-weight: 300;
+  padding: 62px 35px;
 }

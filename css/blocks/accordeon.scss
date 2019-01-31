@@ -1,6 +1,7 @@
 .accordeon__item {
   position: relative;
   margin-bottom: 30px;
+  
   &:last-child {
     margin-bottom: 0;
   }
@@ -23,6 +24,7 @@ border-right-width: 5px;
 margin-right: 9px;
 }
 .accordeon__title {
+  cursor: pointer;
 display: flex;
 align-items: center;
 font-size: 14px;
