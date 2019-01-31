@@ -10,12 +10,12 @@ html, body { height: 100%; }
 
 body { margin: 0; font-family: 'ubuntu'; color: #fff; line-height: 1.42; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
 
-.wrapper { overflow: hidden; width: 100%; min-width: 940px; min-height: 100%; }
+.wrapper { overflow: hidden; width: 100%; min-width: 0; min-height: 100%; }
 
 ul { margin: 0; padding: 0; }
 ul li { list-style: none; }
 
-.container { margin: 0 auto; width: 945px; height: 100%; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; }
+.container { margin: 0 auto; width: auto; max-width: 945px; height: 100%; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; }
 
 h1, h2, h3, h4, h5, h6 { margin: 0; font-weight: normal; }
 
@@ -28,11 +28,13 @@ footer { position: relative; width: 100%; }
 .section { height: 100vh; min-height: 650px; }
 .section_centered .container { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; }
 
-.button { padding: 10px 15px; background: #e45028; color: #fff; border-radius: 5px; text-transform: uppercase; font-family: 'ubuntu'; font-size: 13px; font-weight: 500; }
+img { max-width: 100%; }
+
+.button { padding: 0.63rem 0.94rem; background: #e45028; color: #fff; border-radius: 5px; text-transform: uppercase; font-family: 'ubuntu'; font-size: 0.8125rem; font-weight: 500; }
 
 .button_bg_none { background: none; font-family: 'ubuntu'; font-size: 14px; font-weight: 300; text-transform: none; margin-left: 20px; }
 
-.title { font-family: 'gagalin'; font-size: 72px; margin-bottom: 45px; }
+.title { font-family: 'gagalin'; font-size: 4.5rem; margin-bottom: 0.625em; }
 
 .hero { background: url("../img/texture.png"), url("../img/start-bg.png") center center no-repeat; background-size: cover; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; }
 
@@ -40,9 +42,9 @@ footer { position: relative; width: 100%; }
 
 .hero__content { -webkit-box-flex: .8; -ms-flex: .8; flex: .8; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
 
-.hero__title { color: #f9b43b; margin-top: 44px; margin-bottom: 22px; }
+.hero__title { color: #f9b43b; margin-top: 0.6em; margin-bottom: 0.3em; }
 
-.hero__text { color: #fff; font-family: 'lifehack'; font-weight: 500; font-size: 65px; line-height: 1em; }
+.hero__text { color: #fff; font-family: 'lifehack'; font-weight: 500; font-size: 4.0625rem; line-height: 1em; }
 
 .hero__picture { margin: 0 16px; display: inline-block; margin-bottom: 38px; }
 
@@ -224,5 +226,18 @@ footer { position: relative; width: 100%; }
 .phone__number { color: #e45028; font-family: 'ubuntu'; font-weight: 700; font-size: 14px; display: inline-block; padding-bottom: 10px; }
 
 .address { font-family: 'ubuntu'; font-weight: 300; font-size: 14px; padding-top: 10px; }
+
+@media (max-width: 768px) { .container { max-width: 700px; }
+  .menu { display: none; }
+  .hamburger-menu { width: 1.5rem; height: 0.25rem; background: #fff; border-radius: 0.3125rem; }
+  .hamburger-menu::before { content: ""; display: block; width: 1.5rem; height: 0.25rem; background: #fff; border-radius: 0.3125rem; margin-bottom: 0.5rem; }
+  .hamburger-menu::after { content: ""; display: block; width: 1.5rem; height: 0.25rem; background: #fff; border-radius: 0.3125rem; }
+  .button { margin-left: 0; }
+  .hero__content { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; }
+  .hero__text { text-align: center; }
+  .hero__picture { margin: 0; }
+  .hero__desc { width: 90%; }
+  .team__container { width: 100vw; position: absolute; top: 0; left: 0; }
+  .fixed-menu { display: none; } }
 
 /*# sourceMappingURL=main.css.map */

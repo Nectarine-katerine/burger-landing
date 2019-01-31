@@ -1,0 +1,63 @@
+@media (max-width: 768px) {
+  .container {
+    max-width: 700px,
+  }
+  .menu {
+    display: none;
+  }
+  .hamburger-menu {
+    width: 1.5rem;
+    height: 0.25rem;
+    background: #fff;
+    border-radius: 0.3125rem;
+
+    &::before {
+      content: "";
+      display: block;
+      width: 1.5rem;
+      height: 0.25rem;
+      background: #fff;
+      border-radius: 0.3125rem;
+      margin-bottom: 0.5rem;
+
+    }
+  }
+  .hamburger-menu::after {
+    content: "";
+    display: block;
+    width: 1.5rem;
+    height: 0.25rem;
+    background: #fff;
+    border-radius: 0.3125rem;
+  }
+
+  .button {
+    margin-left: 0;
+  }
+  .hero__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .hero__text {
+    text-align: center;
+  }
+  .hero__picture {
+    margin: 0;
+  }
+  .hero__desc {
+    width: 90%;
+  }
+ 
+  .team__container {
+    width: 100vw;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  .fixed-menu {
+    display: none;
+  }
+}
