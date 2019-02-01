@@ -1,6 +1,6 @@
 /*
 Error: Undefined variable: "$gray".
-        on line 7 of C:\Users\AS\Desktop\burger_project\css\blocks\best.scss
+        on line 7 of C:\Users\AS\Desktop\burger_project\docs\css\blocks\best.scss
 
 2:   background: url('../img/bg_best.png') center center no-repeat;
 3:   background-size: cover;
@@ -15,7 +15,7 @@ Error: Undefined variable: "$gray".
 12:   display: flex;
 
 Backtrace:
-C:\Users\AS\Desktop\burger_project\css\blocks\best.scss:7
+C:\Users\AS\Desktop\burger_project\docs\css\blocks\best.scss:7
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/script/tree/variable.rb:49:in `_perform'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/script/tree/node.rb:50:in `perform'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:402:in `visit_prop'
@@ -61,4 +61,4 @@ C:/Program Files (x86)/Koala/bin/sass:22:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$gray\".\A         on line 7 of C:\Users\AS\Desktop\burger_project\css\blocks\best.scss\A \A 2:   background: url('../img/bg_best.png') center center no-repeat;\A 3:   background-size: cover;\A 4: }\A 5: \A 6: .best__title {\A 7:   color: $gray;\A 8:   text-align: center;\A 9: }\A 10: \A 11: .best__list {\A 12:   display: flex;"; }
+  content: "Error: Undefined variable: \"$gray\".\A         on line 7 of C:\Users\AS\Desktop\burger_project\docs\css\blocks\best.scss\A \A 2:   background: url('../img/bg_best.png') center center no-repeat;\A 3:   background-size: cover;\A 4: }\A 5: \A 6: .best__title {\A 7:   color: $gray;\A 8:   text-align: center;\A 9: }\A 10: \A 11: .best__list {\A 12:   display: flex;"; }

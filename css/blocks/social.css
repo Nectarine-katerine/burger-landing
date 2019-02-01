@@ -1,0 +1,10 @@
+.social { height: 100%; }
+
+.social__icon { width: 20px; height: 20px; margin-right: 20px; }
+
+.social__icon { fill: #2f3234; display: inline-block; -webkit-transition: fill .3s; transition: fill .3s; }
+.social__icon:hover { fill: #fff; -webkit-transition: fill .3s; transition: fill .3s; }
+
+.social__icon_margin-0 { margin-right: 0; }
+
+.social__list { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: end; -ms-flex-pack: end; justify-content: flex-end; -webkit-box-align: center; -ms-flex-align: center; align-items: center; height: 100%; }

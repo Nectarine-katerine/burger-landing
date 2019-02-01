@@ -3,9 +3,16 @@ $gray: #2f3234;
 $red: #e45028;
 $yellow: #f9b43b;
 
+// resolutions
+$tablets: 768px;
+$phones: 480px;
+
 //setup
 @import './layout/fonts.scss';
+@import './layout/media.scss';
 @import './layout/base.scss';
+
+
 
 
 //common
@@ -33,5 +40,7 @@ $yellow: #f9b43b;
 @import './blocks/social.scss';
 @import './blocks/phone.scss';
 @import './blocks/address.scss';
-@import './layout/media.scss';
+@import './blocks/hamburger-menu.scss';
+
+
 

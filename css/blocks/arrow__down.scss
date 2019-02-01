@@ -1,7 +1,10 @@
 .arrow__down {
   position: absolute;
-  bottom: 40px;
+  bottom: 2.5rem;
   left: 48%;
+  @include tablets {
+bottom: 1.5rem;
+  }
 }
   .arrow__down-link {
     display: block;
@@ -11,6 +14,6 @@
 
   .arrow__down-icon {
     fill: #fff;
-    width: 35px;
-    height: 25px;
+    width: 1.8125rem;
+    height: 0.875rem;
   }

@@ -1,24 +1,25 @@
 /*
-Error: Undefined variable: "$yellow".
-        on line 18 of C:\Users\AS\Desktop\burger_project\docs\css\blocks\hero.scss
+Error: Undefined mixin 'tablets'.
+        on line 3 of C:\Users\AS\Desktop\burger_project\css\blocks\form.scss, in `tablets'
+        from line 3 of C:\Users\AS\Desktop\burger_project\css\blocks\form.scss
 
-13:   display: flex;
-14:   justify-content: center;
-15:   align-items: center;
-16: }
-17: .hero__title {
-18:   color: $yellow;
-19:   margin-top: 44px;
-20:   margin-bottom: 22px;
-21: }
-22: 
-23: .hero__text {
+1: .form {
+2:   display: flex;
+3:   @include tablets {
+4:     flex-direction: column;
+5:     width: 80%;
+6:     margin: 0 auto;
+7:   }
+8:   @include phones {
 
 Backtrace:
-C:\Users\AS\Desktop\burger_project\docs\css\blocks\hero.scss:18
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/script/tree/variable.rb:49:in `_perform'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/script/tree/node.rb:50:in `perform'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:402:in `visit_prop'
+C:\Users\AS\Desktop\burger_project\css\blocks\form.scss:3:in `tablets'
+C:\Users\AS\Desktop\burger_project\css\blocks\form.scss:3
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:352:in `block in visit_mixin'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:98:in `block in with_mixin'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:135:in `with_frame'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:98:in `with_mixin'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:350:in `visit_mixin'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `visit'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:79:in `block in with_base'
@@ -61,4 +62,4 @@ C:/Program Files (x86)/Koala/bin/sass:22:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$yellow\".\A         on line 18 of C:\Users\AS\Desktop\burger_project\docs\css\blocks\hero.scss\A \A 13:   display: flex;\A 14:   justify-content: center;\A 15:   align-items: center;\A 16: }\A 17: .hero__title {\A 18:   color: $yellow;\A 19:   margin-top: 44px;\A 20:   margin-bottom: 22px;\A 21: }\A 22: \A 23: .hero__text {"; }
+  content: "Error: Undefined mixin 'tablets'.\A         on line 3 of C:\Users\AS\Desktop\burger_project\css\blocks\form.scss, in `tablets'\A         from line 3 of C:\Users\AS\Desktop\burger_project\css\blocks\form.scss\A \A 1: .form {\A 2:   display: flex;\A 3:   @include tablets {\A 4:     flex-direction: column;\A 5:     width: 80%;\A 6:     margin: 0 auto;\A 7:   }\A 8:   @include phones {"; }

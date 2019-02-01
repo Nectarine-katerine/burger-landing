@@ -14,11 +14,22 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+
+  @include tablets {
+      width: 100vw;
+      position: absolute;
+      top: 0;
+      left: 0;
+      text-align: center;
+  }
 }
 
 .team__content {
   width: 80%;
   margin: 0 auto;
+  @include tablets {
+    text-align: center;
+}
 }
 
 .team__title {

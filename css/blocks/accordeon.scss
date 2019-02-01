@@ -5,9 +5,10 @@
   &:last-child {
     margin-bottom: 0;
   }
+
 }
 .accordeon__item_active .accordeon__appearance {
-  height: 95px;
+  height: 100%;
 }
 .accordeon__item_active .accordeon__title {
   color: $yellow;
@@ -27,8 +28,10 @@ margin-right: 9px;
   cursor: pointer;
 display: flex;
 align-items: center;
-font-size: 14px;
+justify-content: flex-start;
+font-size: 0.875rem;
 margin-bottom: 17px;
+
 &:before {
   content: '';
 border: 5px solid transparent;
@@ -41,7 +44,10 @@ border-right-width: 5px;
 display: inline-block;
 margin-right: 9px;
 }
-
+@include tablets {
+  justify-content: center;
+  font-size: 1.5625rem;
+}
 }
 .accordeon__desc {
   line-height: 1.42em;
@@ -64,6 +70,9 @@ margin-right: 9px;
   overflow: hidden;
   display: flex;
   justify-content: space-between;
+  @include tablets {
+    flex-direction: column;
+  }
 }
 .accordeon__avatar {
   width: 18%;

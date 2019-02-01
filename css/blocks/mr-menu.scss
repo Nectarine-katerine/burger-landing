@@ -30,6 +30,9 @@
 }
 .carte__accordeon-item_active {
   width: 45%;
+  @include tablets {
+    width: 100%;
+  }
 }
 .carte__accordeon-item_active .carte__accordeon-appearance {
 width: 100%;

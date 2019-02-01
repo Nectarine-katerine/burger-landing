@@ -5,4 +5,7 @@
 .order__title {
   color: $yellow;
   text-align: center;
+  @include phones {
+    margin-bottom: 1.4rem;
+  }
 }

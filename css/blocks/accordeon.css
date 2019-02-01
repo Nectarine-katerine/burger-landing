@@ -1,21 +1,21 @@
 /*
 Error: Undefined variable: "$yellow".
-        on line 13 of C:\Users\AS\Desktop\burger_project\css\blocks\accordeon.scss
+        on line 14 of C:\Users\AS\Desktop\burger_project\css\blocks\accordeon.scss
 
-8: }
-9: .accordeon__item_active .accordeon__appearance {
-10:   height: 95px;
-11: }
-12: .accordeon__item_active .accordeon__title {
-13:   color: $yellow;
-14: }
-15: .accordeon__item_active .accordeon__title::before {
-16: content: '';
-17: border: 5px solid transparent;
-18: width: 0;
+9: }
+10: .accordeon__item_active .accordeon__appearance {
+11:   height: 100%;
+12: }
+13: .accordeon__item_active .accordeon__title {
+14:   color: $yellow;
+15: }
+16: .accordeon__item_active .accordeon__title::before {
+17: content: '';
+18: border: 5px solid transparent;
+19: width: 0;
 
 Backtrace:
-C:\Users\AS\Desktop\burger_project\css\blocks\accordeon.scss:13
+C:\Users\AS\Desktop\burger_project\css\blocks\accordeon.scss:14
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/script/tree/variable.rb:49:in `_perform'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/script/tree/node.rb:50:in `perform'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:402:in `visit_prop'
@@ -61,4 +61,4 @@ C:/Program Files (x86)/Koala/bin/sass:22:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$yellow\".\A         on line 13 of C:\Users\AS\Desktop\burger_project\css\blocks\accordeon.scss\A \A 8: }\A 9: .accordeon__item_active .accordeon__appearance {\A 10:   height: 95px;\A 11: }\A 12: .accordeon__item_active .accordeon__title {\A 13:   color: $yellow;\A 14: }\A 15: .accordeon__item_active .accordeon__title::before {\A 16: content: '';\A 17: border: 5px solid transparent;\A 18: width: 0;"; }
+  content: "Error: Undefined variable: \"$yellow\".\A         on line 14 of C:\Users\AS\Desktop\burger_project\css\blocks\accordeon.scss\A \A 9: }\A 10: .accordeon__item_active .accordeon__appearance {\A 11:   height: 100%;\A 12: }\A 13: .accordeon__item_active .accordeon__title {\A 14:   color: $yellow;\A 15: }\A 16: .accordeon__item_active .accordeon__title::before {\A 17: content: '';\A 18: border: 5px solid transparent;\A 19: width: 0;"; }
