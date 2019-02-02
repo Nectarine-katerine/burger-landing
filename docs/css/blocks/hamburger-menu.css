@@ -1,23 +1,19 @@
 /*
 Error: Undefined mixin 'tablets'.
-        on line 27 of C:\Users\AS\Desktop\burger_project\css\blocks\reviews.scss, in `tablets'
-        from line 27 of C:\Users\AS\Desktop\burger_project\css\blocks\reviews.scss
+        on line 2 of C:\Users\AS\Desktop\burger_project\css\blocks\hamburger-menu.scss, in `tablets'
+        from line 2 of C:\Users\AS\Desktop\burger_project\css\blocks\hamburger-menu.scss
 
-22:   position: relative;
-23:   &:hover .reviews__text {
-24:     opacity: 1;
-25:     transition: opacity .3s;
-26:   }
-27:   @include tablets {
-28:     width: 50%;
-29:     height: 25%;
-30:   }
-31: }
-32: .reviews__text {
+1: .hamburger__menu-link {
+2:   @include tablets {
+3:     width: 1.5rem;
+4:     height: 0.25rem;
+5:     background: #fff;
+6:     border-radius: 0.3125rem;
+7:     position: relative;
 
 Backtrace:
-C:\Users\AS\Desktop\burger_project\css\blocks\reviews.scss:27:in `tablets'
-C:\Users\AS\Desktop\burger_project\css\blocks\reviews.scss:27
+C:\Users\AS\Desktop\burger_project\css\blocks\hamburger-menu.scss:2:in `tablets'
+C:\Users\AS\Desktop\burger_project\css\blocks\hamburger-menu.scss:2
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:352:in `block in visit_mixin'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:98:in `block in with_mixin'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:135:in `with_frame'
@@ -65,4 +61,4 @@ C:/Program Files (x86)/Koala/bin/sass:22:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined mixin 'tablets'.\A         on line 27 of C:\Users\AS\Desktop\burger_project\css\blocks\reviews.scss, in `tablets'\A         from line 27 of C:\Users\AS\Desktop\burger_project\css\blocks\reviews.scss\A \A 22:   position: relative;\A 23:   &:hover .reviews__text {\A 24:     opacity: 1;\A 25:     transition: opacity .3s;\A 26:   }\A 27:   @include tablets {\A 28:     width: 50%;\A 29:     height: 25%;\A 30:   }\A 31: }\A 32: .reviews__text {"; }
+  content: "Error: Undefined mixin 'tablets'.\A         on line 2 of C:\Users\AS\Desktop\burger_project\css\blocks\hamburger-menu.scss, in `tablets'\A         from line 2 of C:\Users\AS\Desktop\burger_project\css\blocks\hamburger-menu.scss\A \A 1: .hamburger__menu-link {\A 2:   @include tablets {\A 3:     width: 1.5rem;\A 4:     height: 0.25rem;\A 5:     background: #fff;\A 6:     border-radius: 0.3125rem;\A 7:     position: relative;"; }

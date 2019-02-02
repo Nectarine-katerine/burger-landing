@@ -1,0 +1,103 @@
+.carte {
+  background:url('../img/bg-menu.png') center center no-repeat / cover;
+  position: relative;
+}
+.carte__title {
+  color: #fff;
+  margin-bottom: 0;
+  margin-top: 100px;
+}
+
+.carte__accordeon {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: flex-end;
+}
+.carte__accordeon-list {
+  display: flex;
+  justify-content: flex-end;
+  height: 100%;
+}
+.carte__accordeon-item {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+  height: 100%;
+  position: relative;
+}
+.carte__accordeon-item_active {
+  width: 45%;
+  @include tablets {
+    width: 100%;
+  }
+}
+.carte__accordeon-item_active .carte__accordeon-appearance {
+width: 100%;
+height: 100%;
+background: $gray;
+opacity: .93;
+line-height: 1.42em;
+}
+
+.carte__accordeon-item_active .carte__accordeon-title-text {
+  color: $yellow;
+}
+
+.carte__accordeon-title {
+  position: relative;
+  height: 100%;
+  display: flex;
+  justify-content: flex-end;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 30px 15px;
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(20,20,20,0.7);
+    display: block;
+  }
+  @include phones {
+    padding: 0.7% 0.5%;
+  }
+}
+.carte__accordeon-title_meat {
+  background-image: url(../img/menu_meat.png);
+}
+.carte__accordeon-title_veg {
+  background-image: url(../img/menu-veg.png);
+}
+.carte__accordeon-title_diet {
+  background-image: url(../img/menu-diet.png);
+}
+.carte__accordeon-title-text {
+font-size: 40px;
+margin-bottom: 17px;
+writing-mode: vertical-lr;
+transform: rotate(180deg);
+}
+
+.carte__accordeon-appearance {
+  width: 0;
+  height: 0;
+  overflow: hidden;
+}
+
+.carte__accordeon-desc-text {
+  font-family: 'ubuntu';
+  font-size: 14px;
+  font-weight: 300;
+  padding: 62px 35px;
+
+  @include phones {
+    padding: 5% 3.5%;
+  }
+}

@@ -1,23 +1,23 @@
 /*
 Error: Undefined mixin 'tablets'.
-        on line 27 of C:\Users\AS\Desktop\burger_project\css\blocks\reviews.scss, in `tablets'
-        from line 27 of C:\Users\AS\Desktop\burger_project\css\blocks\reviews.scss
+        on line 33 of C:\Users\AS\Desktop\burger_project\css\blocks\mr-menu.scss, in `tablets'
+        from line 33 of C:\Users\AS\Desktop\burger_project\css\blocks\mr-menu.scss
 
-22:   position: relative;
-23:   &:hover .reviews__text {
-24:     opacity: 1;
-25:     transition: opacity .3s;
-26:   }
-27:   @include tablets {
-28:     width: 50%;
-29:     height: 25%;
-30:   }
-31: }
-32: .reviews__text {
+28:   height: 100%;
+29:   position: relative;
+30: }
+31: .carte__accordeon-item_active {
+32:   width: 45%;
+33:   @include tablets {
+34:     width: 100%;
+35:   }
+36: }
+37: .carte__accordeon-item_active .carte__accordeon-appearance {
+38: width: 100%;
 
 Backtrace:
-C:\Users\AS\Desktop\burger_project\css\blocks\reviews.scss:27:in `tablets'
-C:\Users\AS\Desktop\burger_project\css\blocks\reviews.scss:27
+C:\Users\AS\Desktop\burger_project\css\blocks\mr-menu.scss:33:in `tablets'
+C:\Users\AS\Desktop\burger_project\css\blocks\mr-menu.scss:33
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:352:in `block in visit_mixin'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:98:in `block in with_mixin'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:135:in `with_frame'
@@ -65,4 +65,4 @@ C:/Program Files (x86)/Koala/bin/sass:22:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined mixin 'tablets'.\A         on line 27 of C:\Users\AS\Desktop\burger_project\css\blocks\reviews.scss, in `tablets'\A         from line 27 of C:\Users\AS\Desktop\burger_project\css\blocks\reviews.scss\A \A 22:   position: relative;\A 23:   &:hover .reviews__text {\A 24:     opacity: 1;\A 25:     transition: opacity .3s;\A 26:   }\A 27:   @include tablets {\A 28:     width: 50%;\A 29:     height: 25%;\A 30:   }\A 31: }\A 32: .reviews__text {"; }
+  content: "Error: Undefined mixin 'tablets'.\A         on line 33 of C:\Users\AS\Desktop\burger_project\css\blocks\mr-menu.scss, in `tablets'\A         from line 33 of C:\Users\AS\Desktop\burger_project\css\blocks\mr-menu.scss\A \A 28:   height: 100%;\A 29:   position: relative;\A 30: }\A 31: .carte__accordeon-item_active {\A 32:   width: 45%;\A 33:   @include tablets {\A 34:     width: 100%;\A 35:   }\A 36: }\A 37: .carte__accordeon-item_active .carte__accordeon-appearance {\A 38: width: 100%;"; }
