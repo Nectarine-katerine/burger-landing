@@ -36,8 +36,8 @@
   top: 0;
   bottom: 0;
   background: rgba(#000000, .52);
-  padding: 25px; 
-  padding-left: 20px;
+  padding: 8%;
+  padding-left: 11%;
   color: #fff;
   opacity: 0;
   overflow: hidden;
@@ -47,28 +47,47 @@
   align-items: flex-start;
   justify-content: space-evenly;
   @include tablets {
-    
+    align-items: center; 
+  }
+  @include phones {
+    align-items: center; 
   }
 }
 .reviews__text-title {
   font-family: 'gagalin';
   text-transform: uppercase;
-  padding-bottom: 25px;
-  font-weight: 14px;
+  padding-bottom: 4%;
+  font-weight: 0.875rem;
   @include tablets {
-    
+    padding-bottom: 2%;
+  }
+  @include phones {
+    text-align: center;
+    font-size: 2rem;
   }
 }
 .reviews__text-desc {
   font-weight: 300;
   width: 72%;
-  font-size: 14px;
+  font-size: 0.875rem;
   overflow: hidden;
-  @include tablets {
-    
+  @include phones {
+    display: none;
+  }
+}
+.reviews__btn {
+  @include phones {
+    display: none;
+  }
+}
+.reviews__btn_phone {
+  display: none;
+  @include phones {
+    display: block;
+    text-align: center;
   }
 }
 .reviews__text-button {
   background-color: $gray;
-  margin-top: 17px;
+  margin-top: 8%;
 }

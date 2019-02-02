@@ -7,7 +7,14 @@ left: 0;
 .footer__container {
 display: flex;
 flex-direction: row;
+@include phones {
+  flex-direction: column;
+}
+
 }
 .footer__col {
   flex: 1;
+  @include phones {
+   text-align: center;
+  }
 }

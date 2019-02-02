@@ -1,6 +1,7 @@
 .hero {
   background:  url('../img/texture.png'), url('../img/start-bg.png') center center no-repeat;
   background-size: cover;
+  position: relative;
 }
 
 .hero__container {
@@ -8,13 +9,13 @@
   height: 100vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
 }
 
 .hero__content {
   display: flex;
   justify-content: center;
   align-items: center;
+  // height: 100%;
   @include tablets {
     flex-direction: column;
     justify-content: flex-start;
@@ -23,11 +24,11 @@
 }
 .hero__title {
   color: $yellow;
-  margin-top: 2.7rem;
-  margin-bottom: 1.35rem;
+  margin-top: 4vmax;
+  margin-bottom: 1vmax;
   @include tablets {
-    margin-top: 1.7rem;
-    margin-bottom: 1.1rem;
+    margin-top: 2vmax;
+    margin-bottom: 1vmax;
     font-size: 4rem;
   }
 }
@@ -49,9 +50,9 @@
 }
 
 .hero__picture {
-  margin: 0 1rem;
+  margin: 0 1.5%;
   display: inline-block;
-  margin-bottom: 2.375rem;
+  margin-bottom: 4%;
   @include tablets {
     margin: 0;
   }

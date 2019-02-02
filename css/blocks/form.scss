@@ -11,7 +11,7 @@
 }
 .form__col {
   flex: 1;
-  margin-right: 20px;
+  margin-right: 2.1%;
   &:last-child {
     margin-right: 0;
   }
@@ -21,23 +21,23 @@
 }
 .form__row {
   display: flex;
-  margin-bottom: 20px;
+  margin-bottom: 2.1%;
   &:last-child {
     margin-bottom: 0;
   }
 }
 .form__block {
-  margin-right: 20px;
+  margin-right: 4.5%;
   flex: 1;
   font-family: 'ubuntu';
-  font-size: 14px;
+  font-size: 0.875rem;
   font-weight: 300;
   &:last-child {
     margin-right: 0;
   }
 }
 .form__block-title {
-  margin-bottom: 5px;
+  margin-bottom: 2.2%;
 }
 .form__block-input {
   border-radius: 5px;
@@ -55,7 +55,7 @@
 }
 .form__block-input-textarea {
   resize: vertical;
-  min-height: 107px;
+  min-height: 6.6875rem
 }
 
 .form__block_controlls {

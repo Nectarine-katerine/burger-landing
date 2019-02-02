@@ -1,6 +1,6 @@
 .accordeon__item {
   position: relative;
-  margin-bottom: 30px;
+  margin-bottom: 5%;
   
   &:last-child {
     margin-bottom: 0;
@@ -22,7 +22,7 @@ border-bottom-color: $yellow;
 border-top-width: 0;
 border-left-width: 5px;
 border-right-width: 5px;
-margin-right: 9px;
+margin-right: 1%;
 }
 .accordeon__title {
   cursor: pointer;
@@ -30,7 +30,7 @@ display: flex;
 align-items: center;
 justify-content: flex-start;
 font-size: 0.875rem;
-margin-bottom: 17px;
+margin-bottom: 2%;
 
 &:before {
   content: '';
@@ -42,7 +42,7 @@ border-bottom-width: 0;
 border-left-width: 5px;
 border-right-width: 5px;
 display: inline-block;
-margin-right: 9px;
+margin-right: 1%;
 }
 @include tablets {
   justify-content: center;
@@ -55,13 +55,13 @@ margin-right: 9px;
 .accordeon__desc-name {
   font-family: 'ubuntu';
   font-weight: 700;
-  font-size: 14px;
-  margin-bottom: 12px;
+  font-size: 0.875rem;
+  margin-bottom: 1.2%;
 }
 .accordeon__desc-text {
   font-family: 'ubuntu';
   font-weight: 300;
-  font-size: 14px;
+  font-size: 0.875rem;
   width: 53%;
 }
 
@@ -82,5 +82,5 @@ margin-right: 9px;
   background-repeat: no-repeat;
  overflow: hidden;
   display: inline-block;
-  margin: 0 18px;
+  margin: 0 1.6%;
 }

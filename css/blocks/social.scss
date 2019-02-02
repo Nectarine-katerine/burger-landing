@@ -4,7 +4,7 @@
 .social__icon {
   width: 20px;
   height: 20px;
-  margin-right: 20px;
+  margin-right: 1.25rem;
 }
 .social__icon {
   fill:#2f3234;
@@ -23,4 +23,7 @@
   justify-content: flex-end;
   align-items: center;
   height: 100%;
+  @include phones {
+    justify-content: center;
+  }
 }
