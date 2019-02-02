@@ -70,6 +70,9 @@
   width: 72%;
   font-size: 0.875rem;
   overflow: hidden;
+  @include tablets {
+    text-align: center;
+  }
   @include phones {
     display: none;
   }
