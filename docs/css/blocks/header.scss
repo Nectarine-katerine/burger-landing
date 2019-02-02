@@ -2,12 +2,15 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-top: 5px;
+  padding-top: 1%;
 }
 .header__btns {
   display: flex;
   align-items: center;
 }
 .header__button {
-  margin-left: 15px;
+  margin-left: 0.9375rem;
+  @include tablets {
+    margin: 0 0.9375rem;
+  }
 }

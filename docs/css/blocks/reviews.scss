@@ -36,8 +36,8 @@
   top: 0;
   bottom: 0;
   background: rgba(#000000, .52);
-  padding: 25px; 
-  padding-left: 20px;
+  padding: 8%;
+  padding-left: 11%;
   color: #fff;
   opacity: 0;
   overflow: hidden;
@@ -57,7 +57,6 @@
   font-family: 'gagalin';
   text-transform: uppercase;
   padding-bottom: 4%;
-  font-weight: 0.875rem;
   @include tablets {
     padding-bottom: 2%;
   }
@@ -69,7 +68,7 @@
 .reviews__text-desc {
   font-weight: 300;
   width: 72%;
-  font-size: 14px;
+  font-size: 0.875rem;
   overflow: hidden;
   @include phones {
     display: none;
@@ -89,5 +88,5 @@
 }
 .reviews__text-button {
   background-color: $gray;
-  margin-top: 17px;
+  margin-top: 8%;
 }

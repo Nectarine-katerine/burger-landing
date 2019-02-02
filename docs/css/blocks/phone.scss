@@ -1,14 +1,15 @@
 .phone__icon {
   fill: #e45028;
-  width: 12px;
-  height: 11px;
+  width: 0.75rem;
+  height: 0.6875rem;
   display: inline-block;
 }
 .phone__number {
   color: $red;
   font-family: 'ubuntu';
   font-weight: 700;
-  font-size: 14px;
+  font-size: 0.875rem;
   display: inline-block;
-  padding-bottom: 10px;
+  padding-bottom: 2%;
+  text-decoration: none;
 }
