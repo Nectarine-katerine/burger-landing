@@ -10,4 +10,7 @@
 }
 .header__button {
   margin-left: 0.9375rem;
+  @include tablets {
+    margin: 0 0.9375rem;
+  }
 }
