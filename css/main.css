@@ -493,7 +493,8 @@ img {
   padding-bottom: 4%; }
   @media screen and (max-width: 768px) {
     .reviews__text-title {
-      padding-bottom: 2%; } }
+      padding-bottom: 2%;
+      text-align: center; } }
   @media screen and (max-width: 480px) {
     .reviews__text-title {
       text-align: center;

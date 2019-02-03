@@ -59,6 +59,7 @@
   padding-bottom: 4%;
   @include tablets {
     padding-bottom: 2%;
+    text-align: center;
   }
   @include phones {
     text-align: center;
