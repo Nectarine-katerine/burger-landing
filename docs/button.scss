@@ -1,0 +1,23 @@
+.button {
+  padding: 0.63rem 0.94rem;
+  background: $red;
+  color: #fff;
+  border-radius: 0.3125rem;
+  text-transform: uppercase;
+  font-family: 'ubuntu';
+  font-size: 0.8125rem;
+  font-weight: 500;  
+
+  @include tablets {
+    margin-left: 0;
+  }
+}
+
+.button_bg_none {
+  background: none;
+  font-family: 'ubuntu';
+  font-size: 0.875rem;
+  font-weight: 300;
+  text-transform: none;
+  margin-left: 1.25rem;
+}
