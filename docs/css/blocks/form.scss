@@ -1,0 +1,115 @@
+.form {
+  display: flex;
+  @include tablets {
+    flex-direction: column;
+    width: 80%;
+    margin: 0 auto;
+  }
+  @include phones {
+    width: 95%;
+  }
+}
+.form__col {
+  flex: 1;
+  margin-right: 1.25rem;
+  &:last-child {
+    margin-right: 0;
+  }
+  @include tablets {
+    margin-right: 0;
+  }
+}
+.form__row {
+  display: flex;
+  margin-bottom: 1.25rem;
+  &:last-child {
+    margin-bottom: 0;
+    @include tablets {
+      margin-bottom: 1.25rem;
+    }
+  }
+  @include phones {
+    margin-bottom: 1.625rem;
+    &:last-child {
+      margin-bottom: 1.625rem;
+    }
+  }
+}
+.form__block {
+  margin-right: 4.5%;
+  flex: 1;
+  font-family: 'ubuntu';
+  font-size: 0.875rem;
+  font-weight: 300;
+  &:last-child {
+    margin-right: 0;
+  }
+}
+.form__block-title {
+  margin-bottom: 0.625rem;
+}
+.form__block-input {
+  border-radius: 5px;
+  background: #fff;
+  border: 2px solid #fff;
+  width: 100%;
+  padding: 0.625rem;
+  outline: none;
+  transition: border-color .3s;
+}
+
+.form__block-input:focus {
+  border: 2px solid #f9b43b;
+  transition: border-color .3s;
+}
+.form__block-input-textarea {
+  resize: vertical;
+  min-height: 6.6875rem
+}
+
+.form__block_controlls {
+  display: flex;
+  align-items: center;
+  margin-right: 0;
+  cursor: pointer;
+}
+
+.form__radio, .form__checkbox {
+  display: none;
+}
+.form__radio_fake, .form__checkbox_fake {
+  width: 16px;
+  height: 16px;
+  border: 1px solid #c9c9c9;
+  background-image: linear-gradient(to top, #ededed, #ffffff);
+  position: relative;
+  margin-right: 10px;
+}
+.form__radio_fake {
+  border-radius: 50%;
+
+}
+.form__radio:checked~.form__radio_fake:after {    
+  content: "";
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #e35028;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: .3s;
+  
+}
+
+.form__checkbox:checked~.form__checkbox_fake:after {
+  content: '\2714';
+  color: #e35028;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: .3s;
+
+}
