@@ -187,8 +187,8 @@ img {
 
 .hero__title {
   color: #f9b43b;
-  margin-top: 2.5rem;
-  margin-bottom: 1.5rem; }
+  margin-top: 2rem;
+  margin-bottom: 2rem; }
   @media screen and (max-width: 768px) {
     .hero__title {
       margin-top: 2.5rem;
@@ -200,8 +200,7 @@ img {
   font-family: 'lifehack';
   font-weight: 500;
   font-size: 4.0625rem;
-  line-height: 0.8em;
-  margin-bottom: 11%; }
+  line-height: 0.9em; }
   @media screen and (max-width: 768px) {
     .hero__text {
       text-align: center;
@@ -212,10 +211,14 @@ img {
     .hero__text {
       width: initial; } }
 
+.hero__desc {
+  padding-bottom: 24%; }
+
 .hero__picture {
-  margin: 0 1.5%;
+  width: 70;
+  margin: 0 1.6%;
   display: inline-block;
-  margin-bottom: 15%; }
+  margin-bottom: 17%; }
   @media screen and (max-width: 768px) {
     .hero__picture {
       margin: 0; } }
@@ -230,7 +233,7 @@ img {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding-top: 1%; }
+  padding: 0.9% 0.2% 0 0; }
 
 .header__btns {
   display: -webkit-box;
@@ -290,8 +293,8 @@ img {
 
 .fixed-menu {
   position: fixed;
-  top: 19%;
-  right: 12%; }
+  top: 15.4%;
+  right: 15.1%; }
   @media screen and (max-width: 768px) {
     .fixed-menu {
       display: none; } }
@@ -321,8 +324,8 @@ img {
 
 .arrow__down {
   position: absolute;
-  left: 48%;
-  bottom: 1.5rem; }
+  left: 48.5%;
+  bottom: 2.5rem; }
 
 .arrow__down-link {
   display: block;
@@ -340,7 +343,8 @@ img {
 
 .best__title {
   color: #2f3234;
-  text-align: center; }
+  text-align: center;
+  margin-bottom: 0.4em; }
 
 .best__list {
   display: -webkit-box;
@@ -391,7 +395,7 @@ img {
       margin-bottom: 4%; } }
 
 .best__img {
-  margin-bottom: 1.5%; }
+  margin-bottom: 8%; }
   @media screen and (max-width: 480px) {
     .best__img {
       margin: 0; } }
@@ -407,7 +411,7 @@ img {
 .best__desc-title {
   font-family: 'lifehack';
   font-size: 1.5rem;
-  padding-bottom: 1.4%; }
+  padding-bottom: 3.4%; }
 
 .reviews {
   background: #000;
@@ -500,6 +504,9 @@ img {
   width: 72%;
   font-size: 0.875rem;
   overflow: hidden; }
+  @media screen and (max-width: 768px) {
+    .reviews__text-desc {
+      text-align: center; } }
   @media screen and (max-width: 480px) {
     .reviews__text-desc {
       display: none; } }
@@ -650,7 +657,8 @@ img {
   position: relative; }
 
 .title__team {
-  color: #f9b43b; }
+  color: #f9b43b;
+  margin-bottom: 1.6rem; }
 
 .team__accordeon {
   position: absolute;
@@ -661,7 +669,8 @@ img {
   background-color: #2f3234;
   opacity: .93;
   width: 50%;
-  padding: 0 6.5%;
+  padding: 0 7%;
+  padding-bottom: 2.5%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -682,7 +691,7 @@ img {
       padding: 0; } }
 
 .team__item {
-  margin-bottom: 6.5%; }
+  margin-bottom: 3%; }
   .team__item:last-child {
     margin-bottom: 0; }
   @media screen and (max-width: 768px) {
@@ -735,11 +744,11 @@ img {
       align-items: center; } }
 
 .team__avatar {
-  width: 6.25rem;
-  width: 6.25rem;
+  width: 7.25rem;
+  height: 7.25rem;
   overflow: hidden;
   background-repeat: 50%;
-  margin: 0 2%; }
+  margin: 0 3.9%; }
   @media screen and (max-width: 768px) {
     .team__avatar {
       margin-bottom: 2%; } }
@@ -765,7 +774,8 @@ img {
 
 .team__desc-text {
   font-weight: 300;
-  width: 53%; }
+  width: 56%;
+  line-height: 1.65em; }
   @media screen and (max-width: 768px) {
     .team__desc-text {
       margin: 0 auto;
@@ -833,7 +843,7 @@ img {
     margin-right: 0; }
 
 .form__block-title {
-  margin-bottom: 2.2%; }
+  margin-bottom: 0.625rem; }
 
 .form__block-input {
   border-radius: 5px;

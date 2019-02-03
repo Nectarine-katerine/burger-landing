@@ -6,6 +6,7 @@
 .best__title {
   color: $gray;
   text-align: center;
+  margin-bottom: 0.4em;
 }
 
 .best__list {
@@ -39,7 +40,7 @@
   }
 }
 .best__img {
-  margin-bottom: 1.5%;
+  margin-bottom: 8%;
   @include phones {
     margin: 0;
   }
@@ -56,5 +57,5 @@
 .best__desc-title {
   font-family: 'lifehack';
   font-size: 1.5rem;
-  padding-bottom: 1.4%;
+  padding-bottom: 3.4%;
 }
