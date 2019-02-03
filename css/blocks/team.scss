@@ -103,6 +103,10 @@
 .team__desc {
   font-family: 'ubuntu';
   font-size: 0.875rem;
+  width: 47%;
+  @include tablets {
+    width: 75%;
+  }
 }
 
 .team__desc-name {
@@ -112,10 +116,5 @@
 
 .team__desc-text {
   font-weight: 300;
-  width: 56%;
   line-height: 1.65em;
-  @include tablets {
-    margin: 0 auto;
-    width: 75%;
-  }
 }
