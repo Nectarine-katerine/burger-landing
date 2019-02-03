@@ -838,12 +838,12 @@ img {
     margin-bottom: 0; }
     @media screen and (max-width: 768px) {
       .form__row:last-child {
-        margin-bottom: 1.25rem; } }
+        margin-bottom: 1rem; } }
   @media screen and (max-width: 480px) {
     .form__row {
-      margin-bottom: 1.625rem; }
+      margin-bottom: 0.9rem; }
       .form__row:last-child {
-        margin-bottom: 1.625rem; } }
+        margin-bottom: 0.9rem; } }
 
 .form__block {
   margin-right: 4.5%;
@@ -889,6 +889,17 @@ img {
   align-items: center;
   margin-right: 0;
   cursor: pointer; }
+  @media screen and (max-width: 480px) {
+    .form__block_controlls {
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center; } }
+
+@media screen and (max-width: 480px) {
+  .form__row_btns {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center; } }
 
 .form__radio, .form__checkbox {
   display: none; }
