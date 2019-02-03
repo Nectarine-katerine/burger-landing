@@ -1,0 +1,17 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.9% 0.2% 0 0;
+
+}
+.header__btns {
+  display: flex;
+  align-items: center;
+}
+.header__button {
+  margin-left: 0.9375rem;
+  @include tablets {
+    margin: 0 0.9375rem;
+  }
+}
