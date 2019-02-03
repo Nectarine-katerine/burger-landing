@@ -22,16 +22,16 @@
 .form__row {
   display: flex;
   margin-bottom: 1.25rem;
-  &:last-child {
+    &:last-child {
     margin-bottom: 0;
     @include tablets {
-      margin-bottom: 1.25rem;
+      margin-bottom: 1rem;
     }
   }
   @include phones {
-    margin-bottom: 1.625rem;
+    margin-bottom: 0.9rem;
     &:last-child {
-      margin-bottom: 1.625rem;
+      margin-bottom: 0.9rem;
     }
   }
 }
@@ -66,12 +66,19 @@
   resize: vertical;
   min-height: 6.6875rem
 }
-
 .form__block_controlls {
   display: flex;
   align-items: center;
   margin-right: 0;
   cursor: pointer;
+  @include phones {
+   justify-content: center;
+  }
+}
+.form__row_btns {
+  @include phones {
+    justify-content: center;
+   }
 }
 
 .form__radio, .form__checkbox {
