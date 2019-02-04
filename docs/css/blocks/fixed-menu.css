@@ -1,5 +1,0 @@
-.fixed-menu { position: fixed; top: 77px; right: 172px; }
-
-.fixed-menu_link { display: block; width: 6px; height: 6px; border-radius: 50%; background-color: #fff; margin-top: 15px; position: relative; }
-
-.fixed-menu_item:hover .fixed-menu_link::after, .fixed-menu_item_active .fixed-menu_link::after { content: ""; width: 16px; height: 16px; border-radius: 50%; border: 1px solid #fff; position: absolute; top: 50%; left: 50%; -webkit-transform: translate(-50%, -50%); transform: translate(-50%, -50%); }

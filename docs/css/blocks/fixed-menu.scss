@@ -1,7 +1,11 @@
 .fixed-menu {
   position: fixed;
-  top: 77px;
-  right: 172px;
+  top: 15.4%;
+  right: 15.1%;
+
+  @include tablets {
+    display: none;
+  }
 }
 
 .fixed-menu_link {
