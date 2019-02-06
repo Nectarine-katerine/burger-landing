@@ -209,7 +209,7 @@ img {
       text-align: center;
       font-size: 3.8rem;
       margin-bottom: 0;
-      line-height: 0.6em; } }
+      line-height: 0.9em; } }
 
 .hero__desc {
   padding-bottom: 24%; }
@@ -219,7 +219,7 @@ img {
       text-align: center; } }
   @media screen and (max-width: 480px) {
     .hero__desc {
-      font-size: 2.375rem; } }
+      font-size: 3.375rem; } }
 
 .hero__picture {
   width: 70;
@@ -626,13 +626,22 @@ img {
   overflow: hidden;
   font-size: 0.875rem;
   font-weight: 300; }
+  @media screen and (max-width: 480px) {
+    .carte__desc {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column; } }
 
 .carte__text {
   padding: 10% 8%;
   line-height: 1.7em; }
   @media screen and (max-width: 480px) {
     .carte__text {
-      padding: 5% 3.5%; } }
+      padding: 1% 7%; } }
 
 .js-carte__item {
   width: 47%; }
