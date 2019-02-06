@@ -1086,7 +1086,8 @@ img {
   margin-top: 3%;
   margin-right: 2%;
   width: 1.539rem;
-  height: 1.539rem; }
+  height: 1.539rem;
+  cursor: pointer; }
   .close:before, .close::after {
     position: absolute;
     left: 50%;
