@@ -1,4 +1,7 @@
 .close {
+  display: none; 
+  @include tablets {
+    display: block;
   align-self: flex-end;
   position: relative;
   margin-top: 3%;
@@ -20,13 +23,9 @@
 &::after {
   transform: rotate(-45deg);
 }
-@include tablets {
-  display: none;
-}
 }
 
+}
 .close__menu {
-  @include tablets {
-    display: block;
-  }
+  
 }
