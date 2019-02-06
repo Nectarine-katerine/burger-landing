@@ -1,15 +1,30 @@
 .menu {
   @include tablets {
-    display: none;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: $gray;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
 }
 .menu__list {
   display: flex;
   align-items: center;
+  @include tablets {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 }
 .menu__item {
   display: flex;
   align-items: center;
+  
   &:last-child {
     &:after {
       display: none;
@@ -23,6 +38,15 @@
     border-radius: 50%;
     background: #fff;   
     margin: 0 16px;
+    @include tablets {
+      margin: 20px 0;
+    }
+  }
+  @include tablets {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    // margin-bottom: 20px;
   }
 }
 

@@ -20,4 +20,13 @@
 &::after {
   transform: rotate(-45deg);
 }
+@include tablets {
+  display: none;
+}
+}
+
+.close__menu {
+  @include tablets {
+    display: block;
+  }
 }
