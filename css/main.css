@@ -438,6 +438,22 @@ img {
   width: 1.8125rem;
   height: 0.875rem; }
 
+.arrow__left-icon {
+  fill: #fff;
+  width: 1.8125rem;
+  height: 0.875rem;
+  -webkit-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg); }
+
+.arrow__right-icon {
+  fill: #fff;
+  width: 1.8125rem;
+  height: 0.875rem;
+  -webkit-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  transform: rotate(-90deg); }
+
 .best {
   background: url("../img/bg_best.png") center center no-repeat;
   background-size: cover; }
@@ -1203,3 +1219,17 @@ img {
         -webkit-transform: rotate(-45deg);
         -ms-transform: rotate(-45deg);
         transform: rotate(-45deg); } }
+
+.slider {
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#f9b43b), color-stop(48%, #eb8c38), color-stop(74%, #f9b43b), to(#f9b43b));
+  background-image: -webkit-linear-gradient(bottom, #f9b43b 0%, #eb8c38 48%, #f9b43b 74%, #f9b43b 100%);
+  background-image: -o-linear-gradient(bottom, #f9b43b 0%, #eb8c38 48%, #f9b43b 74%, #f9b43b 100%);
+  background-image: linear-gradient(to top, #f9b43b 0%, #eb8c38 48%, #f9b43b 74%, #f9b43b 100%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.slider__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
