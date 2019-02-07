@@ -42,14 +42,6 @@ html,
 body {
   height: 100%; }
 
-@media screen and (max-width: 768px) {
-  html {
-    font-size: 0.9375rem; } }
-
-@media screen and (max-width: 480px) {
-  html {
-    font-size: 0.8125rem; } }
-
 body {
   margin: 0;
   font-family: 'ubuntu';
@@ -76,12 +68,6 @@ body {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column; }
-
-ul {
-  margin: 0;
-  padding: 0; }
-  ul li {
-    list-style: none; }
 
 h1, h2, h3, h4, h5, h6 {
   margin: 0;
