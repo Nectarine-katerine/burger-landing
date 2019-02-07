@@ -164,6 +164,9 @@ img {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between; }
+  @media screen and (max-width: 768px) {
+    .hero__container {
+      width: 100%; } }
 
 .hero__content {
   display: -webkit-box;
@@ -209,7 +212,8 @@ img {
       text-align: center;
       font-size: 3.8rem;
       margin-bottom: 0;
-      line-height: 0.9em; } }
+      line-height: 0.9em;
+      width: 81%; } }
 
 .hero__desc {
   padding-bottom: 24%; }
@@ -255,10 +259,6 @@ img {
 
 @media screen and (max-width: 768px) {
   .menu {
-    display: none; } }
-
-@media screen and (max-width: 768px) {
-  .menu {
     position: absolute;
     top: 0;
     bottom: 0;
@@ -266,9 +266,7 @@ img {
     right: 0;
     background: #2f3234;
     height: 100vh;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+    display: none;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
@@ -338,6 +336,9 @@ img {
   font-size: 0.8125rem;
   font-weight: 500;
   text-transform: uppercase; }
+  @media screen and (max-width: 768px) {
+    .menu__link {
+      font-size: 1.6rem; } }
 
 .logo {
   z-index: 10; }
@@ -1155,10 +1156,9 @@ img {
       -ms-flex-item-align: end;
       align-self: flex-end;
       position: relative;
-      margin-top: 3%;
-      margin-right: 2%;
       width: 1.539rem;
       height: 1.539rem;
+      padding: 1.35rem;
       cursor: pointer; }
       .close:before, .close::after {
         position: absolute;
@@ -1176,6 +1176,31 @@ img {
         -webkit-transform: rotate(-45deg);
         -ms-transform: rotate(-45deg);
         transform: rotate(-45deg); } }
+
+@media screen and (max-width: 768px) {
+  .close__menu {
+    position: absolute;
+    top: 0.6rem;
+    right: 1.3rem;
+    padding: 1.06rem;
+    display: block;
+    cursor: pointer; }
+    .close__menu:before, .close__menu::after {
+      position: absolute;
+      left: 50%;
+      content: '';
+      height: 1.539rem;
+      width: 0.24rem;
+      background-color: #ffffff;
+      border-radius: 25%; }
+    .close__menu:before {
+      -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+      transform: rotate(45deg); }
+    .close__menu::after {
+      -webkit-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+      transform: rotate(-45deg); } }
 
 .slider {
   background-image: -webkit-gradient(linear, left bottom, left top, from(#f9b43b), color-stop(48%, #eb8c38), color-stop(74%, #f9b43b), to(#f9b43b));
