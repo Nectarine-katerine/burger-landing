@@ -164,9 +164,6 @@ img {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between; }
-  @media screen and (max-width: 768px) {
-    .hero__container {
-      width: 100%; } }
 
 .hero__content {
   display: -webkit-box;
@@ -1152,7 +1149,7 @@ img {
 
 .close {
   display: none; }
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 480px) {
     .close {
       display: block;
       -ms-flex-item-align: end;
@@ -1161,7 +1158,8 @@ img {
       margin-top: 3%;
       margin-right: 2%;
       width: 1.539rem;
-      height: 1.539rem; }
+      height: 1.539rem;
+      cursor: pointer; }
       .close:before, .close::after {
         position: absolute;
         left: 50%;
