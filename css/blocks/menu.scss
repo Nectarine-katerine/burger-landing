@@ -4,7 +4,7 @@
   }
  
 }
-.menu__full {
+.menu {
   @include tablets {
     position: absolute;
     top: 0;
@@ -16,19 +16,18 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    z-index: 0;
+    z-index: 5;
   }
 }
-.menu__full .menu__list {
+
+.menu__list {
+  display: flex;
+  align-items: center;
   @include tablets {
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
-}
-.menu__list {
-  display: flex;
-  align-items: center;
  
 }
 .menu__item {
@@ -65,44 +64,6 @@
   text-decoration: none;
   font-family: 'ubuntu';
   font-size: 0.8125rem;
-  font-weight: 500;
-  text-transform: uppercase;
-}
-
-.menu__full .menu__item {
-  display: flex;
-  align-items: center;
-  
-  &:last-child {
-    &:after {
-      display: none;
-    }
-  }
-  &:after {
-    content: "";
-    display: inline-block;
-    width: 4px;
-    height: 4px;
-    border-radius: 50%;
-    background: #fff;   
-    margin: 0 16px;
-    @include tablets {
-      margin: 20px 0;
-    }
-  }
-  @include tablets {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    // margin-bottom: 20px;
-  }
-}
-
-.menu__full .menu__link {
-  color: #fff;
-  text-decoration: none;
-  font-family: 'ubuntu';
-  font-size: 1.6rem;
   font-weight: 500;
   text-transform: uppercase;
 }

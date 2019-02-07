@@ -261,7 +261,7 @@ img {
     display: none; } }
 
 @media screen and (max-width: 768px) {
-  .menu__full {
+  .menu {
     position: absolute;
     top: 0;
     bottom: 0;
@@ -279,20 +279,7 @@ img {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
-    z-index: 0; } }
-
-@media screen and (max-width: 768px) {
-  .menu__full .menu__list {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center; } }
+    z-index: 5; } }
 
 .menu__list {
   display: -webkit-box;
@@ -301,6 +288,18 @@ img {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center; }
+  @media screen and (max-width: 768px) {
+    .menu__list {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center; } }
 
 .menu__item {
   display: -webkit-box;
@@ -340,47 +339,6 @@ img {
   text-decoration: none;
   font-family: 'ubuntu';
   font-size: 0.8125rem;
-  font-weight: 500;
-  text-transform: uppercase; }
-
-.menu__full .menu__item {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center; }
-  .menu__full .menu__item:last-child:after {
-    display: none; }
-  .menu__full .menu__item:after {
-    content: "";
-    display: inline-block;
-    width: 4px;
-    height: 4px;
-    border-radius: 50%;
-    background: #fff;
-    margin: 0 16px; }
-    @media screen and (max-width: 768px) {
-      .menu__full .menu__item:after {
-        margin: 20px 0; } }
-  @media screen and (max-width: 768px) {
-    .menu__full .menu__item {
-      -webkit-box-orient: vertical;
-      -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-      flex-direction: column;
-      -webkit-box-pack: center;
-      -ms-flex-pack: center;
-      justify-content: center;
-      -webkit-box-align: center;
-      -ms-flex-align: center;
-      align-items: center; } }
-
-.menu__full .menu__link {
-  color: #fff;
-  text-decoration: none;
-  font-family: 'ubuntu';
-  font-size: 1.6rem;
   font-weight: 500;
   text-transform: uppercase; }
 
@@ -1164,7 +1122,8 @@ img {
   cursor: pointer; }
   @media screen and (max-width: 768px) {
     .hamburger__menu {
-      padding: 1.35rem; } }
+      padding: 1.35rem;
+      z-index: 0; } }
 
 @media screen and (max-width: 768px) {
   .hamburger__menu-link {
