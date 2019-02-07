@@ -7,6 +7,7 @@
 .title__team {
   color: $yellow;
   margin-bottom: 1.6rem;
+  text-decoration: none;
 }
 
 .team__accordeon {
@@ -71,6 +72,7 @@
   height: 0;
   overflow: hidden;
   display: flex;
+  transition: height .3s;
   @include tablets {
     flex-direction: column;
     align-items: center;
@@ -87,9 +89,9 @@
     margin-bottom: 2%;
   }
 }
-
 .js-team__item .team__text {
   height: initial;
+  // transition: height .3s;
 }
 
 .js-team__item .team__title {

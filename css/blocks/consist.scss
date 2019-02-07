@@ -2,12 +2,21 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: rgba(227, 80, 40, 0.4);
+}
+.consist__link {
+  display: block;
+  text-decoration: none;
+  color: #fff;
+  background-color: rgba(227, 80, 40, 0.4);
   padding: 0.8125rem 1.25rem;
   border-radius: 3px;
   position: absolute;
-  top: -19%;
+  top: 8%;
   left: 0;
+}
+.consist__icon {
+  width: 2.875rem;
+  height: 2.75rem;
 }
 .consist__text {
   font-family: 'gagalin';
@@ -15,12 +24,8 @@
   font-weight: 400;
   text-transform: uppercase;
 }
-.consist__link {
-  text-decoration: none;
-  color: #fff;
+
+.consist__list {
+  display: none;
 }
 
-.consist__icon {
-  width: 2.875rem;
-  height: 2.75rem;
-}
