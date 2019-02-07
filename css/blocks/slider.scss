@@ -5,26 +5,6 @@
   justify-content: center;
 }
 
-.consist {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background: $orange;
-  padding: 0.8125rem 1.25rem;
-  border-radius: 3px;
-  position: absolute;
-  top: -19%;
-  left: 0;
-}
-
-.consist__text,
-.calorie__text {
-  font-family: 'gagalin';
-  font-size: 0.875rem;
-  font-weight: 400;
-  text-transform: uppercase;
-}
-
 .slider__title {
   margin-bottom: 1%;
   line-height: 1em;
@@ -63,20 +43,4 @@
 
 .slider__price-title-text {
   font-size: 2.5rem;
-}
-
-.consist__icon {
-  width: 2.875rem;
-  height: 2.75rem;
-}
-
-.calorie {
-  position: absolute;
-  left: 0;
-  bottom: 0;
-}
-
-.calorie__icon {
-  width: 3.75rem;
-  height: 3.75rem;
 }

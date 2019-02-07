@@ -394,6 +394,9 @@ img {
   width: 1.8125rem;
   height: 0.875rem; }
 
+.arrow__left {
+  margin-right: 2.5%; }
+
 .arrow__left-icon {
   fill: #fff;
   width: 1.8125rem;
@@ -1217,31 +1220,6 @@ img {
   -ms-flex-pack: center;
   justify-content: center; }
 
-.consist {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  background: #e35028;
-  padding: 0.8125rem 1.25rem;
-  border-radius: 3px;
-  position: absolute;
-  top: -19%;
-  left: 0; }
-
-.consist__text,
-.calorie__text {
-  font-family: 'gagalin';
-  font-size: 0.875rem;
-  font-weight: 400;
-  text-transform: uppercase; }
-
 .slider__title {
   margin-bottom: 1%;
   line-height: 1em; }
@@ -1279,6 +1257,34 @@ img {
 .slider__price-title-text {
   font-size: 2.5rem; }
 
+.consist {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background: rgba(227, 80, 40, 0.4);
+  padding: 0.8125rem 1.25rem;
+  border-radius: 3px;
+  position: absolute;
+  top: -19%;
+  left: 0; }
+
+.consist__text {
+  font-family: 'gagalin';
+  font-size: 0.875rem;
+  font-weight: 400;
+  text-transform: uppercase; }
+
+.consist__link {
+  text-decoration: none;
+  color: #fff; }
+
 .consist__icon {
   width: 2.875rem;
   height: 2.75rem; }
@@ -1288,6 +1294,26 @@ img {
   left: 0;
   bottom: 0; }
 
+.calorie__link {
+  text-decoration: none;
+  position: relative; }
+
 .calorie__icon {
   width: 3.75rem;
   height: 3.75rem; }
+
+.calorie__text {
+  position: absolute;
+  top: -97%;
+  left: 22%;
+  text-align: center;
+  color: #fff;
+  font-family: 'gagalin';
+  font-size: 1.3125rem;
+  font-weight: 400;
+  text-transform: uppercase; }
+
+.calorie__text-desc {
+  display: block;
+  padding-top: 0.2rem;
+  font-size: 0.875rem; }

@@ -1,0 +1,26 @@
+.consist {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: rgba(227, 80, 40, 0.4);
+  padding: 0.8125rem 1.25rem;
+  border-radius: 3px;
+  position: absolute;
+  top: -19%;
+  left: 0;
+}
+.consist__text {
+  font-family: 'gagalin';
+  font-size: 0.875rem;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+.consist__link {
+  text-decoration: none;
+  color: #fff;
+}
+
+.consist__icon {
+  width: 2.875rem;
+  height: 2.75rem;
+}
