@@ -12,11 +12,11 @@ closeMenu.addEventListener('click', function () {
 
 //аккордеон
 // js-team__item
-const items = document.querySelectorAll('.team__item');
+const teamItems = document.querySelectorAll('.team__item');
 
-for (item of items) {
+for (eachItem of teamItems) {
 
-  item.addEventListener('click', function () {
+  eachItem.addEventListener('click', function () {
     const curItem = event.currentTarget;
     const teamText = curItem.querySelector('.team__text');
     const textBlock = teamText.firstElementChild;
@@ -28,7 +28,7 @@ for (item of items) {
       teamText.style.height = 0;
 
     } else {
-        Array.from(items).forEach(function(element) {
+        Array.from(teamItems).forEach(function(element) {
         element.classList.remove('js-team__item');
         element.querySelector('.team__text').style.height = 0;
       });
