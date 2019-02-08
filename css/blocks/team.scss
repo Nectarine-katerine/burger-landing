@@ -68,7 +68,7 @@
   }
 }
 
-.team__text {
+.team__text-appear {
   height: 0;
   overflow: hidden;
   display: flex;
@@ -83,15 +83,19 @@
   width: 7.25rem;
   height: 7.25rem;
   overflow: hidden;
-  background-repeat: 50%;
+  border-radius: 50%;
   margin: 0 3.9%;
   @include tablets {
     margin-bottom: 2%;
+
   }
 }
-.js-team__item .team__text {
-  height: initial;
-  // transition: height .3s;
+// .js-team__item .team__text {
+//   height: 200px;
+// }
+.js-team__item .team__text-appear {
+ height: initial;
+  transition: height .3s;
 }
 
 .js-team__item .team__title {

@@ -1,7 +1,17 @@
 .calorie {
   position: absolute;
   left: 0;
-  bottom: 15%;
+  bottom: 18%;
+  @include tablets {
+    position: absolute;
+    top: 15%;
+    left: 73%;
+  }
+  @include phones {
+    position: absolute;
+    top: 2%;
+    left: 82%;
+  }
 }
 .calorie__link {
   text-decoration: none;
@@ -10,6 +20,7 @@
 .calorie__icon {
   width: 3.75rem;
   height: 3.75rem;
+  fill: #fff;
 }
 .calorie__text {
   position: absolute;

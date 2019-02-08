@@ -53,3 +53,33 @@
     }
   }
 }
+
+.close__consist {
+  @include tablets {
+    position: absolute;
+    top: 0.6rem;
+    right: 1.3rem;
+    padding: 1.06rem;
+    display: block;
+    cursor: pointer;
+    &:before,
+    &::after {
+      position: absolute;
+      left: 50%;
+      content: '';
+      height: 1.539rem;
+      width: 0.24rem;
+      background-color: $red;
+      border-radius: 25%;
+    }
+    &:before {
+      transform: rotate(45deg);
+    }
+    &::after {
+      transform: rotate(-45deg);
+    }
+  }
+  @include phones {
+    top: 0;
+  }
+}
