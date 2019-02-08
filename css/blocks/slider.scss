@@ -39,7 +39,12 @@
     width: 80%;
   }
 }
-
+.slider__img {
+  width: 48%;
+  @include tablets {
+    width: 77%;
+  }
+}
 .slider__content {
   display: flex;
   align-items: center;

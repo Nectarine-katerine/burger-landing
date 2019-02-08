@@ -1304,6 +1304,12 @@ img {
     .slider__text {
       width: 80%; } }
 
+.slider__img {
+  width: 48%; }
+  @media screen and (max-width: 768px) {
+    .slider__img {
+      width: 77%; } }
+
 .slider__content {
   display: -webkit-box;
   display: -ms-flexbox;
