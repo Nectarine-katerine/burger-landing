@@ -14,3 +14,23 @@ margin-bottom: 2.5%;
   width: 1.8125rem;
   height: 0.875rem;
 }
+.arrow__left {
+  margin-right: 2.5%;
+  cursor: pointer;
+}
+.arrow__right {
+  cursor: pointer;
+}
+.arrow__left-icon {
+  fill: #fff;
+  width: 1.8125rem;
+  height: 0.875rem;
+  transform: rotate(90deg);
+}
+
+.arrow__right-icon {
+  fill: #fff;
+  width: 1.8125rem;
+  height: 0.875rem;
+  transform: rotate(-90deg);
+}

@@ -2,6 +2,8 @@
 $gray: #2f3234;
 $red: #e45028;
 $yellow: #f9b43b;
+$orange: #e35028;
+$green: #8BC03F;
 
 // resolutions
 $tablets: 768px;
@@ -41,3 +43,6 @@ $phones: 480px;
 @import './blocks/address.scss';
 @import './blocks/hamburger-menu.scss';
 @import './blocks/close.scss';
+@import './blocks/slider.scss';
+@import './blocks/consist.scss';
+@import './blocks/calorie.scss';

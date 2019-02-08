@@ -1,0 +1,104 @@
+.consist {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  top: 4rem;
+  left: 0;
+  @include tablets {
+    top: 15%;
+    left: 15%;
+  }
+  @include phones {
+    top: 2%;
+    left: 0;
+  }
+}
+
+.consist__link {
+  display: block;
+  text-decoration: none;
+  color: #fff;
+  background-color: rgba(227, 80, 40, 0.4);
+  padding: 0.8125rem 1.25rem;
+  border-radius: 3px;
+  
+}
+.consist__icon {
+  width: 2.875rem;
+  height: 2.75rem;
+  fill: #fff;
+}
+.consist__text {
+  font-family: 'gagalin';
+  font-size: 0.875rem;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.consist__list {
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(250, 250, 250, .9);
+  border-radius: 5px;
+  position: absolute;
+  top: 0;
+  left: 100%;
+  padding: 1.125rem 1.375rem;
+  z-index: 15;
+@include phones {
+  padding: 0.4rem;
+}
+}
+.consist__ingredien {
+  display: flex;
+  font-family: 'ubuntu';
+  font-size: 0.875rem;
+  color: $gray;
+  align-items: center;
+  font-weight: 500;
+  justify-content: flex-start;
+}
+.consist__item {
+  display: flex;
+  justify-content: space-between;
+}
+.consist__gramm {
+  display: flex;
+  font-family: 'ubuntu';
+  font-size: 0.875rem;
+  color: $gray;
+font-weight: 300;
+align-items: center;
+white-space: nowrap;
+@include tablets {
+  margin-right: 3rem;
+}
+@include phones {
+  margin-right: 2.5rem;
+}
+}
+.consist__ingredien-icon {
+  width: 2.875rem;
+  height: 2.75rem;
+  
+}
+
+.consist__ingredient-name {
+  margin-left: 1.5625rem;
+  margin-right: 4rem;
+  @include phones {
+    margin-right: 2rem;
+  }
+}
+
+.consist__ingredien-icon_beef, .consist__ingredien-icon_sauce {
+  fill: $red;
+}
+
+.consist__ingredien-icon_buns, .consist__ingredien-icon_cheese {
+  fill: $yellow;
+}
+.consist__ingredien-icon_salad, .consist__ingredien-icon_cucumber {
+  fill: $green;
+}
