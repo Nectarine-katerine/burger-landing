@@ -1,14 +1,21 @@
 const menu=document.querySelector('.menu');
 const hamburgerMenu=document.querySelector('.hamburger__menu');
+const menuLink=document.querySelectorAll('.menu__link');
 
 hamburgerMenu.addEventListener('click', function () {
-  menu.style.display='flex';
+  menu.style.left=0;
 });
 
 const closeMenu=document.querySelector('.close__menu');
 closeMenu.addEventListener('click', function () {
-  menu.style.display='none';
+  menu.style.left='99999px';
 });
+
+for(eachLink of menuLink) {
+eachLink.addEventListener('click', function() {
+  menu.style.left='99999px';
+});
+};
 
 //аккордеон
 // js-team__item
