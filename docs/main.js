@@ -21,6 +21,7 @@ logo.addEventListener('click', function () {
 for(eachLink of menuLink) {
 eachLink.addEventListener('click', function() {
   menu.style.left='9999px';
+  document.body.style.overflow='visible';
 });
 };
 
