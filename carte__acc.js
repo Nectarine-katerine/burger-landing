@@ -12,17 +12,16 @@ for (eachItem of carteItems) {
 
       curItem.classList.remove('js-carte__item');
       carteDesc.style.width=0;
+      
+    } else {
+      Array.from(carteItems).forEach(function (element) {
+        element.classList.remove('js-carte__item');
+        element.querySelector('.carte__appear').style.width=0;
+      });
+    }
 
-    } 
-    // else {
-    //     Array.from(carteItems).forEach(function(element) {
-    //     element.classList.remove('js-carte__item');
-    //     element.querySelector('.carte__appear').style.width = 0;
-    //   });
-    // }
+    curItem.classList.add('js-carte__item');
+    carteDesc.style.width = `${reqWidth}px`;
 
-      curItem.classList.add('js-carte__item');
-      carteDesc.style.width=`${reqWidth}px`;
-  
   });
 }
