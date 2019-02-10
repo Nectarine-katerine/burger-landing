@@ -671,7 +671,8 @@ img {
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 2% 1%; }
+  padding: 2% 1%;
+  cursor: pointer; }
   .carte__title::before {
     content: "";
     position: absolute;
@@ -710,9 +711,7 @@ img {
 
 .carte__desc {
   width: 0;
-  overflow: hidden;
-  font-size: 0.875rem;
-  font-weight: 300; }
+  overflow: hidden; }
   @media screen and (max-width: 480px) {
     .carte__desc {
       display: -webkit-box;
@@ -722,6 +721,17 @@ img {
       -webkit-box-direction: normal;
       -ms-flex-direction: column;
       flex-direction: column; } }
+
+.carte__appear {
+  font-size: 0.875rem;
+  font-weight: 300;
+  height: 100%;
+  background: #2f3234;
+  opacity: .93;
+  line-height: 1.42em; }
+  @media screen and (max-width: 480px) {
+    .carte__appear {
+      opacity: .98; } }
 
 .carte__text {
   padding: 10% 8%;
@@ -743,13 +753,10 @@ img {
       z-index: 10; } }
 
 .js-carte__item .carte__desc {
-  width: 100%;
-  background: #2f3234;
-  opacity: .93;
-  line-height: 1.42em; }
-  @media screen and (max-width: 480px) {
-    .js-carte__item .carte__desc {
-      opacity: .98; } }
+  width: initial; }
+
+.js-carte__item .carte__appear {
+  width: 100%; }
 
 .js-carte__item .carte__title {
   color: #f9b43b; }
