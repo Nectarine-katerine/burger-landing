@@ -55,11 +55,7 @@
 }
 
 .close__consist {
-  @include tablets {
-    position: absolute;
-    top: 0.6rem;
-    right: 1.3rem;
-    padding: 1.06rem;
+  display: block;
     display: block;
     cursor: pointer;
     &:before,
@@ -79,7 +75,3 @@
       transform: rotate(-45deg);
     }
   }
-  @include phones {
-    top: 0;
-  }
-}

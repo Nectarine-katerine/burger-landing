@@ -34,16 +34,51 @@
 
 .slider__text {
   width: 52%;
-  // line-height: 1.52em;
   @include tablets {
     width: 80%;
+  }
+  @include phones {
+    width: 100%;
   }
 }
 .slider__img {
   width: 48%;
+  position: relative;
   @include tablets {
     width: 77%;
   }
+}
+
+.slider__calorie {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  @include tablets {
+    left: 85%;
+    top: 0;
+  }
+}
+
+.slider__calorie-icon {
+  width: 3.75rem;
+  height: 3.75rem;
+  fill: #fff;
+}
+.slider__calorie-text {
+  position: absolute;
+  top: 1.8rem;
+  left: 0.8rem;
+  text-align: center;
+  color: #fff;
+  font-family: 'gagalin';
+  font-size: 1.3125rem;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+.slider__calorie-text-desc {
+  display: block;
+  padding-top: 0.2rem;
+  font-size: 0.875rem;
 }
 .slider__content {
   display: flex;
@@ -56,12 +91,7 @@
    align-items: center;
    justify-content: center;
  }
-
 }
-
-
-
-
 .slider__desc {
   font-size: 0.875rem;
   font-weight: 300;
@@ -86,7 +116,6 @@
     font-size: 2.846rem
   }
 }
-
 .slider__price-title-text {
   font-size: 1.9rem;
   @include phones {

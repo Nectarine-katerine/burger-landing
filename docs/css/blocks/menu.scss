@@ -4,7 +4,7 @@
     position: fixed;
     top: 0;
     bottom: 0;
-    left: 99999px;
+    left: 9999px;
     right: 0;
     background: $gray;
     height: 100%;
@@ -12,7 +12,7 @@
     flex-direction: column;
     justify-content: center;
     z-index: 25;
-    transition: left .9s;
+    transition: left .2s;
   }
 }
 
