@@ -11,7 +11,7 @@ for (eachItem of carteItems) {
     if (curItem.classList.contains('js-carte__item')) {//открыт
 
       curItem.classList.remove('js-carte__item');
-      carteDesc.style.width=git0;
+      carteDesc.style.width=0;
 
     } 
     // else {

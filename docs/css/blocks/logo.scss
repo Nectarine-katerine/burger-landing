@@ -2,3 +2,12 @@
   width: 5.75rem;
   height: 4.3125rem;
 }
+
+.logo__full-menu{
+  display: none;
+  @include tablets {
+    display: block;
+    position: absolute; 
+    top: 0.2rem;
+  }
+}

@@ -7,6 +7,7 @@
 .title__team {
   color: $yellow;
   margin-bottom: 1.6rem;
+  text-decoration: none;
 }
 
 .team__accordeon {
@@ -66,11 +67,14 @@
     justify-content: center;
   }
 }
-
 .team__text {
   height: 0;
   overflow: hidden;
-  display: flex;
+}
+
+.team__text-appear {
+    display: flex;
+  transition: height .3s;
   @include tablets {
     flex-direction: column;
     align-items: center;
@@ -81,15 +85,19 @@
   width: 7.25rem;
   height: 7.25rem;
   overflow: hidden;
-  background-repeat: 50%;
+  border-radius: 50%;
   margin: 0 3.9%;
   @include tablets {
     margin-bottom: 2%;
+
   }
 }
-
+// .js-team__item .team__text {
+//   height: 200px;
+// }
 .js-team__item .team__text {
-  height: initial;
+ height: initial;
+  transition: height .4s;
 }
 
 .js-team__item .team__title {
