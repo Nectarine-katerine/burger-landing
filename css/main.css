@@ -712,18 +712,9 @@ img {
 .carte__desc {
   width: 0;
   overflow: hidden; }
-  @media screen and (max-width: 480px) {
-    .carte__desc {
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-orient: vertical;
-      -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-      flex-direction: column; } }
 
 .carte__appear {
-  width: 0;
+  width: 100%;
   height: 100%;
   -webkit-transition: width .3s;
   -o-transition: width .3s;
@@ -735,7 +726,14 @@ img {
   line-height: 1.42em; }
   @media screen and (max-width: 480px) {
     .carte__appear {
-      opacity: .98; } }
+      opacity: .98;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column; } }
 
 .carte__text {
   padding: 10% 8%;
