@@ -723,9 +723,13 @@ img {
       flex-direction: column; } }
 
 .carte__appear {
+  width: 0;
+  height: 100%;
+  -webkit-transition: width .3s;
+  -o-transition: width .3s;
+  transition: width .3s;
   font-size: 0.875rem;
   font-weight: 300;
-  height: 100%;
   background: #2f3234;
   opacity: .93;
   line-height: 1.42em; }
@@ -753,10 +757,10 @@ img {
       z-index: 10; } }
 
 .js-carte__item .carte__desc {
-  width: initial; }
-
-.js-carte__item .carte__appear {
-  width: 100%; }
+  width: 100%;
+  -webkit-transition: width .3s;
+  -o-transition: width .3s;
+  transition: width .3s; }
 
 .js-carte__item .carte__title {
   color: #f9b43b; }

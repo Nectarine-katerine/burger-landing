@@ -81,15 +81,18 @@
   }
 }
 .carte__appear {
+  width: 0;
+  height: 100%;
+  transition: width .3s;
   font-size: 0.875rem;
   font-weight: 300;
-  height: 100%;
   background: $gray;
   opacity: .93;
   line-height: 1.42em;
   @include phones {
     opacity: .98;
   }
+  
 }
 .carte__text {
   padding: 10% 8%;
@@ -111,10 +114,8 @@
   }
 }
 .js-carte__item .carte__desc {
-  width: initial;
-}
-.js-carte__item .carte__appear {
   width: 100%;
+  transition: width .3s;
 }
 
 .js-carte__item .carte__title {
