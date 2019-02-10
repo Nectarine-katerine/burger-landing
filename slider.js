@@ -4,8 +4,8 @@ const arrowRight=document.querySelector('.arrow__right');
 const item=document.querySelector('.slider__list');
 const slidesInView=1;
 
-const step=items.firstElementChild.getBoundingClientRect().width;
-const maxRight=(items.children.length-1)*step;
+const step=item.firstElementChild.getBoundingClientRect().width;
+const maxRight=(item.children.length-1)*step;
 const minRight=0;
 let currentRight = 0;
 

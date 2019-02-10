@@ -67,11 +67,13 @@
     justify-content: center;
   }
 }
-
-.team__text-appear {
+.team__text {
   height: 0;
   overflow: hidden;
-  display: flex;
+}
+
+.team__text-appear {
+    display: flex;
   transition: height .3s;
   @include tablets {
     flex-direction: column;
@@ -93,9 +95,9 @@
 // .js-team__item .team__text {
 //   height: 200px;
 // }
-.js-team__item .team__text-appear {
+.js-team__item .team__text {
  height: initial;
-  transition: height .3s;
+  transition: height .4s;
 }
 
 .js-team__item .team__title {

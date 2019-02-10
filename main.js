@@ -1,19 +1,26 @@
 const menu=document.querySelector('.menu');
 const hamburgerMenu=document.querySelector('.hamburger__menu');
 const menuLink=document.querySelectorAll('.menu__link');
+const closeMenu=document.querySelector('.close__menu');
+const logo=document.querySelector('.logo__full-menu');
 
 hamburgerMenu.addEventListener('click', function () {
   menu.style.left=0;
+  document.body.style.overflow='hidden';
 });
 
-const closeMenu=document.querySelector('.close__menu');
 closeMenu.addEventListener('click', function () {
-  menu.style.left='99999px';
+  menu.style.left='';
+  document.body.style.overflow='visible';
+});
+logo.addEventListener('click', function () {
+  menu.style.left='';
+  document.body.style.overflow='visible';
 });
 
 for(eachLink of menuLink) {
 eachLink.addEventListener('click', function() {
-  menu.style.left='99999px';
+  menu.style.left='9999px';
 });
 };
 
