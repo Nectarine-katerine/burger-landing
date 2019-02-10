@@ -11,7 +11,7 @@ const minRight=0;
 
 let currentRight = 0;
 
-arrowRight.addEventListener('click', function() {
+arrowRight.addEventListener('click', function(event) {
   event.preventDefault();
 if (currentRight < maxRight){
   currentRight += step;
@@ -22,7 +22,7 @@ if (currentRight < maxRight){
 }
 });
 
-arrowLeft.addEventListener('click', function() {
+arrowLeft.addEventListener('click', function(event) {
   event.preventDefault();
   if (currentRight > minRight){
     currentRight -= step;
