@@ -28,7 +28,7 @@ arrowLeft.addEventListener('click', function(event) {
     currentRight -= step;
     item.style.right=`${currentRight}px`;
   } else {
-  currentRight=maxLeft;
+  currentRight=maxRight;
   items.style.right=maxRight;
   }
   });

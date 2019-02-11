@@ -18,7 +18,7 @@ for (var eachItem of carteItems) {
       });
 
     curItem.classList.add('js-carte__item');
-    carteDesc.style.width = 'initial';
+    carteDesc.style.width = '100%';
     }
   });
 }
