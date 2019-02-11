@@ -41,7 +41,10 @@
     height: 4px;
     border-radius: 50%;
     background: #fff;   
-    margin: 0 16px;
+    margin: 0 1rem;
+    @include laptop {
+      margin: 0 0.5rem;
+    }
     @include tablets {
       margin: 20px 0;
     }
@@ -54,13 +57,17 @@
 }
 
 .menu__link {
+  font-size: 12px;
   color: #fff;
   text-decoration: none;
   font-family: 'ubuntu';
   font-size: 0.8125rem;
   font-weight: 500;
   text-transform: uppercase;
-
+  white-space: nowrap;
+  @include laptop {
+    font-size: 0.68rem;
+  }
   @include tablets {
     font-size: 1.6rem;
   }
