@@ -5,51 +5,22 @@
   display: flex;
   justify-content: flex-end;
 }
-
+.team__container {
+  width: 50%;
+  position: absolute;
+  background-color: $gray;
+  top: 0;
+  opacity: .93;
+  padding: 7% 9%;
+@include tablets {
+  width: 100%;
+  text-align: center;
+}  
+}
 .title__team {
   color: $yellow;
-  margin-bottom: 0;
   text-decoration: none;
-  @include tablets {
-    text-align: center;
-  }
-  
 }
-.team__accordeon {
-  position: relative;
-  background-color: $gray;
-  opacity: .93;
-  width: 50%;
-  padding: 7% 9%;
-  padding-bottom: 2.5%;
-  @include tablets {
-    width: 100%;
-    padding-top: 5%;
-  }
-  @include phones {
-   padding-top: 15%;
-  }
-}
-.team__list {
-  position: absolute;
-  top: 15%;
-  left: 17%;
-  bottom: 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  @include tablets {
-    width: 100%;
-    top: 10%;
-    left: 0;
-    align-items: center;
-    padding: 0;
-  }
-  @include phones {
-    top: 13%;
-  }
-}
-
 .team__item {
   margin-bottom: 3%;
   &:last-child {
@@ -92,7 +63,6 @@
 
 .team__text-appear {
     display: flex;
-  transition: height .3s;
   @include tablets {
     flex-direction: column;
     align-items: center;
@@ -107,13 +77,11 @@
   margin: 0 3.9%;
   @include tablets {
     margin-bottom: 2%;
-
   }
 }
 
 .js-team__item .team__text {
- height: initial;
-  transition: height .4s;
+  transition: height .3s;
 }
 
 .js-team__item .team__title {
