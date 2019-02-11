@@ -318,7 +318,10 @@ img {
     height: 4px;
     border-radius: 50%;
     background: #fff;
-    margin: 0 16px; }
+    margin: 0 1rem; }
+    @media screen and (max-width: 924px) {
+      .menu__item:after {
+        margin: 0 0.5rem; } }
     @media screen and (max-width: 768px) {
       .menu__item:after {
         margin: 20px 0; } }
@@ -336,12 +339,17 @@ img {
       align-items: center; } }
 
 .menu__link {
+  font-size: 12px;
   color: #fff;
   text-decoration: none;
   font-family: 'ubuntu';
   font-size: 0.8125rem;
   font-weight: 500;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  white-space: nowrap; }
+  @media screen and (max-width: 924px) {
+    .menu__link {
+      font-size: 0.68rem; } }
   @media screen and (max-width: 768px) {
     .menu__link {
       font-size: 1.6rem; } }
@@ -671,7 +679,8 @@ img {
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 2% 1%; }
+  padding: 2% 1%;
+  cursor: pointer; }
   .carte__title::before {
     content: "";
     position: absolute;
@@ -710,11 +719,22 @@ img {
 
 .carte__desc {
   width: 0;
-  overflow: hidden;
+  overflow: hidden; }
+
+.carte__appear {
+  width: 100%;
+  height: 100%;
+  -webkit-transition: width .3s;
+  -o-transition: width .3s;
+  transition: width .3s;
   font-size: 0.875rem;
-  font-weight: 300; }
+  font-weight: 300;
+  background: #2f3234;
+  opacity: .93;
+  line-height: 1.42em; }
   @media screen and (max-width: 480px) {
-    .carte__desc {
+    .carte__appear {
+      opacity: .98;
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
@@ -744,12 +764,9 @@ img {
 
 .js-carte__item .carte__desc {
   width: 100%;
-  background: #2f3234;
-  opacity: .93;
-  line-height: 1.42em; }
-  @media screen and (max-width: 480px) {
-    .js-carte__item .carte__desc {
-      opacity: .98; } }
+  -webkit-transition: width .3s;
+  -o-transition: width .3s;
+  transition: width .3s; }
 
 .js-carte__item .carte__title {
   color: #f9b43b; }
