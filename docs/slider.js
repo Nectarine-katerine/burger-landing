@@ -29,6 +29,6 @@ arrowLeft.addEventListener('click', function(event) {
     item.style.right=`${currentRight}px`;
   } else {
   currentRight=maxRight;
-  items.style.right=maxRight;
+  items.style.right=maxRight + 'px';
   }
   });
