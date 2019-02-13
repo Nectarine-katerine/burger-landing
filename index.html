@@ -877,17 +877,21 @@
       <section class="section section_centered order" id="order">
         <div class="container">
           <h2 class="title order__title">Закажите доставку</h2>
-          <form action="#" class="form">
+          <form action="#" class="form" id="myForm">
             <div class="form__col">
               <div class="form__row">
                 <label class="form__block">
                   <div class="form__block-title">Имя</div>
-                  <input type="text" class="form__block-input">
+                  <input type="text" class="form__block-input" name="name" required>
+                  <div class="error"></div>
                 </label>
+                
                 <label class="form__block">
                   <div class="form__block-title">Телефон</div>
-                  <input type="text" class="form__block-input" id="phone" placeholder="89212264923">
+                  <input type="text" class="form__block-input" id="phone" placeholder="89212264923" name="phone" required>
+                  <div class="error"></div>
                 </label>
+               
               </div>
               <div class="form__row">
                 <label class="form__block">
@@ -918,7 +922,8 @@
               <div class="form__row">
                 <label class="form__block">
                   <div class="form__block-title">Комментарий</div>
-                  <textarea class="form__block-input form__block-input-textarea"></textarea>
+                  <textarea class="form__block-input form__block-input-textarea" name="comment"></textarea>
+                  <div class="error"></div>
                 </label>
               </div>
               <div class="form__row form__row_controlls">
@@ -941,7 +946,7 @@
                 </label>
               </div>
               <div class="form__row form__row_btns">
-                <button type="button" class="button">Заказать</button>
+                <button type="button" class="button" id="formButton">Заказать</button>
                 <button class="button button_bg_none" type="reset">Очистить</button>
               </div>
 
