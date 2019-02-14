@@ -257,6 +257,9 @@ img {
 .header__button {
   margin-left: 0.9375rem; }
 
+.header__button:hover {
+  background: #c1401e; }
+
 .menu {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -626,6 +629,9 @@ img {
 .reviews__text-button {
   background-color: #2f3234;
   margin-top: 8%; }
+
+.reviews__text-button:hover {
+  background-color: #1f2122; }
 
 .map {
   background-image: url("../img/map.png");
@@ -1320,7 +1326,8 @@ img {
 .slider__calorie {
   position: absolute;
   left: 0;
-  bottom: 0; }
+  bottom: 0;
+  opacity: .5; }
   @media screen and (max-width: 768px) {
     .slider__calorie {
       left: 85%;

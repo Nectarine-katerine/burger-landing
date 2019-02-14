@@ -87,7 +87,9 @@ formButton.addEventListener('click', function(event){
     } else if ((xhr.response.status == 0)) {
         modal.setContent('Отправить письмо не удалось, повторите запрос позже');
         modal.open();
-        // modal.close();
+        setTimeout(e=>{
+          modal.close();
+      }, 3000);
     }
     });
   }
