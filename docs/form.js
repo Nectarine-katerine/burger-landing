@@ -1,3 +1,4 @@
+// Ввод только цифр Телефон
 const phone = document.querySelector('#phone');
 
 phone.addEventListener('keydown', function() {
@@ -16,18 +17,85 @@ phone.addEventListener('keydown', function() {
   };
 });
 
+//модалка форма;
+const button=document.querySelector('#formButton');
+const template = document.querySelector("#modal-template").innerHTML;
+const wrapper = document.querySelector(".wrapper");
+const modal = createModal();
+
+function createModal() {
+  const container = document.createElement('div');
+  container.className = 'popup';
+  container.innerHTML = template;
+
+  const contentBlock = container.querySelector('.popup__content');
+
+  const closeBtn=container.querySelector('.popup__close');
+
+  closeBtn.addEventListener('click', e => {
+    wrapper.removeChild(container);
+  })
+
+  const overlay = container.querySelector('.overlay');
+  overlay.addEventListener('click', e => {
+    if (e.target === overlay) {
+      closeBtn.click();
+    }
+  })
+  return {
+    open(){
+      wrapper.appendChild(container);
+    },
+    close(){
+      closeBtn.click();
+    },
+    setContent(content){
+      contentBlock.innerHTML=content;
+    }
+  };
+}
+// валидация и отправка данных на сервер
+
 const myForm=document.querySelector('#myForm');
 const formButton=document.querySelector('#formButton');
-const error=document.querySelectorAll('.error');
+const clearBtn = myForm.querySelector('#reset');
 
 formButton.addEventListener('click', function(event){
   event.preventDefault();
   if (validateForm(myForm)) {
-    console.log('Всё ок!');
+    const name=myForm.elements.name.value;
+    const phone=myForm.elements.phone.value;
+    const comment=myForm.elements.comment.value;
+    const to='mymail@mail.ru';
+    var formData=new FormData();
+    formData.append('name', name);
+    formData.append('phone', phone);
+    formData.append('comment', comment);
+    formData.append('to', to);
+    const xhr=new XMLHttpRequest();
+    xhr.responseType='json';
+    xhr.open('POST', 'https://webdev-api.loftschool.com/sendmail');
+    xhr.send(formData);
+    xhr.addEventListener('load', e => {
+      if (xhr.response.status){
+            modal.setContent('Сообщение отправлено');
+            modal.open();
+            setTimeout(e=>{
+                modal.close();
+            }, 3000);
+            
+    } else if ((xhr.response.status == 0)) {
+        modal.setContent('Отправить письмо не удалось, повторите запрос позже');
+        modal.open();
+        setTimeout(e=>{
+          modal.close();
+      }, 3000);
+    }
+    });
   }
 });
 
-function validateForm(form) {
+function validateForm(myForm) {
   let valid = true;
 
   if(!validateField(myForm.elements.name)) {
@@ -43,15 +111,13 @@ function validateForm(form) {
 };
 
 function validateField(field) {
-  for (var eachError of error) {
-    if (field.checkValidity(true)) {
-      eachError.textContent = '';
-      return field.checkValidity();
-    } else if (!field.checkValidity(false)){
-      eachError.textContent = field.validationMessage;
-    }
-  }
-  // if (!field.checkValidity()) {
-  // error.textContent=field.validationMessage;
-  // return field.checkValidity();
+  if (!field.checkValidity()){
+    field.nextElementSibling.textContent = field.validationMessage;
+    return false;
 }
+else {
+    field.nextElementSibling.textContent = '';
+    return true;
+}
+}
+
