@@ -5,11 +5,13 @@ const closeMenu=document.querySelector('.close__menu');
 const logo=document.querySelector('.logo__full-menu');
 
 hamburgerMenu.addEventListener('click', function () {
+  event.preventDefault();
   menu.style.left=0;
   document.body.style.overflow='hidden';
 });
 
 closeMenu.addEventListener('click', function () {
+  event.preventDefault();
   menu.style.left='';
   document.body.style.overflow='visible';
 });
@@ -20,6 +22,7 @@ logo.addEventListener('click', function () {
 
 for(eachLink of menuLink) {
 eachLink.addEventListener('click', function() {
+  event.preventDefault();
   menu.style.left='9999px';
   document.body.style.overflow='visible';
 });

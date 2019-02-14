@@ -5,6 +5,7 @@ const modalR = createModal();
 
 for (eachBtn of reviewsBtn) {
   eachBtn.addEventListener('click', e => {
+    event.preventDefault();
     const paragraph = e.currentTarget.parentNode.childNodes[3].innerHTML;
     const headline = e.currentTarget.parentNode.firstElementChild.innerHTML;
     modalR.setContent(headline, paragraph);
@@ -26,6 +27,7 @@ function createModal() {
   const closeBtn=container.querySelector('.popup__close-reviews');
 
   closeBtn.addEventListener('click', e => {
+    event.preventDefault();
     wrapperR.removeChild(container);
   })
 

@@ -33,6 +33,7 @@ function createModal() {
   const closeBtn=container.querySelector('.popup__close');
 
   closeBtn.addEventListener('click', e => {
+    event.preventDefault();
     wrapper.removeChild(container);
   })
 
