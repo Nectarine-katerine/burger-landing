@@ -1,3 +1,4 @@
+// Ввод только цифр Телефон
 const phone = document.querySelector('#phone');
 
 phone.addEventListener('keydown', function() {
@@ -15,6 +16,45 @@ phone.addEventListener('keydown', function() {
     event.preventDefault();
   };
 });
+
+//модалка форма;
+const button=document.querySelector('#formButton');
+const template = document.querySelector("#modal-template").innerHTML;
+const wrapper = document.querySelector(".wrapper");
+const modal = createModal();
+
+function createModal() {
+  const container = document.createElement('div');
+  container.className = 'popup';
+  container.innerHTML = template;
+
+  const contentBlock = container.querySelector('.popup__content');
+
+  const closeBtn=container.querySelector('.popup__close');
+
+  closeBtn.addEventListener('click', e => {
+    wrapper.removeChild(container);
+  })
+
+  const overlay = container.querySelector('.overlay');
+  overlay.addEventListener('click', e => {
+    if (e.target === overlay) {
+      closeBtn.click();
+    }
+  })
+  return {
+    open(){
+      wrapper.appendChild(container);
+    },
+    close(){
+      closeBtn.click();
+    },
+    setContent(content){
+      contentBlock.innerHTML=content;
+    }
+  };
+}
+// валидация и отправка данных на сервер
 
 const myForm=document.querySelector('#myForm');
 const formButton=document.querySelector('#formButton');
@@ -38,19 +78,16 @@ formButton.addEventListener('click', function(event){
     xhr.send(formData);
     xhr.addEventListener('load', e => {
       if (xhr.response.status){
-        const response = 'сообщение отправлено';
-            modal.setContent('',response);
+            modal.setContent('Сообщение отправлено');
             modal.open();
             setTimeout(e=>{
-                clearBtn.click();
                 modal.close();
-            },2000);
+            }, 3000);
             
-    } else {
-        const rejected = 'сообщение отклонено';
-        modal.setContent('',rejected);
+    } else if ((xhr.response.status == 0)) {
+        modal.setContent('Отправить письмо не удалось, повторите запрос позже');
         modal.open();
-        clearBtn.click();
+        // modal.close();
     }
     });
   }
@@ -81,3 +118,4 @@ else {
     return true;
 }
 }
+
