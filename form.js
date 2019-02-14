@@ -18,16 +18,45 @@ phone.addEventListener('keydown', function() {
 
 const myForm=document.querySelector('#myForm');
 const formButton=document.querySelector('#formButton');
-const error=document.querySelectorAll('.error');
+const clearBtn = myForm.querySelector('#reset');
 
 formButton.addEventListener('click', function(event){
   event.preventDefault();
   if (validateForm(myForm)) {
-    console.log('Всё ок!');
+    const name=myForm.elements.name.value;
+    const phone=myForm.elements.phone.value;
+    const comment=myForm.elements.comment.value;
+    const to='mymail@mail.ru';
+    var formData=new FormData();
+    formData.append('name', name);
+    formData.append('phone', phone);
+    formData.append('comment', comment);
+    formData.append('to', to);
+    const xhr=new XMLHttpRequest();
+    xhr.responseType='json';
+    xhr.open('POST', 'https://webdev-api.loftschool.com/sendmail');
+    xhr.send(formData);
+    xhr.addEventListener('load', e => {
+      if (xhr.response.status){
+        const response = 'сообщение отправлено';
+            modal.setContent('',response);
+            modal.open();
+            setTimeout(e=>{
+                clearBtn.click();
+                modal.close();
+            },2000);
+            
+    } else {
+        const rejected = 'сообщение отклонено';
+        modal.setContent('',rejected);
+        modal.open();
+        clearBtn.click();
+    }
+    });
   }
 });
 
-function validateForm(form) {
+function validateForm(myForm) {
   let valid = true;
 
   if(!validateField(myForm.elements.name)) {
@@ -43,15 +72,12 @@ function validateForm(form) {
 };
 
 function validateField(field) {
-  for (var eachError of error) {
-    if (field.checkValidity(true)) {
-      eachError.textContent = '';
-      return field.checkValidity();
-    } else if (!field.checkValidity(false)){
-      eachError.textContent = field.validationMessage;
-    }
-  }
-  // if (!field.checkValidity()) {
-  // error.textContent=field.validationMessage;
-  // return field.checkValidity();
+  if (!field.checkValidity()){
+    field.nextElementSibling.textContent = field.validationMessage;
+    return false;
+}
+else {
+    field.nextElementSibling.textContent = '';
+    return true;
+}
 }

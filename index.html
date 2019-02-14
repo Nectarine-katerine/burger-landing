@@ -922,7 +922,7 @@
               <div class="form__row">
                 <label class="form__block">
                   <div class="form__block-title">Комментарий</div>
-                  <textarea class="form__block-input form__block-input-textarea" name="comment"></textarea>
+                  <textarea class="form__block-input form__block-input-textarea" name="comment" required></textarea>
                   <div class="error"></div>
                 </label>
               </div>
@@ -947,7 +947,7 @@
               </div>
               <div class="form__row form__row_btns">
                 <button type="button" class="button" id="formButton">Заказать</button>
-                <button class="button button_bg_none" type="reset">Очистить</button>
+                <button class="button button_bg_none" type="reset" id="reset">Очистить</button>
               </div>
 
 
@@ -1040,10 +1040,33 @@
       </ul>
     </div>
   </div>
+  <div class="popup opened">
+    <div class="overlay">
+      <div class="popup__container">
+        
+        <div class="popup__content">
+          <p>Сообщение отправлено</p>
+        </div>
+        <button type="button" class="button popup__close">Закрыть</button>
+      </div>
+    </div>
+  </div>
+  <script type="template" id="modal-template">
+    <div class="overlay">
+      <div class="popup__container">
+        <a href="#" class="popup__close"></a>
+        <div class="popup__content">
+          <h1>sdasd</h1>
+        </div>
+      </div>
+    </div>
+  </script>
   <script src="./slider.js"></script>
+  <script src="./modal.js"></script>
   <script src="./form.js"></script>
   <script src="./main.js"></script>
   <script src="./carte__acc.js"></script>
+
 
 </body>
 
