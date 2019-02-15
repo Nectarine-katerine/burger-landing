@@ -126,7 +126,8 @@ img {
   text-transform: uppercase;
   font-family: 'ubuntu';
   font-size: 0.8125rem;
-  font-weight: 500; }
+  font-weight: 500;
+  text-decoration: none; }
   @media screen and (max-width: 768px) {
     .button {
       margin-left: 0; } }
