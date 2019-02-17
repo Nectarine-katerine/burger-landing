@@ -20,24 +20,24 @@ phone.addEventListener('keydown', function() {
 //модалка форма;
 const button=document.querySelector('#formButton');
 const template = document.querySelector("#modal-template").innerHTML;
-const wrapper = document.querySelector(".wrapper");
+var wrapper = document.querySelector(".wrapper");
 const modal = createModal();
 
 function createModal() {
-  const container = document.createElement('div');
+  var container = document.createElement('div');
   container.className = 'popup';
   container.innerHTML = template;
 
   const contentBlock = container.querySelector('.popup__content');
 
-  const closeBtn=container.querySelector('.popup__close');
+  var closeBtn=container.querySelector('.popup__close');
 
   closeBtn.addEventListener('click', e => {
     event.preventDefault();
     wrapper.removeChild(container);
   })
 
-  const overlay = container.querySelector('.overlay');
+  var overlay = container.querySelector('.overlay');
   overlay.addEventListener('click', e => {
     if (e.target === overlay) {
       closeBtn.click();
