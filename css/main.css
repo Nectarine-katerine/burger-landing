@@ -358,6 +358,10 @@ img {
     .menu__link {
       font-size: 1.6rem; } }
 
+@media screen and (max-width: 768px) {
+  .menu__link:hover {
+    color: #f9b43b; } }
+
 .logo__icon {
   width: 5.75rem;
   height: 4.3125rem; }
@@ -912,7 +916,7 @@ img {
       font-size: 3.2rem; } }
   @media screen and (max-width: 480px) {
     .order__title {
-      margin-bottom: 1.4rem; } }
+      margin-bottom: 1rem; } }
 
 .form {
   display: -webkit-box;
@@ -953,9 +957,9 @@ img {
         margin-bottom: 1rem; } }
   @media screen and (max-width: 480px) {
     .form__row {
-      margin-bottom: 0.9rem; }
+      margin-bottom: 0.6rem; }
       .form__row:last-child {
-        margin-bottom: 0.9rem; } }
+        margin-bottom: 0.6rem; } }
 
 .form__block {
   margin-right: 4.5%;
