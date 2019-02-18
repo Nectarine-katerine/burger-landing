@@ -19,6 +19,13 @@ logo.addEventListener('click', function () {
   menu.style.left='';
   document.body.style.overflow='visible';
 });
+const menuList=document.querySelector('.menu__list');
+menuList.addEventListener('click', e => {
+  if (e.target === menuList) {
+    menu.style.left='';
+  document.body.style.overflow='visible';
+  }
+})
 
 for(eachLink of menuLink) {
 eachLink.addEventListener('click', function() {
