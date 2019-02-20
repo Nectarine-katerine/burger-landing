@@ -1,13 +1,13 @@
-const {src, dest, task} = require('gulp');
-const rm = require( 'gulp-rm' );
+const {src, dest, task, series} = require('gulp');
+const rm = require('gulp-rm');
 
-task( 'clean:tmp', function() {
-  return gulp.src( 'app/tmp/**/*', { read: false })
-    .pipe( rm() )
+task('clean', () => {
+  return src('dist/**/*', { read: false }).pipe(rm())
 })
 
-function copy(){
-  return src('src/css/**/*.scss').pipe(dest('dist'))
-}
-
-exports.copy = copy
+task(
+  'copy',
+  series('clean', () => {
+    return src('src/css/**/*.scss').pipe(dest('dist'));
+  })
+);
