@@ -55,18 +55,25 @@
 }
 
 .close__consist {
+  display: none;
+  @include tablets {
   display: block;
     display: block;
     cursor: pointer;
     &:before,
     &::after {
       position: absolute;
-      left: 50%;
+      left: 95%;
+      top: 2%;
       content: '';
       height: 1.539rem;
       width: 0.24rem;
       background-color: $red;
       border-radius: 25%;
+      @include phones {
+        top: 1%;
+        left: 93%;
+      }
     }
     &:before {
       transform: rotate(45deg);
@@ -75,3 +82,4 @@
       transform: rotate(-45deg);
     }
   }
+}
