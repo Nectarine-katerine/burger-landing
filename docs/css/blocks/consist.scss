@@ -20,9 +20,12 @@
   font-weight: 400;
   text-transform: uppercase;
 }
-.consist__ingredien-icon {
+.consist__ingredient-icon {
   width: 2.875rem;
   height: 2.75rem;
+  @include phones {
+    width: 2rem;
+  }
 }
 
 .consist__ingredien-icon_beef, .consist__ingredien-icon_sauce {
@@ -38,43 +41,59 @@
 .consist__link:hover {
   background-color:rgba(227, 80, 40, 1);
 }
-.consist__link:hover+.consist__table {
+.consist__link:hover+.consist__list {
   opacity: 1;
   transition: opacity .3s;
 }
-.consist__table {
+.consist__list {
+  display: flex;
+  flex-direction: column;
   opacity: 0;
   position: absolute;
-  left: 19%;
+  left: 5.4rem;
   top: 0;
   background-color:rgba(250, 250, 250, 0.9);
   border-radius: 3px;
-  border-collapse: collapse;
-  width: 70%;
+  width: 60%;
   transition: opacity .3s;
   z-index: 20;
+  @include laptop {
+    width: 70%;
+  }
+    @include phones {
+    width: 80%;
+  }
 }
-.table__cell {
+.consist__item {
+  display: flex;
   color: $gray;
   white-space: nowrap;
   padding: 1% 8%;
+  width: 94%;
+  margin: 0 auto;
   @include tablets {
-    padding: 1% 3%;
+    padding: 1% 1%;
   }
 }
-.table__cell_text-right {
-  text-align: right;
-}
 
-.table__row_last-cell-dnone > *:last-child {
-  display: none;
+.consist__ingredient{
+  margin-right: 1rem;
+}
+.col__left {
+  display: flex;
+  align-items: center;
+  width: 60%;
   @include tablets {
-    position: relative;
-    display: table-cell;
-    padding-left: 2%;
-    padding-right: 15%;
-    vertical-align: top;
-  }  @include phones {
-    padding-right: 10%;
+    width: 55%;
+  }
+
+}
+.col__right {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 40%;
+  @include phones {
+    width: 38%;
   }
 }
