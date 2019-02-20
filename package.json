@@ -1,13 +1,28 @@
 {
-  "name": "burger-gulp",
-  "version": "0.1.0",
+  "name": "burger_project",
+  "version": "1.0.0",
+  "description": "Landing MrBurger ================================================",
+  "main": "gulpfile.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "dependencies": {},
   "devDependencies": {
     "gulp": "^4.0.0",
-    "gulp-autoprefixer": "^6.0.0",
-    "gulp-concat-css": "^3.1.0",
-    "gulp-livereload": "^4.0.1",
-    "gulp-minify-css": "^1.2.4",
-    "gulp-notify": "^3.2.0",
-    "gulp-rename": "^1.4.0"
-  }
+    "gulp-rm": "^2.0.0"
+  },
+  "scripts": {
+    "gulp": "gulp"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Nectarine-katerine/burger-landing.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Nectarine-katerine/burger-landing/issues"
+  },
+  "homepage": "https://github.com/Nectarine-katerine/burger-landing#readme"
 }
