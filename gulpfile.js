@@ -21,9 +21,15 @@ task('clean', () => {
 task('copy:html', () => {
     return src('src/*.html').pipe(dest('dist')).pipe(reload({stream: true}));
   });
-  // task('copy:sprite', () => {
-  //   return src('src/*.svg').pipe(dest('dist')).pipe(reload({stream: true}));
-  // });
+  task('copy:sprite', () => {
+    return src('src/*.svg').pipe(dest('dist')).pipe(reload({stream: true}));
+  });
+  task('copy:img', () => {
+    return src('src/img/*').pipe(dest('dist/img')).pipe(reload({stream: true}));
+  });
+  task('copy:fonts', () => {
+    return src('src/fonts/*').pipe(dest('dist/fonts')).pipe(reload({stream: true}));
+  });
 
 const styles = [
   'node_modules/normalize.css/normalize.css',
@@ -80,4 +86,4 @@ task('scripts', () =>{
   watch('./src/*.html', series('copy:html'));
   watch('./src/scripts/*.js', series('scripts'));
 
-task('default', series('clean', 'copy:html', 'styles', 'scripts', 'server'));
+task('default', series('clean', 'copy:html', 'copy:sprite', 'copy:img', 'copy:fonts', 'styles', 'scripts', 'server'));

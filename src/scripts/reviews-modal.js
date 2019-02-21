@@ -2,9 +2,11 @@
   const reviewsBtn=document.querySelectorAll('.reviews__btn');
   const templateR = document.querySelector("#modal-reviews").innerHTML;
   const modalR = createModal();
+  var wrapper = document.querySelector(".wrapper");
+
   
-  for (eachBtn of reviewsBtn) {
-    eachBtn.addEventListener('click', e => {
+  for (let i=0; i<reviewsBtn.length; i++) {
+    reviewsBtn[i].addEventListener('click', e => {
       event.preventDefault();
       const paragraph = e.currentTarget.parentNode.childNodes[3].innerHTML;
       const headline = e.currentTarget.parentNode.firstElementChild.innerHTML;

@@ -45,6 +45,7 @@
 .slider__img {
   width: 48%;
   position: relative;
+  overflow: hidden;
   @include tablets {
     width: 77%;
   }

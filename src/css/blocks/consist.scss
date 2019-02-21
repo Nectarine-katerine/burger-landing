@@ -1,5 +1,6 @@
 .consist {
   position: relative;
+  overflow:  hidden;
 }
 .consist__link {
   display: inline-block;
@@ -38,17 +39,17 @@
 .consist__ingredien-icon_salad, .consist__ingredien-icon_cucumber {
   fill: $green;
 }
-// .consist__link:hover {
-//   background-color:rgba(227, 80, 40, 1);
-// }
-// .consist__link:hover+.consist__table {
-//   opacity: 1;
-//   transition: opacity .3s;
-// }
+.consist__link:hover {
+  background-color:rgba(227, 80, 40, 1);
+}
+.consist__link:hover+.consist__list {
+  opacity: 1;
+  transition: opacity .3s;
+}
 .consist__list {
   display: flex;
   flex-direction: column;
-  opacity: 1;
+  opacity: 0;
   position: absolute;
   left: 5.4rem;
   top: 0;
