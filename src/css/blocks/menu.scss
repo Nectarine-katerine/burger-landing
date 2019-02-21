@@ -72,3 +72,9 @@
     font-size: 1.6rem;
   }
 }
+
+.menu__link:hover {
+  @include tablets {
+    color: $yellow;
+  }
+}

@@ -18,6 +18,7 @@
   height: 100%;
   align-items: center;
   transition: right .3s;
+  right: 0;
 }
 
 .slider__item {
@@ -54,6 +55,7 @@
   position: absolute;
   left: 0;
   bottom: 0;
+  opacity: .5;
   @include tablets {
     left: 85%;
     top: 0;

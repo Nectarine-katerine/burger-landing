@@ -1,0 +1,15 @@
+.video {
+  background: url('../img/video-bg.png') center center no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.title__video {
+  color: $gray;
+}
+.video__player {
+  width: 30%;
+}

@@ -4,6 +4,8 @@ $red: #e45028;
 $yellow: #f9b43b;
 $orange: #e35028;
 $green: #8BC03F;
+$darkRed: #c1401e;
+$darkGray: #1f2122;
 
 // resolutions
 $laptop: 924px;
@@ -46,3 +48,7 @@ $phones: 480px;
 @import './blocks/close.scss';
 @import './blocks/slider.scss';
 @import './blocks/consist.scss';
+@import './blocks/error.scss';
+@import './blocks/popup.scss';
+@import './blocks/popup-reviews.scss';
+
