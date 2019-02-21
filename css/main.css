@@ -1187,6 +1187,29 @@ img {
       top: 100%;
       margin-top: 0.3125rem; } }
 
+.video {
+  background: url("../img/video-bg.png") center center no-repeat;
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+
+.title__video {
+  color: #2f3234; }
+
+.video__player {
+  width: 30%; }
+
 .close {
   display: none; }
   @media screen and (max-width: 480px) {
