@@ -1,3 +1,4 @@
+(function(){
 // var md = new MobileDetect(window.navigator.userAgent),
 // isMobile = md.mobile();
 
@@ -98,3 +99,4 @@ let OnePageScroll = function () {
     })
   }
   OnePageScroll();
+})()
