@@ -63,7 +63,7 @@
       },
       {
         iconLayout: 'default#image',
-        iconImageHref: './sprite.svg',
+        iconImageHref: '../img/map-marker.svg',
         iconImageSize: [46, 57],
         iconImageOffset: [-23, -57]
       });

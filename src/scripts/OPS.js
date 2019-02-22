@@ -1,11 +1,13 @@
 (function(){
-// var md = new MobileDetect(window.navigator.userAgent),
-// isMobile = md.mobile();
+
 
 let OnePageScroll = function () {
   const sections = $('.section');
   const visible = $(".maincontent");
   let inscroll = false;
+
+  const md = new MobileDetect(window.navigator.userAgent);
+  const isMobile = md.mobile();
 
   let performTransition = function (sectionEq) {
     if (!inscroll) {
@@ -61,14 +63,17 @@ let OnePageScroll = function () {
       },
       touchmove: e => e.preventDefault()
     });
+$("wrapper").on('touchmove', e => {
+  e.preventDefault();
+});
 
-    // if (isMobile) {
-    //   $(window).swipe({
-    //     swipe: (event, direction) => {
-    //       scrollToSection(direction);
-    //     }
-    //   });
-    // }
+    if (isMobile) {
+      $(window).swipe({
+        swipe: (event, direction) => {
+          scrollToSection(direction);
+        }
+      });
+    }
 
     $(document).on("keydown", e=>{
       const section = defineSections(sections);
