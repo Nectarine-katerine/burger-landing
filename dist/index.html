@@ -58,7 +58,7 @@
                 </ul>
 
               </nav>
-              <a href="#order" class="button header__button">Заказать</a>
+              <a href="#" class="button header__button" data-scroll-to="7">Заказать</a>
               <div class="hamburger__menu">
                 <a href="#" class="hamburger__menu-link"></a>
               </div>
@@ -233,7 +233,7 @@
                     <div class="slider__price">
                       <div class="slider__price-title">500 <span class="slider__price-title-text">рублей</span>
                       </div>
-                      <a href="#order" class="button slider__button">Заказать</a>
+                      <a href="#" class="button slider__button" data-scroll-to="7">Заказать</a>
                     </div>
                   </div>
                 </div>
@@ -336,7 +336,7 @@
                     <div class="slider__price">
                       <div class="slider__price-title">550 <span class="slider__price-title-text">рублей</span>
                       </div>
-                      <a href="#order" class="button slider__button">Заказать</a>
+                      <a href="#" class="button slider__button" data-scroll-to="7">Заказать</a>
                     </div>
                   </div>
                 </div>
@@ -439,7 +439,7 @@
                     <div class="slider__price">
                       <div class="slider__price-title">400 <span class="slider__price-title-text">рублей</span>
                       </div>
-                      <a href="#order" class="button slider__button">Заказать</a>
+                      <a href="#" class="button slider__button" data-scroll-to="7">Заказать</a>
                     </div>
                   </div>
                 </div>
@@ -542,7 +542,7 @@
                     <div class="slider__price">
                       <div class="slider__price-title">600 <span class="slider__price-title-text">рублей</span>
                       </div>
-                      <a href="#order" class="button slider__button">Заказать</a>
+                      <a href="#" class="button slider__button" data-scroll-to="7">Заказать</a>
                     </div>
                   </div>
                 </div>
@@ -820,9 +820,35 @@
         </ul>
 
       </section>
-      <section class="section section_centered video">
-        <h2 class="title title__video">Как мы работаем</h2>
-      </section>
+      <section class="section section__centered video">
+          <div class="container video__container">
+            <h2 class="title title__video">Как мы работаем</h2>
+            <div class="video__player">
+              <video id="player" poster="./img/poster-video.png">
+                <source src="./img/burger_video.mp4" type="video/mp4">
+              </video>
+              <svg class="play video__player-img">
+                  <use xlink:href="./sprite.svg#play"></use>
+                </svg>
+            </div>
+            <div class="video__toolbar">
+                <div class="duration">
+                    <svg class="play duration__img">
+                      <use xlink:href="./sprite.svg#play"></use>
+                    </svg>
+                    <input type="range" class="duration__length" id="durationLevel">
+                </div>
+                <div class="sound">
+                    <svg class="play sound__mic" id="mic">
+                        <use xlink:href="./sprite.svg#volume"></use>
+                      </svg>
+                    <div class="sound__volume">
+                        <input type="range" class="duration__length duration__length--other" id="micLevel">
+                    </div>
+                </div>
+            </div>
+          </div>
+        </section>
       <section class="section section_centered order">
         <div class="container">
           <h2 class="title order__title">Закажите доставку</h2>

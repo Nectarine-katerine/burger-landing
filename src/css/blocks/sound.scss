@@ -1,0 +1,22 @@
+.sound {
+  display: flex;
+  align-items: center;
+  margin: 0 15px;
+}
+
+.sound__mic {
+  cursor: pointer;
+  height: 2rem;
+  width: 2rem;
+  fill: #626262;
+}
+
+.sound__volume {
+  margin-left: 10px;   
+  margin-top: -8px; 
+
+  @include phones {
+    position: absolute;
+    top: 0;
+  }
+}

@@ -30,7 +30,7 @@ let OnePageScroll = function () {
         .addClass("fixed-menu_item_active")
         .siblings()
         .removeClass("fixed-menu_item_active");
-    }, 1000);
+    }, 1000+300);
   };
 
     let defineSections = function (sectionsList) {

@@ -8,7 +8,7 @@
       hintContent: '<div class="map__hint"> ул.Литералов, д. 19 </div>',
       ballonContent: [
         '<div class="map__balloon">',
-        '<img class="map__burger-img" src="img/" alt="Burger"/>',
+        // '<img class="map__burger-img" src="img/" alt="Burger"/>',
         'Самые вкусные бургеры у нас! Заходите по адресу: ул.Литералов, д. 19',
         '</div>'
       ]
@@ -19,7 +19,7 @@
       hintContent: '<div class="map__hint"> Малый проспект В 0, д. 64 </div>',
       ballonContent: [
         '<div class="map__balloon">',
-        '<img class="map__burger-img" src="img/" alt="Burger"/>',
+        // '<img class="map__burger-img" src="img/" alt="Burger"/>',
         'Самые вкусные бургеры у нас! Заходите по адресу: Малый проспект В 0, д. 64',
         '</div>'
       ]
@@ -30,7 +30,7 @@
       hintContent: '<div class="map__hint"> наб. реки Фонтанки, д. 56 </div>',
       ballonContent: [
         '<div class="map__balloon">',
-        '<img class="map__burger-img" src="img/" alt="Burger"/>',
+        // '<img class="map__burger-img" src="img/" alt="Burger"/>',
         'Самые вкусные бургеры у нас! Заходите по адресу: наб. реки Фонтанки, д. 56',
         '</div>'
       ]
@@ -41,13 +41,14 @@
       hintContent: '<div class="map__hint"> наб. реки Фонтанки, д. 56 </div>',
       ballonContent: [
         '<div class="map__balloon">',
-        '<img class="map__burger-img" src="img/" alt="Burger"/>',
+        // '<img class="map__burger-img" src="img/" alt="Burger"/>',
         'Самые вкусные бургеры у нас! Заходите по адресу: наб. реки Фонтанки, д. 56',
         '</div>'
       ]
     }
-  ];
-  
+  ], 
+  geoObjects=[];
+
   function init() {
     var map = new ymaps.Map('map', {
       center: [59.94, 30.32],
@@ -56,19 +57,22 @@
       behaviors: ['drag']
     });
   
-    placemarks.forEach(function(obj) {
-      var placemark = new ymaps.Placemark([obj.latitude, obj.longitude], {
-        hintContent: obj.hintContent,
-        ballonContent: obj.ballonContent.join('')
+    for (var i=0; i<placemarks.length; i++){
+        geoObjects[i] = new ymaps.Placemark([placemarks[i].latitude, placemarks[i].longitude], {
+        hintContent: placemarks[i].hintContent,
+        ballonContent: placemarks[i].ballonContent.join('')
       },
       {
         iconLayout: 'default#image',
-        iconImageHref: '../img/map-marker.svg',
+        iconImageHref: './img/map-marker.svg',
         iconImageSize: [46, 57],
         iconImageOffset: [-23, -57]
       });
-      map.geoObjects.add(placemark);
-    });
+    }
+
+    var clusterer=new ymaps.Clusterer();
+    map.geoObjects.add(clusterer);
+    clusterer.add(geoObjects);
   }
 })()
 
