@@ -2,21 +2,31 @@
   display: flex;
   align-items: center;
   margin: 0 15px;
+  position: relative;
 }
 
-.sound__mic {
+.sound__mic_active{
+  &::after {
+    content: "";
+    position: absolute;
+    width: 1.8rem;
+    height: 2px;
+    background: #626262;
+    top: 42%;
+    left: 1.5%;
+    transform: rotate(45deg);
+  }
+}
+
+.sound__icon {
   cursor: pointer;
   height: 2rem;
   width: 2rem;
   fill: #626262;
+  margin-top: 5px;
 }
 
 .sound__volume {
   margin-left: 10px;   
   margin-top: -8px; 
-
-  @include phones {
-    position: absolute;
-    top: 0;
-  }
 }

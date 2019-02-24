@@ -833,15 +833,18 @@
             </div>
             <div class="video__toolbar">
                 <div class="duration">
-                    <svg class="play duration__img">
+                  <div class="play duration__img"></div>
+                    <!-- <svg class="play duration__img">
                       <use xlink:href="./sprite.svg#play"></use>
-                    </svg>
+                    </svg> -->
                     <input type="range" class="duration__length" id="durationLevel">
                 </div>
                 <div class="sound">
-                    <svg class="play sound__mic" id="mic">
+                  <div class="sound__mic">
+                    <svg id="mic" class="sound__icon">
                         <use xlink:href="./sprite.svg#volume"></use>
                       </svg>
+                    </div>
                     <div class="sound__volume">
                         <input type="range" class="duration__length duration__length--other" id="micLevel">
                     </div>

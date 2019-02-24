@@ -9,20 +9,28 @@
 
 .title__video {
   color: $gray;
+  @include tablets {
+    text-align: center;
+  }
 }
 
 .video__container {
-  height: 100vh;
   width: 80%;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  @include tablets {
+   width: 100%;
+  }
 }
 .video__player {
   position: relative;
   width: 80%;
   overflow: hidden;
+  @include tablets {
+    width: 95%;
+   }
 }
 #player {
   max-width: 100%;
@@ -49,9 +57,12 @@
 
 .video__toolbar {
   width: 80%;
-  height: 35px;
+  height: 2rem;
   background-color: #3e3e3e;
   display: flex;
+  @include tablets {
+    width: 95%;
+   }
 }
 
 
