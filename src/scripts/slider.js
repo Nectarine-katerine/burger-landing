@@ -33,4 +33,12 @@
     items.style.right=maxRight + 'px';
     }
     });
+
+  $('.consist__link').on('touchstart', e => {
+    $('.consist.list').css('opacity', '1');
+  })
+
+  $('.consist__link').on('touchend', e => {
+    $('.consist.list').css('opacity', '0');
+  })
 })()
