@@ -6,8 +6,8 @@ let OnePageScroll = function () {
   const visible = $(".maincontent");
   let inscroll = false;
 
-  const md = new MobileDetect(window.navigator.userAgent);
-  const isMobile = md.mobile();
+  const mobileDetect = new MobileDetect(window.navigator.userAgent);
+  const isMobile = mobileDetect.mobile();
 
   let performTransition = function (sectionEq) {
     if (!inscroll) {
@@ -69,8 +69,10 @@ $("wrapper").on('touchmove', e => {
 
     if (isMobile) {
       $(window).swipe({
-        swipe: (event, direction) => {
-          scrollToSection(direction);
+        swipe: function(event, direction) {
+          const scrollDirection = direction === 'down' ? 'up' : 'down';
+          
+          scrollToSection(scrollDirection);
         }
       });
     }
