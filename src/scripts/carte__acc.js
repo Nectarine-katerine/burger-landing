@@ -1,40 +1,40 @@
-(function(){
-  const carteItems = document.querySelectorAll('.carte__item');
-  // const carteTitle = $('.carte__title');
-
-  // for(var i=0; i<carteTitle.length; i++) {
-  //   carteTitle[i].addEventListener('click', function(e){
-  //     const curTitle = event.currentTarget
-  //     console.log(curTitle)
-  //     if(carteTitle[i] === curTitle){
-  //       $(curTitle).closest('.carte__item').addClass('js-team__title');
-  //     }
-  //   })
-
-    
-  // }
+(function () {
+  let verticalAcco = () => {
+    let calculateWidth = () => {
+      let windowWidth = window.innerWidth;
+      let titles = document.querySelectorAll('.carte__title');
+      let title = document.querySelector('.carte__title');
+      let titlesWidth = parseFloat(getComputedStyle(title).width);
+      let reqWidth = windowWidth - titlesWidth * titles.length;
+      return reqWidth > 550 ? 550 : reqWidth;
+    }
 
 
-  for (var eachItem of carteItems) {
-  
-    eachItem.addEventListener('click', function(event) {
-      const curItem = event.currentTarget;
-      const carteDesc = curItem.querySelector('.carte__desc');
-      if (curItem.classList.contains('js-carte__item')) {//открыт
-  
-        curItem.classList.remove('js-carte__item');
-        carteDesc.style.width=0;
-      
-      } 
-      else {
-        Array.from(carteItems).forEach(function(element) {
-          element.classList.remove('js-carte__item');
-          element.querySelector('.carte__desc').style.width=0;
-        });
-  
-      curItem.classList.add('js-carte__item');
-      carteDesc.style.width = '100%';
-      }
-    });
+    let oMenulink = document.querySelectorAll('.carte__title');
+
+    oMenulink.forEach(function (personName) {
+      personName.addEventListener("click", function (e) {
+        e.preventDefault();
+        let activePerson = document.querySelector(".js-carte__item");
+
+        if (activePerson) {
+          let teamAccordeonDetails = activePerson.querySelector(".carte__desc");
+          teamAccordeonDetails.style.width = "0px";
+          activePerson.classList.remove("js-carte__item");
+
+        }
+
+        if (!activePerson || ((activePerson.querySelector(".carte__title-text") != e.target) && (activePerson.querySelector(".carte__title") != e.target))) {
+          let currentPerson = e.target.closest(".carte__item");
+          currentPerson.classList.add("js-carte__item");
+
+          let currentPersonInfo = currentPerson.querySelector(".menu__desc");
+          currentPersonInfo.style.width = calculateWidth() + "px";
+        }
+
+      })
+    })
   }
+  verticalAcco();
+
 })()
