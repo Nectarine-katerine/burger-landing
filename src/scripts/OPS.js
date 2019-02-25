@@ -70,7 +70,7 @@ $("wrapper").on('touchmove', e => {
     if (isMobile) {
       $(window).swipe({
         swipe: function(event, direction, distance, duration, fingerCount, fingerData) {
-          const scrollDirection = direction === 'down' ? 'up' : 'down';
+          const scrollDirection = direction === 'down' ? 'down' : 'up';
           scrollToSection(scrollDirection);
         }
       });
