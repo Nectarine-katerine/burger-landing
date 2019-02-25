@@ -1783,7 +1783,7 @@ img {
       text-align: center; } }
 
 .video__container {
-  width: 80%;
+  width: 95%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1795,7 +1795,8 @@ img {
 .video__player {
   position: relative;
   width: 80%;
-  overflow: hidden; }
+  overflow: hidden;
+  white-space: nowrap; }
   @media screen and (max-width: 768px) {
     .video__player {
       width: 95%; } }
