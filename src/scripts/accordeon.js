@@ -1,13 +1,36 @@
 (function(){
 //аккордеон
-// js-team__item
-// let teamAcco = () => {
-// let teamList = document.querySelector('.team__list');
 
-// teamList.addEventListener('click', e => {
+// let teamAccoJS = () => {
+//   let oTeamText = document.querySelectorAll('.team__text');
 
-// })
+//   oTeamText.forEach(function(personName) {
+//     personName.addEventListener('click', function(e) {
+//       e.preventDefault();
+//       let activePerson = document.querySelector('team__item.js-team__item');
+
+//       if (activePerson) {
+//         let teamAccordeonAppear = activePerson.querySelector('.team__text-appear')
+
+//         teamAccordeonAppear.style.height = '0px';
+//         activePerson.classList.remove('js-team__item');
+//       }
+
+//       if (!activePerson || activePerson.querySelector('.team__text') !== this){
+//         let currentPerson = this.closest('team__item');
+//         currentPerson.classList.add('js-team__item');
+
+//         let currentPersonInfo = currentPerson.querySelector('.team__text-appear');
+
+//         currentPersonInfo.style.height = currentPersonInfo.scrollHeight + 'px';
+//       }
+//     })
+//   })
 // }
+
+// teamAccoJS();
+
+
 let teamItems=document.querySelectorAll('.team__item');
 for(let i=0; i<teamItems.length; i++) {
 

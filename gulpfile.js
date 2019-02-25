@@ -12,6 +12,7 @@ const sourcemaps = require('gulp-sourcemaps');
 const babel = require('gulp-babel');
 const uglify = require('gulp-uglify');
 const gulpif = require('gulp-if');
+const MobileDetect = require('mobile-detect');
 
 const env = process.env.NODE_ENV;
 sass.compiler = require('node-sass');
@@ -54,6 +55,7 @@ task('styles', () => {
     .pipe(gulpif(env === 'prod', cleanCSS()))
     .pipe(gulpif(env === 'dev', sourcemaps.write()))
     .pipe(dest('dist'))
+    // .pipe(MobileDetect())
     .pipe(reload({ stream: true }));
 });
 
