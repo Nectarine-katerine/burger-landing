@@ -1715,7 +1715,8 @@ img {
 
 .team__text {
   height: 0;
-  overflow: hidden; }
+  overflow: hidden;
+  transition: height .3s; }
 
 .team__text-appear {
   display: flex; }
