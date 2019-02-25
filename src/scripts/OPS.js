@@ -6,8 +6,8 @@ let OnePageScroll = function () {
   const visible = $(".maincontent");
   let inscroll = false;
 
-  // const mobileDetect = new MobileDetect(window.navigator.userAgent);
-  // const isMobile = mobileDetect.mobile();
+  const mobileDetect = new MobileDetect(window.navigator.userAgent);
+  const isMobile = mobileDetect.mobile();
 
   let performTransition = function (sectionEq) {
     if (!inscroll) {
@@ -67,15 +67,14 @@ $("wrapper").on('touchmove', e => {
   e.preventDefault();
 });
 
-    // if (isMobile) {
-    //   $(window).swipe({
-    //     function(event, direction) {
-    //       const scrollDirection = direction === 'down' ? 'up' : 'down';
-          
-    //       scrollToSection(scrollDirection);
-    //     }
-    //   });
-    // }
+    if (isMobile) {
+      $(window).swipe({
+        swipe: function(event, direction, distance, duration, fingerCount, fingerData) {
+          const scrollDirection = direction === 'down' ? 'up' : 'down';
+          scrollToSection(scrollDirection);
+        }
+      });
+    }
 
     $(document).on("keydown", e=>{
       const section = defineSections(sections);
