@@ -6,16 +6,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Mr Burger</title>
 
-  <link rel="stylesheet" href="./css/layout.css/font.css">
-  <link rel="stylesheet" href="./css/main.css">
+  <!-- <link rel="stylesheet" href="./css/layout.css/font.css"> -->
+  <link rel="stylesheet" href="./main.min.css">
   <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
   <link rel="icon" href="./favicon.ico" type="image/x-icon">
+  <script src="https://api-maps.yandex.ru/2.1/?apikey=<0ae06489-99df-4662-808a-1adbf47c70f4>&lang=ru_RU"
+    type="text/javascript">
+    </script>
 </head>
 
 <body>
   <div class="wrapper">
     <div class="maincontent">
-      <section class="section hero">
+      <section class="section is-active hero">
         <div class="container hero__container">
           <header class="header">
             <div class="logo">
@@ -33,30 +36,30 @@
                 <a class="close close__menu"></a>
                 <ul class="menu__list">
                   <li class="menu__item">
-                    <a href="#best" class="menu__link">О нас</a>
+                    <a href="#" class="menu__link" data-scroll-to="1">О нас</a>
                   </li>
                   <li class="menu__item">
-                    <a href="#slider" class="menu__link">Бургеры</a>
+                    <a href="#" class="menu__link" data-scroll-to="2">Бургеры</a>
                   </li>
                   <li class="menu__item">
-                    <a href="#team" class="menu__link">Команда</a>
+                    <a href="#" class="menu__link" data-scroll-to="3">Команда</a>
                   </li>
                   <li class="menu__item">
-                    <a href="#carte" class="menu__link">Меню</a>
+                    <a href="#" class="menu__link" data-scroll-to="4">Меню</a>
                   </li>
                   <li class="menu__item">
-                    <a href="#reviews" class="menu__link">Отзывы</a>
+                    <a href="#" class="menu__link" data-scroll-to="5">Отзывы</a>
                   </li>
                   <li class="menu__item">
-                    <a href="#YMapsID" class="menu__link">Как мы работаем</a>
+                    <a href="#" class="menu__link" data-scroll-to="6">Как мы работаем</a>
                   </li>
                   <li class="menu__item">
-                    <a href="#footer" class="menu__link">Контакты</a>
+                    <a href="#" class="menu__link" data-scroll-to="7">Контакты</a>
                   </li>
                 </ul>
 
               </nav>
-              <a href="#order" class="button header__button">Заказать</a>
+              <a href="#" class="button header__button" data-scroll-to="7">Заказать</a>
               <div class="hamburger__menu">
                 <a href="#" class="hamburger__menu-link"></a>
               </div>
@@ -81,7 +84,7 @@
         </div>
 
       </section>
-      <section class="section section_centered best" id="best">
+      <section class="section section_centered best">
         <div class="container best__container">
           <h2 class="title best__title">Мы лучшие</h2>
           <ul class="best__list">
@@ -125,7 +128,7 @@
       </section>
       <section class="section section_centered slider" id="slider">
         <div class="arrow__left">
-          <a href="#" class="arrow__left-link"></a>
+          <a href="#" class="arrow__left-link" data-scroll-to="1"></a>
           <svg class="arrow__left-icon">
             <use xlink:href="./sprite.svg#arrow-scroll"></use>
           </svg>
@@ -229,9 +232,9 @@
                     экзотического
                     соуса чураско.</p>
                   <div class="slider__price">
-                    <div class="title slider__price-title">500 <span class="slider__price-title-text">рублей</span>
+                    <div class="slider__price-title">500 <span class="slider__price-title-text">рублей</span>
                     </div>
-                    <a href="#order" class="button slider__button">Заказать</a>
+                    <a href="#" class="button slider__button" data-scroll-to="7">Заказать</a>
                   </div>
                 </div>
               </div>
@@ -247,74 +250,74 @@
                       <div class="consist__text">Состав</div>
                     </a>
                     <ul class="consist__list">
-                        <a class="close__consist"></a>
-                        <li class="consist__item">
-                          <div class="col__left">
-                            <div class="consist__ingredient">
-                              <svg class="consist__ingredient-icon consist__ingredien-icon_beef">
-                                <use xlink:href="./sprite.svg#beef"></use>
-                              </svg>
-                            </div>
-                            <div class="consist__ingredient-text">Говядина</div>
+                      <a class="close__consist"></a>
+                      <li class="consist__item">
+                        <div class="col__left">
+                          <div class="consist__ingredient">
+                            <svg class="consist__ingredient-icon consist__ingredien-icon_beef">
+                              <use xlink:href="./sprite.svg#beef"></use>
+                            </svg>
                           </div>
-                          <div class="col__right">300 г</div>
-                        </li>
-                        <li class="consist__item">
-                          <div class="col__left">
-                            <div class="consist__ingredient">
-                              <svg class="consist__ingredient-icon consist__ingredien-icon_buns">
-                                <use xlink:href="./sprite.svg#buns"></use>
-                              </svg>
-                            </div>
-                            <div class="consist__ingredient-text">Булочки</div>
+                          <div class="consist__ingredient-text">Говядина</div>
+                        </div>
+                        <div class="col__right">300 г</div>
+                      </li>
+                      <li class="consist__item">
+                        <div class="col__left">
+                          <div class="consist__ingredient">
+                            <svg class="consist__ingredient-icon consist__ingredien-icon_buns">
+                              <use xlink:href="./sprite.svg#buns"></use>
+                            </svg>
                           </div>
-                          <div class="col__right">100 г</div>
-                        </li>
-                        <li class="consist__item">
-                          <div class="col__left">
-                            <div class="consist__ingredient">
-                              <svg class="consist__ingredient-icon consist__ingredien-icon_salad">
-                                <use xlink:href="./sprite.svg#salad"></use>
-                              </svg>
-                            </div>
-                            <div class="consist__ingredient-text">Зелень</div>
+                          <div class="consist__ingredient-text">Булочки</div>
+                        </div>
+                        <div class="col__right">100 г</div>
+                      </li>
+                      <li class="consist__item">
+                        <div class="col__left">
+                          <div class="consist__ingredient">
+                            <svg class="consist__ingredient-icon consist__ingredien-icon_salad">
+                              <use xlink:href="./sprite.svg#salad"></use>
+                            </svg>
                           </div>
-                          <div class="col__right">70 г</div>
-                        </li>
-                        <li class="consist__item">
-                          <div class="col__left">
-                            <div class="consist__ingredient">
-                              <svg class="consist__ingredient-icon consist__ingredien-icon_sauce">
-                                <use xlink:href="./sprite.svg#sauce"></use>
-                              </svg>
-                            </div>
-                            <div class="consist__ingredient-text">Соус</div>
+                          <div class="consist__ingredient-text">Зелень</div>
+                        </div>
+                        <div class="col__right">70 г</div>
+                      </li>
+                      <li class="consist__item">
+                        <div class="col__left">
+                          <div class="consist__ingredient">
+                            <svg class="consist__ingredient-icon consist__ingredien-icon_sauce">
+                              <use xlink:href="./sprite.svg#sauce"></use>
+                            </svg>
                           </div>
-                          <div class="col__right">150 г</div>
-                        </li>
-                        <li class="consist__item">
-                          <div class="col__left">
-                            <div class="consist__ingredient">
-                              <svg class="consist__ingredient-icon consist__ingredien-icon_cucumber">
-                                <use xlink:href="./sprite.svg#cucumber"></use>
-                              </svg>
-                            </div>
-                            <div class="consist__ingredient-text">Овощи</div>
+                          <div class="consist__ingredient-text">Соус</div>
+                        </div>
+                        <div class="col__right">150 г</div>
+                      </li>
+                      <li class="consist__item">
+                        <div class="col__left">
+                          <div class="consist__ingredient">
+                            <svg class="consist__ingredient-icon consist__ingredien-icon_cucumber">
+                              <use xlink:href="./sprite.svg#cucumber"></use>
+                            </svg>
                           </div>
-                          <div class="col__right">200 г</div>
-                        </li>
-                        <li class="consist__item">
-                          <div class="col__left">
-                            <div class="consist__ingredient">
-                              <svg class="consist__ingredient-icon consist__ingredien-icon_cheese">
-                                <use xlink:href="./sprite.svg#cheese"></use>
-                              </svg>
-                            </div>
-                            <div class="consist__ingredient-text">Сыр</div>
+                          <div class="consist__ingredient-text">Овощи</div>
+                        </div>
+                        <div class="col__right">200 г</div>
+                      </li>
+                      <li class="consist__item">
+                        <div class="col__left">
+                          <div class="consist__ingredient">
+                            <svg class="consist__ingredient-icon consist__ingredien-icon_cheese">
+                              <use xlink:href="./sprite.svg#cheese"></use>
+                            </svg>
                           </div>
-                          <div class="col__right">80 г</div>
-                        </li>
-                      </ul>
+                          <div class="consist__ingredient-text">Сыр</div>
+                        </div>
+                        <div class="col__right">80 г</div>
+                      </li>
+                    </ul>
                   </div>
                   <div class="slider__calorie">
                     <svg class="slider__calorie-icon">
@@ -332,9 +335,9 @@
                     экзотического
                     соуса чураско.</p>
                   <div class="slider__price">
-                    <div class="title slider__price-title">550 <span class="slider__price-title-text">рублей</span>
+                    <div class="slider__price-title">550 <span class="slider__price-title-text">рублей</span>
                     </div>
-                    <a href="#order" class="button slider__button">Заказать</a>
+                    <a href="#" class="button slider__button" data-scroll-to="7">Заказать</a>
                   </div>
                 </div>
               </div>
@@ -350,74 +353,74 @@
                       <div class="consist__text">Состав</div>
                     </a>
                     <ul class="consist__list">
-                        <a class="close__consist"></a>
-                        <li class="consist__item">
-                          <div class="col__left">
-                            <div class="consist__ingredient">
-                              <svg class="consist__ingredient-icon consist__ingredien-icon_beef">
-                                <use xlink:href="./sprite.svg#beef"></use>
-                              </svg>
-                            </div>
-                            <div class="consist__ingredient-text">Говядина</div>
+                      <a class="close__consist"></a>
+                      <li class="consist__item">
+                        <div class="col__left">
+                          <div class="consist__ingredient">
+                            <svg class="consist__ingredient-icon consist__ingredien-icon_beef">
+                              <use xlink:href="./sprite.svg#beef"></use>
+                            </svg>
                           </div>
-                          <div class="col__right">300 г</div>
-                        </li>
-                        <li class="consist__item">
-                          <div class="col__left">
-                            <div class="consist__ingredient">
-                              <svg class="consist__ingredient-icon consist__ingredien-icon_buns">
-                                <use xlink:href="./sprite.svg#buns"></use>
-                              </svg>
-                            </div>
-                            <div class="consist__ingredient-text">Булочки</div>
+                          <div class="consist__ingredient-text">Говядина</div>
+                        </div>
+                        <div class="col__right">300 г</div>
+                      </li>
+                      <li class="consist__item">
+                        <div class="col__left">
+                          <div class="consist__ingredient">
+                            <svg class="consist__ingredient-icon consist__ingredien-icon_buns">
+                              <use xlink:href="./sprite.svg#buns"></use>
+                            </svg>
                           </div>
-                          <div class="col__right">100 г</div>
-                        </li>
-                        <li class="consist__item">
-                          <div class="col__left">
-                            <div class="consist__ingredient">
-                              <svg class="consist__ingredient-icon consist__ingredien-icon_salad">
-                                <use xlink:href="./sprite.svg#salad"></use>
-                              </svg>
-                            </div>
-                            <div class="consist__ingredient-text">Зелень</div>
+                          <div class="consist__ingredient-text">Булочки</div>
+                        </div>
+                        <div class="col__right">100 г</div>
+                      </li>
+                      <li class="consist__item">
+                        <div class="col__left">
+                          <div class="consist__ingredient">
+                            <svg class="consist__ingredient-icon consist__ingredien-icon_salad">
+                              <use xlink:href="./sprite.svg#salad"></use>
+                            </svg>
                           </div>
-                          <div class="col__right">70 г</div>
-                        </li>
-                        <li class="consist__item">
-                          <div class="col__left">
-                            <div class="consist__ingredient">
-                              <svg class="consist__ingredient-icon consist__ingredien-icon_sauce">
-                                <use xlink:href="./sprite.svg#sauce"></use>
-                              </svg>
-                            </div>
-                            <div class="consist__ingredient-text">Соус</div>
+                          <div class="consist__ingredient-text">Зелень</div>
+                        </div>
+                        <div class="col__right">70 г</div>
+                      </li>
+                      <li class="consist__item">
+                        <div class="col__left">
+                          <div class="consist__ingredient">
+                            <svg class="consist__ingredient-icon consist__ingredien-icon_sauce">
+                              <use xlink:href="./sprite.svg#sauce"></use>
+                            </svg>
                           </div>
-                          <div class="col__right">150 г</div>
-                        </li>
-                        <li class="consist__item">
-                          <div class="col__left">
-                            <div class="consist__ingredient">
-                              <svg class="consist__ingredient-icon consist__ingredien-icon_cucumber">
-                                <use xlink:href="./sprite.svg#cucumber"></use>
-                              </svg>
-                            </div>
-                            <div class="consist__ingredient-text">Овощи</div>
+                          <div class="consist__ingredient-text">Соус</div>
+                        </div>
+                        <div class="col__right">150 г</div>
+                      </li>
+                      <li class="consist__item">
+                        <div class="col__left">
+                          <div class="consist__ingredient">
+                            <svg class="consist__ingredient-icon consist__ingredien-icon_cucumber">
+                              <use xlink:href="./sprite.svg#cucumber"></use>
+                            </svg>
                           </div>
-                          <div class="col__right">200 г</div>
-                        </li>
-                        <li class="consist__item">
-                          <div class="col__left">
-                            <div class="consist__ingredient">
-                              <svg class="consist__ingredient-icon consist__ingredien-icon_cheese">
-                                <use xlink:href="./sprite.svg#cheese"></use>
-                              </svg>
-                            </div>
-                            <div class="consist__ingredient-text">Сыр</div>
+                          <div class="consist__ingredient-text">Овощи</div>
+                        </div>
+                        <div class="col__right">200 г</div>
+                      </li>
+                      <li class="consist__item">
+                        <div class="col__left">
+                          <div class="consist__ingredient">
+                            <svg class="consist__ingredient-icon consist__ingredien-icon_cheese">
+                              <use xlink:href="./sprite.svg#cheese"></use>
+                            </svg>
                           </div>
-                          <div class="col__right">80 г</div>
-                        </li>
-                      </ul>
+                          <div class="consist__ingredient-text">Сыр</div>
+                        </div>
+                        <div class="col__right">80 г</div>
+                      </li>
+                    </ul>
                   </div>
                   <div class="slider__calorie">
                     <svg class="slider__calorie-icon">
@@ -435,9 +438,9 @@
                     экзотического
                     соуса чураско.</p>
                   <div class="slider__price">
-                    <div class="title slider__price-title">400 <span class="slider__price-title-text">рублей</span>
+                    <div class="slider__price-title">400 <span class="slider__price-title-text">рублей</span>
                     </div>
-                    <a href="#order" class="button slider__button">Заказать</a>
+                    <a href="#" class="button slider__button" data-scroll-to="7">Заказать</a>
                   </div>
                 </div>
               </div>
@@ -453,74 +456,74 @@
                       <div class="consist__text">Состав</div>
                     </a>
                     <ul class="consist__list">
-                        <a class="close__consist"></a>
-                        <li class="consist__item">
-                          <div class="col__left">
-                            <div class="consist__ingredient">
-                              <svg class="consist__ingredient-icon consist__ingredien-icon_beef">
-                                <use xlink:href="./sprite.svg#beef"></use>
-                              </svg>
-                            </div>
-                            <div class="consist__ingredient-text">Говядина</div>
+                      <a class="close__consist"></a>
+                      <li class="consist__item">
+                        <div class="col__left">
+                          <div class="consist__ingredient">
+                            <svg class="consist__ingredient-icon consist__ingredien-icon_beef">
+                              <use xlink:href="./sprite.svg#beef"></use>
+                            </svg>
                           </div>
-                          <div class="col__right">300 г</div>
-                        </li>
-                        <li class="consist__item">
-                          <div class="col__left">
-                            <div class="consist__ingredient">
-                              <svg class="consist__ingredient-icon consist__ingredien-icon_buns">
-                                <use xlink:href="./sprite.svg#buns"></use>
-                              </svg>
-                            </div>
-                            <div class="consist__ingredient-text">Булочки</div>
+                          <div class="consist__ingredient-text">Говядина</div>
+                        </div>
+                        <div class="col__right">300 г</div>
+                      </li>
+                      <li class="consist__item">
+                        <div class="col__left">
+                          <div class="consist__ingredient">
+                            <svg class="consist__ingredient-icon consist__ingredien-icon_buns">
+                              <use xlink:href="./sprite.svg#buns"></use>
+                            </svg>
                           </div>
-                          <div class="col__right">100 г</div>
-                        </li>
-                        <li class="consist__item">
-                          <div class="col__left">
-                            <div class="consist__ingredient">
-                              <svg class="consist__ingredient-icon consist__ingredien-icon_salad">
-                                <use xlink:href="./sprite.svg#salad"></use>
-                              </svg>
-                            </div>
-                            <div class="consist__ingredient-text">Зелень</div>
+                          <div class="consist__ingredient-text">Булочки</div>
+                        </div>
+                        <div class="col__right">100 г</div>
+                      </li>
+                      <li class="consist__item">
+                        <div class="col__left">
+                          <div class="consist__ingredient">
+                            <svg class="consist__ingredient-icon consist__ingredien-icon_salad">
+                              <use xlink:href="./sprite.svg#salad"></use>
+                            </svg>
                           </div>
-                          <div class="col__right">70 г</div>
-                        </li>
-                        <li class="consist__item">
-                          <div class="col__left">
-                            <div class="consist__ingredient">
-                              <svg class="consist__ingredient-icon consist__ingredien-icon_sauce">
-                                <use xlink:href="./sprite.svg#sauce"></use>
-                              </svg>
-                            </div>
-                            <div class="consist__ingredient-text">Соус</div>
+                          <div class="consist__ingredient-text">Зелень</div>
+                        </div>
+                        <div class="col__right">70 г</div>
+                      </li>
+                      <li class="consist__item">
+                        <div class="col__left">
+                          <div class="consist__ingredient">
+                            <svg class="consist__ingredient-icon consist__ingredien-icon_sauce">
+                              <use xlink:href="./sprite.svg#sauce"></use>
+                            </svg>
                           </div>
-                          <div class="col__right">150 г</div>
-                        </li>
-                        <li class="consist__item">
-                          <div class="col__left">
-                            <div class="consist__ingredient">
-                              <svg class="consist__ingredient-icon consist__ingredien-icon_cucumber">
-                                <use xlink:href="./sprite.svg#cucumber"></use>
-                              </svg>
-                            </div>
-                            <div class="consist__ingredient-text">Овощи</div>
+                          <div class="consist__ingredient-text">Соус</div>
+                        </div>
+                        <div class="col__right">150 г</div>
+                      </li>
+                      <li class="consist__item">
+                        <div class="col__left">
+                          <div class="consist__ingredient">
+                            <svg class="consist__ingredient-icon consist__ingredien-icon_cucumber">
+                              <use xlink:href="./sprite.svg#cucumber"></use>
+                            </svg>
                           </div>
-                          <div class="col__right">200 г</div>
-                        </li>
-                        <li class="consist__item">
-                          <div class="col__left">
-                            <div class="consist__ingredient">
-                              <svg class="consist__ingredient-icon consist__ingredien-icon_cheese">
-                                <use xlink:href="./sprite.svg#cheese"></use>
-                              </svg>
-                            </div>
-                            <div class="consist__ingredient-text">Сыр</div>
+                          <div class="consist__ingredient-text">Овощи</div>
+                        </div>
+                        <div class="col__right">200 г</div>
+                      </li>
+                      <li class="consist__item">
+                        <div class="col__left">
+                          <div class="consist__ingredient">
+                            <svg class="consist__ingredient-icon consist__ingredien-icon_cheese">
+                              <use xlink:href="./sprite.svg#cheese"></use>
+                            </svg>
                           </div>
-                          <div class="col__right">80 г</div>
-                        </li>
-                      </ul>
+                          <div class="consist__ingredient-text">Сыр</div>
+                        </div>
+                        <div class="col__right">80 г</div>
+                      </li>
+                    </ul>
                   </div>
                   <div class="slider__calorie">
                     <svg class="slider__calorie-icon">
@@ -538,9 +541,9 @@
                     экзотического
                     соуса чураско.</p>
                   <div class="slider__price">
-                    <div class="title slider__price-title">600 <span class="slider__price-title-text">рублей</span>
+                    <div class="slider__price-title">600 <span class="slider__price-title-text">рублей</span>
                     </div>
-                    <a href="#order" class="button slider__button">Заказать</a>
+                    <a href="#" class="button slider__button" data-scroll-to="7">Заказать</a>
                   </div>
                 </div>
               </div>
@@ -556,28 +559,13 @@
           </a>
         </div>
       </section>
-      <section class="section team" id="team">
+      <section class="section team">
+        <div class="container team__container">
           <h2 class="title title__team">Команда</h2>
-        <div class="team__accordeon">
-          
-          <ul class="team__list">
-            <li class="team__item">
-              <h3 class="title team__title">Дэниэл Редклиф</h3>
-              <div class="team__text">
-                <div class="team__text-appear">
-                  <div class="team__avatar">
-                    <img src="./img/team.png" alt="Фото участника команды" class="team__img">
-                  </div>
-
-                    <div class="team__desc">
-                      <h4 class="team__desc-name">Оператор</h4>
-                      <p class="team__desc-text">С радостью поможет подобрать идеальный бургер и оформить заказ.</p>
-                    </div>
-                  </div>
-                </div>
-              </li>
+          <div class="team__accordeon">
+            <ul class="team__list">
               <li class="team__item">
-                <h3 class="title team__title">Ричард Джеймс</h3>
+                <h3 class="team__headline">Дэниэл Редклиф</h3>
                 <div class="team__text">
                   <div class="team__text-appear">
                     <div class="team__avatar">
@@ -592,7 +580,7 @@
                 </div>
               </li>
               <li class="team__item">
-                <h3 class="title team__title">Джейк Финн</h3>
+                <h3 class="team__headline">Ричард Джеймс</h3>
                 <div class="team__text">
                   <div class="team__text-appear">
                     <div class="team__avatar">
@@ -607,7 +595,22 @@
                 </div>
               </li>
               <li class="team__item">
-                <h3 class="title team__title">Николай Иванов</h3>
+                <h3 class="team__headline">Джейк Финн</h3>
+                <div class="team__text">
+                  <div class="team__text-appear">
+                    <div class="team__avatar">
+                      <img src="./img/team.png" alt="Фото участника команды" class="team__img">
+                    </div>
+
+                    <div class="team__desc">
+                      <h4 class="team__desc-name">Оператор</h4>
+                      <p class="team__desc-text">С радостью поможет подобрать идеальный бургер и оформить заказ.</p>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="team__item">
+                <h3 class="team__headline">Николай Иванов</h3>
                 <div class="team__text">
                   <div class="team__text-appear">
                     <div class="team__avatar">
@@ -625,7 +628,7 @@
           </div>
         </div>
       </section>
-      <section class="section carte" id="carte">
+      <section class="section carte">
         <div class="carte__accordeon">
           <h2 class="title title__carte">Меню</h2>
           <ul class="carte__list">
@@ -658,7 +661,7 @@
               </div>
               <div class="carte__desc">
                 <div class="carte__appear">
-                  <a class="close"></a>
+                  <a class="close close__carte"></a>
                   <p class="carte__text">
                     Речевой акт редуцирует диалектический характер. Развивая
                     эту тему,
@@ -681,7 +684,7 @@
               </div>
               <div class="carte__desc">
                 <div class="carte__appear">
-                  <a class="close"></a>
+                  <a class="close close__carte"></a>
                   <p class="carte__text">
                     Речевой акт редуцирует диалектический характер. Развивая
                     эту тему,
@@ -701,7 +704,7 @@
           </ul>
         </div>
       </section>
-      <section class="section reviews" id="reviews">
+      <section class="section reviews">
         <ul class="reviews__list">
           <li class="reviews__item" style="background-image: url(./img/photo-1.jpg)">
             <div class="reviews__text">
@@ -818,7 +821,39 @@
         </ul>
 
       </section>
-      <section class="section section_centered order" id="order">
+      <section class="section section__centered video">
+        <div class="container video__container">
+          <h2 class="title title__video">Как мы работаем</h2>
+          <div class="video__player">
+            <video id="player" poster="./img/poster-video.png">
+              <source src="./img/burger_video.mp4" type="video/mp4">
+            </video>
+            <svg class="play video__player-img">
+              <use xlink:href="./sprite.svg#play"></use>
+            </svg>
+          </div>
+          <div class="video__toolbar">
+            <div class="duration">
+              <div class="play duration__img"></div>
+              <!-- <svg class="play duration__img">
+                      <use xlink:href="./sprite.svg#play"></use>
+                    </svg> -->
+              <input type="range" class="duration__length" id="durationLevel">
+            </div>
+            <div class="sound">
+              <div class="sound__mic">
+                <svg id="mic" class="sound__icon">
+                  <use xlink:href="./sprite.svg#volume"></use>
+                </svg>
+              </div>
+              <div class="sound__volume">
+                <input type="range" class="duration__length duration__length--other" id="micLevel">
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section section_centered order">
         <div class="container">
           <h2 class="title order__title">Закажите доставку</h2>
           <form action="#" class="form" id="myForm">
@@ -829,13 +864,14 @@
                   <input type="text" class="form__block-input" name="name" required>
                   <div class="error"></div>
                 </label>
-                
+
                 <label class="form__block">
                   <div class="form__block-title">Телефон</div>
-                  <input type="text" class="form__block-input" id="phone" placeholder="89212264923" name="phone" required>
+                  <input type="text" class="form__block-input" id="phone" placeholder="89212264923" name="phone"
+                    required>
                   <div class="error"></div>
                 </label>
-               
+
               </div>
               <div class="form__row">
                 <label class="form__block">
@@ -900,9 +936,9 @@
           </form>
         </div>
       </section>
-      <section class="section map" id="YMapsID">
-        <!-- <div class="map__img"></div> -->
-        <footer class="footer" id="footer">
+      <section class="section map" id="map">
+        <!-- <div class="map__img" id="map"></div> -->
+        <footer class="footer">
           <div class="container footer__container">
             <div class="footer__col">
               <a href="#" class="address">Санкт-Петербург, ул.Бабушкина, д.12/1, 15</a>
@@ -955,36 +991,36 @@
     <div class="fixed-menu">
       <ul class="fixed-menu_list">
         <li class="fixed-menu_item fixed-menu_item_active">
-          <a href="#" class="fixed-menu_link"></a>
+          <a href="#" class="fixed-menu_link" data-scroll-to="0"></a>
         </li>
         <li class="fixed-menu_item">
-          <a href="#" class="fixed-menu_link"></a>
+          <a href="#" class="fixed-menu_link" data-scroll-to="1"></a>
         </li>
         <li class="fixed-menu_item">
-          <a href="#" class="fixed-menu_link"></a>
+          <a href="#" class="fixed-menu_link" data-scroll-to="2"></a>
         </li>
         <li class="fixed-menu_item">
-          <a href="#" class="fixed-menu_link"></a>
+          <a href="#" class="fixed-menu_link" data-scroll-to="3"></a>
         </li>
         <li class="fixed-menu_item">
-          <a href="" class="fixed-menu_link"></a>
+          <a href="" class="fixed-menu_link" data-scroll-to="4"></a>
         </li>
         <li class="fixed-menu_item">
-          <a href="#" class="fixed-menu_link"></a>
+          <a href="#" class="fixed-menu_link" data-scroll-to="5"></a>
         </li>
         <li class="fixed-menu_item">
-          <a href="#" class="fixed-menu_link"></a>
+          <a href="#" class="fixed-menu_link" data-scroll-to="6"></a>
         </li>
         <li class="fixed-menu_item">
-          <a href="#" class="fixed-menu_link"></a>
+          <a href="#" class="fixed-menu_link" data-scroll-to="7"></a>
         </li>
         <li class="fixed-menu_item">
-          <a href="#" class="fixed-menu_link"></a>
+          <a href="#" class="fixed-menu_link" data-scroll-to="8"></a>
         </li>
       </ul>
     </div>
   </div>
-  
+
   <script type="template" id="modal-template">
       <div class="overlay">
         <div class="popup__container">
@@ -1008,12 +1044,11 @@
       </div>
     </div>
 </script>
-  <script src="./js/slider.js"></script>
-  <script src="./js/form.js"></script>
-  <script src="./js/main.js"></script>
-  <script src="./js/carte__acc.js"></script>
-  <script src="./js/reviews-modal.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mobile-detect/1.3.6/mobile-detect.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.18/jquery.touchSwipe.min.js"></script>
 
+  <script src="main.min.js"></script>
 
 </body>
 
