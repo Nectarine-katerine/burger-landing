@@ -16,11 +16,11 @@
     {
       latitude: 59.94,
       longitude: 30.25,
-      hintContent: '<div class="map__hint"> Малый проспект В 0, д. 64 </div>',
+      hintContent: '<div class="map__hint"> Малый проспект В.О. , д. 64 </div>',
       ballonContent: [
         '<div class="map__balloon">',
         // '<img class="map__burger-img" src="img/" alt="Burger"/>',
-        'Самые вкусные бургеры у нас! Заходите по адресу: Малый проспект В 0, д. 64',
+        'Самые вкусные бургеры у нас! Заходите по адресу: Малый проспект В.О., д. 64',
         '</div>'
       ]
     },
@@ -37,12 +37,12 @@
     },
     {
       latitude: 59.91,
-      longitude: 30.32,
-      hintContent: '<div class="map__hint"> наб. реки Фонтанки, д. 56 </div>',
+      longitude: 30.27,
+      hintContent: '<div class="map__hint"> наб. Обводного канала, д. 223-225СК </div>',
       ballonContent: [
         '<div class="map__balloon">',
         // '<img class="map__burger-img" src="img/" alt="Burger"/>',
-        'Самые вкусные бургеры у нас! Заходите по адресу: наб. реки Фонтанки, д. 56',
+        'Самые вкусные бургеры у нас! Заходите по адресу: наб. Обводного канала, д. 223-225СК',
         '</div>'
       ]
     }
